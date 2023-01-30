@@ -38,7 +38,13 @@ export default function Layout({ children }) {
 
       <main className="flex-grow">{children}</main>
 
-      <footer className="container m-auto p-5">footer</footer>
+      <footer className="bg-primary border-t-2">
+        <div className="container m-auto p-5 pt-7 pb-7 flex gap-x-10 text-white text-;=l">
+          <span className="flex-grow">&copy; Ecopass.pl - Wszelkie prawa zastrzeżone</span>
+          <span>Regulamin</span>
+          <span>Polityka prywatności</span>
+        </div>
+      </footer>
     </>
   );
 }
