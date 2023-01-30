@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap');
+#__next {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
 html,
 body {
-    @apply bg-blue-50 dark:bg-gray-900;
+    @apply bg-gray-50;
     font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #fff;
 }

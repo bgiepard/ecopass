@@ -1,6 +1,130 @@
 import Head from 'next/head';
+import Layout from 'components/Layout';
+import Image from 'next/image';
+
+import Team from 'assets/team.svg';
+import Dom from 'assets/dom.svg';
+import Blok from 'assets/blok.svg';
+import Fabryka from 'assets/fabryka.svg';
+import Fabryka2 from 'assets/fabryka2.svg';
+import Farba from 'assets/farba.png';
+
+import wiatrowa from 'assets/wiatrowa.jpg';
+import pompy from 'assets/pompy.jpg';
+import malowanie from 'assets/malowanie.jpg';
+import fotowoltaika from 'assets/fotowoltaika.jpg';
+import HomePageSlider from '../components/HomePageSlider';
 
 export default function Home() {
+  const buildings = [
+    {
+      id: 1,
+      name: 'Mieszkania w bloku lub kamienicy',
+      image: Blok,
+      height: 100
+    },
+    {
+      id: 2,
+      name: 'Domy jedno- i wielorodzinne',
+      image: Dom,
+      height: 100
+    },
+    {
+      id: 3,
+      name: 'Budynki przemysłowe i fabryki',
+      image: Fabryka,
+      height: 100
+    },
+    {
+      id: 4,
+      name: 'Budynki użyteczności publicznej',
+      image: Fabryka2,
+      height: 100
+    }
+  ];
+
+  const products = [
+    {
+      id: 1,
+      name: 'Farba termoizolacyjna Thermopol..',
+      image: Farba
+    },
+    {
+      id: 2,
+      name: 'Farba termoizolacyjna Thermopol..',
+      image: Farba
+    },
+    {
+      id: 3,
+      name: 'Farba termoizolacyjna Thermopol..',
+      image: Farba
+    },
+    {
+      id: 4,
+      name: 'Farba termoizolacyjna Thermopol..',
+      image: Farba
+    }
+  ];
+
+  const articles = [
+    {
+      id: 1,
+      image: fotowoltaika,
+      title: 'Koszt zwrotu z fotowoltaiki. Ile na tym zyskasz?',
+      description: '',
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+    },
+    {
+      id: 2,
+      image: pompy,
+      title: 'Pompy ciepła - ile kosztuje instalacja?',
+      description: '',
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+    },
+    {
+      id: 3,
+      image: wiatrowa,
+      title: 'Przydomowe elektrownie wiatrowe. Czy to się opłaca?',
+      description: '',
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+    },
+    {
+      id: 4,
+      image: malowanie,
+      title: 'Farba termoizolacyjna - ile to kosztuje?',
+      description: '',
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+    }
+  ];
+
+  const categories = [
+    {
+      id: 1,
+      name: 'Wszystkie',
+      active: true
+    },
+    {
+      id: 2,
+      name: 'Fotowoltaika',
+      active: false
+    },
+    {
+      id: 3,
+      name: 'Pompy ciepła',
+      active: false
+    },
+    {
+      id: 4,
+      name: 'Dofinansowania',
+      active: false
+    },
+    {
+      id: 5,
+      name: 'Termoizolacja',
+      active: false
+    }
+  ];
+
   return (
     <>
       <Head>
@@ -9,20 +133,119 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container m-auto p-10">
-        <div className="h-96 flex flex-col justify-center mb-10">
-          <h1 className="text-5xl font-bold">hello</h1>
-          <p className="mt-10 text-2xl w-2/3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Amet dolorum exercitationem incidunt inventore molestiae optio possimus voluptatibus!
-            Ab cum eaque earum eos laudantium maxime, mollitia nulla quos.
-            At, consectetur cumque debitis distinctio doloremque, enim maxime quasi quia tempore tenetur totam vitae!
-            Error minima perspiciatis voluptates!
-          </p>
+
+      <Layout>
+        {/*Hero*/}
+        <div className="bg-primary">
+          <div className="container m-auto">
+            <HomePageSlider />
+          </div>
         </div>
 
-      </main>
+        {/*Categories*/}
+        <div className="mt-[100px] mb-[150px]">
+          <div className="container m-auto flex items-center">
+            <div className="mr-10 w-[25%]">
+              <h2 className="font-bold text-4xl mb-10 opacity-80">
+                Wybierz interesującą Cię kategorię
+              </h2>
+              <p className="text-xl opacity-70">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at corporis doloribus
+                earum enim modi nemo nostrum sunt, tempore vitae?
+              </p>
+            </div>
+            <div className="w-[75%] flex justify-around items-center">
+              {buildings.map((item) => (
+                <>
+                  <div className="flex flex-col items-center w-[23%] p-8 shadow-xl rounded-3xl border-t-4 border-secondary hover:shadow-2xl cursor-pointer">
+                    <Image src={item.image} height={item.height} className="mb-8" />
+                    <h3 className="text-[19px] font-bold text-center">{item.name}</h3>
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+        </div>
 
+        {/*Posts*/}
+        <div className="container m-auto mb-[100px]">
+          <div className="mb-10 flex items-center">
+            <h2 className="font-bold text-4xl opacity-80">Ostatnie artykuły</h2>
+            <div className="flex ml-10 items-center gap-x-3">
+              {categories.map((item) => {
+                return (
+                  <button
+                    key={item.id}
+                    className={`p-4 pt-1 pb-1 text-[14px] rounded-2xl bg-white shadow-xl font-bold ${
+                      item.active ? 'border-2 border-secondary' : ''
+                    }`}>
+                    {item.name}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <div className="flex justify-between flex-wrap gap-y-10">
+            {articles.map((item) => (
+              <div className="w-[23%] border-4 rounded-3xl overflow-hidden" key={item.id}>
+                <div className="h-[200px] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    width={300}
+                    className="mb-8 object-cover w-full h-full opacity-80"
+                  />
+                </div>
+                <h1 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5">{item.title}</h1>
+                <p className="pl-5 pr-3 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi
+                  facilis hic laudantium, quidem ut.
+                </p>
+              </div>
+            ))}
+            {articles.reverse().map((item) => (
+              <div className="w-[23%] border-4 rounded-3xl overflow-hidden" key={item.id}>
+                <div className="h-[200px] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    width={300}
+                    className="mb-8 object-cover w-full h-full opacity-80"
+                  />
+                </div>
+                <h1 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5">{item.title}</h1>
+                <p className="pl-5 pr-3 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi
+                  facilis hic laudantium, quidem ut.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/*Products*/}
+        <div className="bg-primary">
+          <div className="container m-auto pt-20 pb-20">
+            <h1 className="text-4xl font-bold text-white w-full">Polecane produkty</h1>
+            <div className="flex justify-between pt-10 pb-10">
+              {products.map((item) => (
+                <div className="p-5 border-2 rounded-2xl w-[23%] bg-gray-100" key={item.id}>
+                  <div className="mb-5 flex flex-col justify-center items-center">
+                    <Image src={item.image} width={300} />
+                    <h3 className="font-bold text-ll mb-5 w-full">{item.name}</h3>
+                    <div className="flex gap-x-1 w-full">
+                      <button className="text-white font-bold text-[14px] border-2 border-secondary text-gray-900 rounded-xl pt-2 pb-2 pl-3 pr-3">
+                        Dowiedz się więcej
+                      </button>
+                      <button className="text-white font-bold text-[14px] bg-secondary rounded-xl pt-2 pb-2 pl-3 pr-3">
+                        Dodaj do koszyka
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Layout>
     </>
   );
 }
