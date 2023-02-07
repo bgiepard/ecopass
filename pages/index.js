@@ -156,12 +156,12 @@ export default function Home() {
             </div>
             <div className="w-[75%] flex justify-around items-center">
               {buildings.map((item) => (
-                <>
+                <div key={item.id}>
                   <div className="flex flex-col items-center w-[23%] p-8 shadow-xl rounded-3xl border-t-4 border-secondary hover:shadow-2xl cursor-pointer">
                     <Image src={item.image} height={item.height} className="mb-8" />
                     <h3 className="text-[19px] font-bold text-center">{item.name}</h3>
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </div>
@@ -247,32 +247,32 @@ export default function Home() {
         </div>
 
         {/*Newsletter*/}
-        <div className="container m-auto pt-[100px] pb-[100px] flex items-center justify-between">
-          <div className="w-[60%]">
-            <Image src={Newsletter} width="700" />
-          </div>
-          <div className="w-[40%]">
-            <h1 className="text-3xl font-bold w-full mb-3">Bądź na bieząco</h1>
+        {/*<div className="container m-auto pt-[100px] pb-[100px] flex items-center justify-between">*/}
+        {/*  <div className="w-[60%]">*/}
+        {/*    <Image src={Newsletter} width="700" />*/}
+        {/*  </div>*/}
+        {/*  <div className="w-[40%]">*/}
+        {/*    <h1 className="text-3xl font-bold w-full mb-3">Bądź na bieząco</h1>*/}
 
-            <h1 className="text-3xl font-bold w-full mb-10">Zapisz się do naszego newslettera</h1>
+        {/*    <h1 className="text-3xl font-bold w-full mb-10">Zapisz się do naszego newslettera</h1>*/}
 
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Adres email"
-                className="drop-shadow-xl p-3 pl-10 pr-10 rounded-2xl"
-              />
-              <button className="bg-secondary font-bold text-white p-3 pl-5 pr-5 pb-2 rounded-2xl shadow-xl">
-                Zapisz mnie!
-              </button>
-            </div>
+        {/*    <div className="flex">*/}
+        {/*      <input*/}
+        {/*        type="email"*/}
+        {/*        placeholder="Adres email"*/}
+        {/*        className="drop-shadow-xl p-3 pl-10 pr-10 rounded-2xl"*/}
+        {/*      />*/}
+        {/*      <button className="bg-secondary font-bold text-white p-3 pl-5 pr-5 pb-2 rounded-2xl shadow-xl">*/}
+        {/*        Zapisz mnie!*/}
+        {/*      </button>*/}
+        {/*    </div>*/}
 
-            <p className="text-xl mt-10">
-              Otrzymuj najnowsze informacje, Lorem ipsum dolor sit amet, <br /> consectetur
-              adipisicing elit. Modi, molestiae.
-            </p>
-          </div>
-        </div>
+        {/*    <p className="text-xl mt-10">*/}
+        {/*      Otrzymuj najnowsze informacje, Lorem ipsum dolor sit amet, <br /> consectetur*/}
+        {/*      adipisicing elit. Modi, molestiae.*/}
+        {/*    </p>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </Layout>
     </>
   );
