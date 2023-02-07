@@ -156,11 +156,11 @@ export default function Home() {
             </div>
             <div className="w-[75%] flex justify-around items-center">
               {buildings.map((item) => (
-                <div key={item.id}>
-                  <div className="flex flex-col items-center w-[23%] p-8 shadow-xl rounded-3xl border-t-4 border-secondary hover:shadow-2xl cursor-pointer">
-                    <Image src={item.image} height={item.height} className="mb-8" />
-                    <h3 className="text-[19px] font-bold text-center">{item.name}</h3>
-                  </div>
+                <div
+                  className="flex flex-col items-center w-[23%] p-8 shadow-xl rounded-3xl border-t-4 border-secondary hover:shadow-2xl cursor-pointer"
+                  key={item.id}>
+                  <Image src={item.image} height={item.height} className="mb-8" />
+                  <h3 className="text-[19px] font-bold text-center">{item.name}</h3>
                 </div>
               ))}
             </div>
