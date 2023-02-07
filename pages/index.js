@@ -12,7 +12,6 @@ import wiatrowa from 'assets/wiatrowa.jpg';
 import pompy from 'assets/pompy.jpg';
 import malowanie from 'assets/malowanie.jpg';
 import fotowoltaika from 'assets/fotowoltaika.jpg';
-import Newsletter from 'assets/Newsletter.svg';
 import HomePageSlider from '../components/HomePageSlider';
 
 export default function Home() {
