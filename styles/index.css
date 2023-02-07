@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
     height: 100%;
 }
+
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
     color: #fff;
