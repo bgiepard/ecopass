@@ -114,8 +114,7 @@ export default function Home() {
           </div>
           <div className="flex justify-between flex-wrap gap-y-10">
             {articles.map((item) => (
-              <Link
-                href={`blog/${item.path}`}
+              <div
                 className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
                 key={item.id}>
                 <div className="h-[200px] overflow-hidden">
@@ -125,14 +124,18 @@ export default function Home() {
                     className="mb-8 object-cover w-full h-full opacity-80"
                   />
                 </div>
-                <h1 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5">{item.title}</h1>
+                <Link
+                  href={`blog/${item.path}`}
+                  className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5 block">
+                  {item.title}
+                </Link>
                 <p className="pl-5 pr-3 pb-5">
                   {item.description
                     ? item.description
                     : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi\n' +
                       '                  facilis hic laudantium, quidem ut.'}
                 </p>
-              </Link>
+              </div>
             ))}
             {articles.reverse().map((item) => (
               <Link

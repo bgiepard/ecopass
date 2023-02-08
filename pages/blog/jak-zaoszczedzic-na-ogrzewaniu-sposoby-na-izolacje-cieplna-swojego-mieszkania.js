@@ -21,9 +21,11 @@ export default function Blog() {
             sposoby, aby zmniejszyć te koszty, i jednym z najbardziej skutecznych jest izolacja
             cieplna. W niniejszym artykule omówimy, jakie są najskuteczniejsze metody izolacji
             cieplnej mieszkania, jak ogrzewać mieszkanie oszczędnie dzięki izolacji cieplnej oraz
-            jak wybrać odpowiednią izolację cieplną dla swojego mieszkania. Przeanalizujemy również,
-            jak inwestycja w izolację cieplną może zapewnić niższe rachunki za ogrzewanie oraz jak
-            ochronić się przed niskimi temperaturami bez wysokich kosztów ogrzewania.
+            jak wybrać odpowiednią izolację cieplną dla swojego mieszkania.
+            <br />
+            Przeanalizujemy również, jak inwestycja w izolację cieplną może zapewnić niższe rachunki
+            za ogrzewanie oraz jak ochronić się przed niskimi temperaturami bez wysokich kosztów
+            ogrzewania.
           </p>
 
           <h2 className="text-3xl mb-3">Krok po kroku do niższych rachunków za ogrzewanie</h2>
