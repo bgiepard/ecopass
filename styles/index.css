@@ -23,6 +23,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
     color: #fff;
