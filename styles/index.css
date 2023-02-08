@@ -19,6 +19,8 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
     height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li button:before,

@@ -3,34 +3,46 @@ import Image from 'next/image';
 
 import Logo from 'assets/logo.png';
 export default function Layout({ children }) {
+  const links = [
+    {
+      id: 1,
+      name: 'artykuły',
+      path: 'blog',
+      customClasses: ''
+    },
+    {
+      id: 2,
+      name: 'kalkulatory',
+      path: '',
+      customClasses: ''
+    },
+    {
+      id: 3,
+      name: 'sklep',
+      path: '',
+      customClasses: 'font-semibold'
+    }
+  ];
   return (
     <>
       <header className="p-5 pt-7 pb-7 bg-primary">
         <div className="container m-auto flex justify-between items-center">
-          <Link href="/" className="text-4xl font-[700] text-white flex items-center">
-            <Image src={Logo} alt="Ecopass logo" width={40} height={40} className="mr-3" />
-            <span>Ecopass</span>
+          <Link href="/" className="text-5xl font-[700] text-white flex items-center">
+            <span className="mr-2">ecopass</span>
+            <Image src={Logo} alt="Ecopass logo" width={40} height={40} />
           </Link>
 
           <nav>
-            <ul className="flex gap-x-12 text-xl font-[500] text-white">
-              <li>
-                <Link href="/blog">Poradniki</Link>
-              </li>
-              <li>
-                <Link href="/">Kalkulatory</Link>
-              </li>
-              <li>
-                <Link href="/">Bezemisyjność</Link>
-              </li>
-              <li>
-                <Link href="/">Kontakt</Link>
-              </li>
-              <li>
-                <Link href="/" className="bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
-                  Sklep
-                </Link>
-              </li>
+            <ul className="flex gap-x-12 text-2xl font-[500] text-white">
+              {links.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href={item.path} className={item.customClasses}>
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>

@@ -8,14 +8,14 @@ export default function HomePageSlider() {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 800,
+    speed: 1600,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 4500,
     pauseOnHover: true,
     appendDots: (dots) => (
       <div style={{ position: 'absolute', top: 0, right: 0, width: '30px' }}>
@@ -33,9 +33,11 @@ export default function HomePageSlider() {
               Dowiedz się jak zmniejszyć zużycie energii
             </h1>
             <p className="mt-5 mb-5 text-gray-200 text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ducimus enim
-              quam quasi voluptates? Ab accusantium consequuntur culpa eaque enim numquam optio
-              possimus praesentium reprehenderit temporibus. Eius molestiae molestias quasi?
+              Chcesz zmniejszyć swoje rachunki za prąd i jednocześnie wpłynąć na środowisko?
+              Zoptymalizowanie zużycia energii jest łatwiejsze niż myślisz. Od wyłączania
+              niepotrzebnych urządzeń po stosowanie energooszczędnych produktów. <br /> <br />
+              <span className="text-white">Pokażemy Ci proste kroki</span>, które możesz podjąć, aby
+              obniżyć swoje zużycie energii.
             </p>
             <div className="flex">
               <button className="text-white text-xl font-bold mr-5 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
@@ -58,9 +60,10 @@ export default function HomePageSlider() {
               Oblicz zysk z&nbsp;Twoich zaplanowanych inwestycji
             </h1>
             <p className="mt-5 mb-5 text-gray-200 text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ducimus enim
-              quam quasi voluptates? Ab accusantium consequuntur culpa eaque enim numquam optio
-              possimus praesentium reprehenderit temporibus. Eius molestiae molestias quasi?
+              Nie musisz już tracić czasu na skomplikowane obliczenia - na naszej stronie masz
+              dostęp do wielu przydatnych kalkulatorów. Oblicz swoje zapotrzebowanie na farbę,
+              policz zwrot z inwestycji w fotowoltaikę i wiele więcej. U nas zaoszczędzisz czas i
+              pieniądze!
             </p>
             <div className="flex">
               <button className="text-white text-xl font-bold mr-5 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
@@ -83,9 +86,12 @@ export default function HomePageSlider() {
               Zacznij biernie oszczędzać na swoich rachunkach!
             </h1>
             <p className="mt-5 mb-5 text-gray-200 text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ducimus enim
-              quam quasi voluptates? Ab accusantium consequuntur culpa eaque enim numquam optio
-              possimus praesentium reprehenderit temporibus. Eius molestiae molestias quasi?
+              Zaoszczędź bez wysiłku na swoich rachunkach dzięki naszym energooszczędnym farbom i
+              produktom. Bierne oszczędzanie jest łatwiejsze niż myślisz, wystarczy tylko zmienić
+              swoje codzienne wybory na bardziej przyjazne dla środowiska.
+              <br />
+              <br />
+              <span className="text-white">Dołącz do nas i zacznij oszczędzać!</span>
             </p>
             <div className="flex">
               <button className="text-white text-xl font-bold mr-5 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
