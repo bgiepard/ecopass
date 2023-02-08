@@ -82,13 +82,13 @@ export default function Home() {
       <Layout>
         {/*Hero*/}
         <div className="bg-primary">
-          <div className="container m-auto">
+          <div className="container m-auto pl-3 pr-3">
             <HomePageSlider />
           </div>
         </div>
 
         {/*Posts*/}
-        <div className="container m-auto mb-[100px] mt-[100px]">
+        <div className="container m-auto mb-[100px] mt-[100px]  pl-3 pr-3">
           <div className="mb-10 flex items-center">
             <h2 className="font-bold text-4xl opacity-80">Ostatnie artykuły</h2>
             <div className="flex ml-10 items-center gap-x-3">
@@ -109,7 +109,7 @@ export default function Home() {
             {articles.map((item) => (
               <Link
                 href="blog/nowy-wpis"
-                className="w-[23%] border-4 rounded-3xl overflow-hidden"
+                className="w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
                 key={item.id}>
                 <div className="h-[200px] overflow-hidden">
                   <Image
@@ -126,7 +126,10 @@ export default function Home() {
               </Link>
             ))}
             {articles.reverse().map((item) => (
-              <div className="w-[23%] border-4 rounded-3xl overflow-hidden" key={item.id}>
+              <Link
+                href="blog/nowy-wpis"
+                className="w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden"
+                key={item.id}>
                 <div className="h-[200px] overflow-hidden">
                   <Image
                     src={item.image}
@@ -139,7 +142,7 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi
                   facilis hic laudantium, quidem ut.
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

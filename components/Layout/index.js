@@ -26,7 +26,7 @@ export default function Layout({ children }) {
   return (
     <>
       <header className="p-5 pt-7 pb-7 bg-primary">
-        <div className="container m-auto flex justify-between items-center">
+        <div className="container m-auto flex justify-between items-center pl-3 pr-3">
           <Link href="/" className="text-5xl font-[700] text-white flex items-center">
             <span className="mr-2">ecopass</span>
             <Image src={Logo} alt="Ecopass logo" width={40} height={40} />
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
       <main className="flex-grow">{children}</main>
 
       <footer className="bg-primary border-t-2">
-        <div className="container m-auto p-5 pt-7 pb-7 flex gap-x-10 text-white text-;=l">
+        <div className="container m-auto p-5 pt-7 pb-7 flex gap-x-10 text-white pl-3 pr-3">
           <span className="flex-grow">&copy; Ecopass.pl - Wszelkie prawa zastrzeżone</span>
           <span>Regulamin</span>
           <span>Polityka prywatności</span>
