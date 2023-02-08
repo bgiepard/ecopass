@@ -23,6 +23,7 @@ export default function Blog() {
             cieplnej mieszkania, jak ogrzewać mieszkanie oszczędnie dzięki izolacji cieplnej oraz
             jak wybrać odpowiednią izolację cieplną dla swojego mieszkania.
             <br />
+            <br />
             Przeanalizujemy również, jak inwestycja w izolację cieplną może zapewnić niższe rachunki
             za ogrzewanie oraz jak ochronić się przed niskimi temperaturami bez wysokich kosztów
             ogrzewania.
