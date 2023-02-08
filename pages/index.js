@@ -82,21 +82,21 @@ export default function Home() {
       <Layout>
         {/*Hero*/}
         <div className="bg-primary">
-          <div className="container m-auto pl-3 pr-3">
+          <div className="container">
             <HomePageSlider />
           </div>
         </div>
 
         {/*Posts*/}
-        <div className="container m-auto mb-[100px] mt-[100px]  pl-3 pr-3">
-          <div className="mb-10 flex items-center">
-            <h2 className="font-bold text-4xl opacity-80">Ostatnie artykuły</h2>
-            <div className="flex ml-10 items-center gap-x-3">
+        <div className="container mt-[50px] mb-[50px] md:mb-[100px] md:mt-[100px]">
+          <div className="mb-10 flex items-center flex-col md:flex-row">
+            <h2 className="font-bold text-4xl opacity-80 mb-8 md:mb-0">Ostatnie artykuły</h2>
+            <div className="flex md:ml-10 items-center gap-x-3 gap-y-3 flex-wrap w-full">
               {categories.map((item) => {
                 return (
                   <button
                     key={item.id}
-                    className={`p-4 pt-2 pb-2 text-[16px] rounded-2xl bg-white shadow-2xl font-bold ${
+                    className={`whitespace-nowrap p-4 pt-2 pb-2 text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl ${
                       item.active ? 'border-2 border-secondary' : ''
                     }`}>
                     {item.name}
@@ -109,7 +109,7 @@ export default function Home() {
             {articles.map((item) => (
               <Link
                 href="blog/nowy-wpis"
-                className="w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
+                className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
                 key={item.id}>
                 <div className="h-[200px] overflow-hidden">
                   <Image
@@ -128,7 +128,7 @@ export default function Home() {
             {articles.reverse().map((item) => (
               <Link
                 href="blog/nowy-wpis"
-                className="w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden"
+                className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
                 key={item.id}>
                 <div className="h-[200px] overflow-hidden">
                   <Image
