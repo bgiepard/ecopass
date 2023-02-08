@@ -14,31 +14,36 @@ export default function Home() {
   const articles = [
     {
       id: 1,
-      image: fotowoltaika,
-      title: 'Koszt zwrotu z fotowoltaiki. Ile na tym zyskasz?',
-      description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+      image: malowanie,
+      title: 'Jak zaoszczędzić na ogrzewaniu: sposoby na izolację cieplną swojego mieszkania',
+      description:
+        'Ogrzewanie mieszkania to jeden z największych wydatków w domowym budżecie. Jednak są sposo..',
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
+      path: 'jak-zaoszczedzic-na-ogrzewaniu-sposoby-na-izolacje-cieplna-swojego-mieszkania'
     },
     {
       id: 2,
       image: pompy,
       title: 'Pompy ciepła - ile kosztuje instalacja?',
       description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
+      path: ''
     },
     {
       id: 3,
       image: wiatrowa,
       title: 'Przydomowe elektrownie wiatrowe. Czy to się opłaca?',
       description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
+      path: ''
     },
     {
       id: 4,
-      image: malowanie,
+      image: fotowoltaika,
       title: 'Farba termoizolacyjna - ile to kosztuje?',
       description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
+      path: ''
     }
   ];
 
@@ -90,13 +95,15 @@ export default function Home() {
         {/*Posts*/}
         <div className="container mt-[50px] mb-[50px] md:mb-[100px] md:mt-[100px]">
           <div className="mb-10 flex items-center flex-col md:flex-row">
-            <h2 className="font-bold text-4xl opacity-80 mb-8 md:mb-0">Ostatnie artykuły</h2>
+            <h2 className="whitespace-nowrap font-bold text-4xl opacity-80 mb-8 md:mb-0">
+              Ostatnie artykuły
+            </h2>
             <div className="flex md:ml-10 items-center gap-x-3 gap-y-3 flex-wrap w-full">
               {categories.map((item) => {
                 return (
                   <button
                     key={item.id}
-                    className={`whitespace-nowrap p-4 pt-2 pb-2 text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl ${
+                    className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl ${
                       item.active ? 'border-2 border-secondary' : ''
                     }`}>
                     {item.name}
@@ -108,7 +115,7 @@ export default function Home() {
           <div className="flex justify-between flex-wrap gap-y-10">
             {articles.map((item) => (
               <Link
-                href="blog/nowy-wpis"
+                href={`blog/${item.path}`}
                 className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
                 key={item.id}>
                 <div className="h-[200px] overflow-hidden">
@@ -120,8 +127,10 @@ export default function Home() {
                 </div>
                 <h1 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5">{item.title}</h1>
                 <p className="pl-5 pr-3 pb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi
-                  facilis hic laudantium, quidem ut.
+                  {item.description
+                    ? item.description
+                    : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi\n' +
+                      '                  facilis hic laudantium, quidem ut.'}
                 </p>
               </Link>
             ))}
