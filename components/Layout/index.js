@@ -37,7 +37,7 @@ export default function Layout({ children }) {
           </Link>
 
           <nav
-            className={`duration-500 absolute z-30 left-0 right-0 pb-5 pl-10 top-0 bottom-0 bg-white pt-[100px] ${
+            className={`duration-500 fixed z-30 left-0 right-0 pb-5 pl-10 top-0 bottom-0 bg-white pt-[100px] ${
               menuVisible ? 'translate-x-0' : 'translate-x-[100%]'
             }
             md:translate-x-0 md:bg-transparent md:pb-0 md:pt-0 md:pl-0 md:left-auto md:right-auto md:top-auto md:static md:pt-0`}>
