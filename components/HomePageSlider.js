@@ -73,13 +73,13 @@ export default function HomePageSlider() {
     <Slider {...settings}>
       {slides.map((item) => {
         return (
-          <div key={item.id} className="h-[500px] md:h-auto">
+          <div key={item.id} className="min-h-[500px] md:h-auto">
             <div className="h-full flex items-center">
               <div className="pt-10 pb-10 flex items-center pr-5 md:pr-10 flex-wrap">
                 <div className="w-full md:w-1/2 md:pt-10 md:pb-10">
                   <h1 className="md:text-7xl text-3xl font-[700] text-white">{item.heading}</h1>
                   <p className="text-l mt-5 mb-5 text-gray-200 md:text-xl">{item.text}</p>
-                  <div className="flex mt-8">
+                  <div className="flex mt-8 flex-wrap gap-y-1">
                     <button className="whitespace-nowrap text-white md:text-xl font-bold mr-1 md:mr-3 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
                       Zobacz produkty
                     </button>
