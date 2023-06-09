@@ -11,11 +11,28 @@ module.exports = {
         primary: '#636ff2',
         secondary: '#2fa749',
         'accent-1': '#333'
-      }
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h2: {
+              // Add your h2 styles here
+              fontSize: theme('fontSize.2xl'),
+              fontWeight: theme('fontWeight.bold'),
+              marginBottom: theme('margin.4')
+            },
+            p: {
+              // Add your p styles here
+              fontSize: theme('fontSize.base'),
+              marginBottom: theme('margin.4')
+            }
+          }
+        }
+      })
     }
   },
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 };

@@ -1,52 +1,18 @@
 import Head from 'next/head';
 import Layout from 'components/Layout';
-import Image from 'next/image';
-
 import HomePageSlider from '../components/HomePageSlider';
+import Post from 'components/Post';
+import { getRecentPosts } from 'services/getRecent';
 
-import wiatrowa from 'assets/wiatrowa.jpg';
-import pompy from 'assets/pompy.jpg';
-import malowanie from 'assets/malowanie.jpg';
-import fotowoltaika from 'assets/fotowoltaika.jpg';
-import Link from 'next/link';
+export const getStaticProps = () => {
+  const posts = getRecentPosts();
 
-export default function Home() {
-  const articles = [
-    {
-      id: 1,
-      image: malowanie,
-      title: 'Jak zaoszczędzić na ogrzewaniu: sposoby na izolację cieplną swojego mieszkania',
-      description:
-        'Ogrzewanie mieszkania to jeden z największych wydatków w domowym budżecie. Jednak są sposo..',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
-      path: 'jak-zaoszczedzic-na-ogrzewaniu-sposoby-na-izolacje-cieplna-swojego-mieszkania'
-    },
-    {
-      id: 2,
-      image: pompy,
-      title: 'Pompy ciepła - ile kosztuje instalacja?',
-      description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
-      path: ''
-    },
-    {
-      id: 3,
-      image: wiatrowa,
-      title: 'Przydomowe elektrownie wiatrowe. Czy to się opłaca?',
-      description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
-      path: ''
-    },
-    {
-      id: 4,
-      image: fotowoltaika,
-      title: 'Farba termoizolacyjna - ile to kosztuje?',
-      description: '',
-      tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie'],
-      path: ''
-    }
-  ];
+  return {
+    props: { posts }
+  };
+};
 
+export default function Home({ posts }) {
   const categories = [
     {
       id: 1,
@@ -112,50 +78,10 @@ export default function Home() {
               })}
             </div>
           </div>
-          <div className="flex justify-between flex-wrap gap-y-10">
-            {articles.map((item) => (
-              <div
-                className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
-                key={item.id}>
-                <div className="h-[200px] overflow-hidden">
-                  <Image
-                    src={item.image}
-                    width={300}
-                    className="mb-8 object-cover w-full h-full opacity-80"
-                  />
-                </div>
-                <Link
-                  href={`blog/${item.path}`}
-                  className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5 block">
-                  {item.title}
-                </Link>
-                <p className="pl-5 pr-3 pb-5">
-                  {item.description
-                    ? item.description
-                    : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi\n' +
-                      '                  facilis hic laudantium, quidem ut.'}
-                </p>
-              </div>
-            ))}
-            {articles.reverse().map((item) => (
-              <Link
-                href="blog/nowy-wpis"
-                className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl"
-                key={item.id}>
-                <div className="h-[200px] overflow-hidden">
-                  <Image
-                    src={item.image}
-                    width={300}
-                    className="mb-8 object-cover w-full h-full opacity-80"
-                  />
-                </div>
-                <h1 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5">{item.title}</h1>
-                <p className="pl-5 pr-3 pb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi
-                  facilis hic laudantium, quidem ut.
-                </p>
-              </Link>
-            ))}
+          <div className="flex gap-5 flex-wrap gap-y-10">
+            {posts.map((post) => {
+              return <Post post={post} key={post.slug} />;
+            })}
           </div>
         </div>
 

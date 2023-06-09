@@ -12,7 +12,7 @@ export default function Layout({ children }) {
     {
       id: 1,
       name: 'artykuły',
-      path: 'blog',
+      path: '/blog',
       customClasses: ''
     },
     {
