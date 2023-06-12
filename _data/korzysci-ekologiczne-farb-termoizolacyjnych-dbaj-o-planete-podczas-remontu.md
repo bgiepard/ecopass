@@ -7,8 +7,6 @@ cover: '/covers/eko.jpg'
 date: 09.06.2023
 ---
 
-# Korzyści ekologiczne farb termoizolacyjnych
-
 Farby termoizolacyjne nie tylko poprawiają izolację termiczną w naszych domach, ale także przynoszą korzyści dla środowiska naturalnego. W tym artykule przyjrzymy się, dlaczego warto sięgnąć po farby termoizolacyjne podczas remontu, jak wpływają one na ekologię i jak możemy dbać o planetę podczas prac remontowych.
 
 ## Poprawa efektywności energetycznej

@@ -7,8 +7,6 @@ cover: '/covers/wiatrowa.jpg'
 date: 08.06.2023
 ---
 
-# Przydomowe elektrownie wiatrowe - czy to się opłaca?
-
 Przydomowe elektrownie wiatrowe są coraz popularniejszym rozwiązaniem w dziedzinie produkcji energii elektrycznej. Pozwalają one na wykorzystanie odnawialnego źródła energii i przyczyniają się do redukcji emisji gazów cieplarnianych. W tym artykule przyjrzymy się, dlaczego warto rozważyć instalację przydomowej elektrowni wiatrowej, jakie są korzyści z posiadania własnego źródła energii wiatrowej oraz czy inwestycja w nią jest opłacalna.
 
 ## Korzyści z posiadania przydomowej elektrowni wiatrowej

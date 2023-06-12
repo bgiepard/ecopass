@@ -7,8 +7,6 @@ cover: '/covers/farba.jpg'
 date: 10.06.2023
 ---
 
-# Farby termoizolacyjne a oszczędności energetyczne - czy warto inwestować?
-
 Farby termoizolacyjne są innowacyjnym rozwiązaniem, które może przynieść wiele korzyści pod względem oszczędności energetycznych. W tym artykule przyjrzymy się, jak działają farby termoizolacyjne i jakie mogą mieć pozytywne skutki dla Twojego domu i portfela.
 
 ## Jak działają farby termoizolacyjne?

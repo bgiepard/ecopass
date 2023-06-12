@@ -7,8 +7,6 @@ cover: '/covers/fotowoltaika.jpg'
 date: 09.06.2023
 ---
 
-# Farba termoizolacyjna - ile to kosztuje?
-
 Farba termoizolacyjna to innowacyjne rozwiązanie, które ma za zadanie poprawić izolacyjność termiczną budynków. Działa ona na zasadzie tworzenia na powierzchni ściany cienkiej warstwy o wysokich właściwościach izolacyjnych. Dzięki temu, zimą utrzymuje ciepło wewnątrz pomieszczeń, a latem chroni przed nadmiernym nagrzewaniem.
 
 ## Korzyści z zastosowania farby termoizolacyjnej

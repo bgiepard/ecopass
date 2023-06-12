@@ -7,8 +7,6 @@ cover: '/covers/pompy.jpg'
 date: 07.06.2023
 ---
 
-# Pompy ciepła - ile kosztuje instalacja?
-
 Pompy ciepła są coraz bardziej popularnym rozwiązaniem w dziedzinie ogrzewania domów. Pozwalają one na wykorzystanie energii odnawialnej i są przyjazne dla środowiska. Jednak wiele osób zastanawia się, ile kosztuje instalacja takiego systemu. Koszt ten zależy od wielu czynników, takich jak rodzaj pompy ciepła, wielkość budynku, lokalizacja i wiele innych. Poniżej przedstawiamy kilka istotnych informacji na ten temat:
 
 ## Rodzaje pomp ciepła

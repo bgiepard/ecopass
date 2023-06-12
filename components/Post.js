@@ -17,12 +17,7 @@ export default function Post({ post }) {
       <Link href={`blog/${post.slug}`} className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5 block">
         {post.title} {post.title_second_line}
       </Link>
-      <p className="pl-5 pr-3 pb-5">
-        {post.description
-          ? post.description
-          : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi\n' +
-            '                  facilis hic laudantium, quidem ut.'}
-      </p>
+      <p className="pl-5 pr-3 pb-5">{`${post.description.slice(0, 100)}...`}</p>
     </div>
   );
 }

@@ -7,8 +7,6 @@ cover: '/covers/green.jpg'
 date: 10.06.2023
 ---
 
-# Energooszczędne systemy grzewcze - alternatywne rozwiązania dla tradycyjnych kotłów
-
 Tradycyjne kotły grzewcze są powszechnie stosowane, ale istnieje wiele alternatywnych rozwiązań, które są bardziej energooszczędne i ekologiczne. W tym artykule przyjrzymy się różnym systemom grzewczym, które stanowią alternatywę dla tradycyjnych kotłów i mogą przyczynić się do oszczędności energii oraz zmniejszenia negatywnego wpływu na środowisko.
 
 ## Pompy ciepła
