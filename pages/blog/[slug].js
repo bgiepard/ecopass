@@ -27,7 +27,7 @@ const Articles = ({ article }) => {
   return (
     <Layout>
       <Head>
-        <title>{`Ecopass: ${article.title} ${article.title_second_line}`}</title>
+        <title>{`Ecopass.pl - ${article.title} ${article.title_second_line}`}</title>
 
         <meta name="description" content={article.description} />
         <meta itemProp="name" content={`${article.title} ${article.title_second_line}`} />

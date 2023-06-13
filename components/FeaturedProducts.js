@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 export default function FeaturedProducts({ product }) {
   return (
     <div className="flex border-2 border-white shadow-md w-full h-[240px] mt-10 gap-5 justify-center items-center rounded-xl">
-      <img src={product.src} className="w-[180px]" />
+      <Image src={product.src} width={180} height={180} alt={product.name} />
       <div className="flex flex-col gap-2 mr-2">
         <h2 className="font-bold text-xl">{product.name}</h2>
         <Link href={product.categoryLink} className="text-sm text-blue-500">
