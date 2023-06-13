@@ -2,7 +2,7 @@
 title: 'Odnawialne źródła energii w praktyce -'
 title_second_line: 'przykłady zastosowań w codziennym życiu'
 description: 'Odnawialne źródła energii odgrywają coraz większą rolę w naszym społeczeństwie, a ich zastosowanie ma wiele korzyści zarówno dla środowiska, jak i dla naszych portfeli. W tym artykule przedstawimy kilka przykładów praktycznych zastosowań odnawialnych źródeł energii, które można wprowadzić do codziennego życia.'
-tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+tags: ['fotowoltaika', 'pompy ciepła', 'kalkulatory', 'oszczędzanie']
 cover: '/covers/odnawialne.jpg'
 date: 12.06.2023
 ---
@@ -20,6 +20,7 @@ Pompy ciepła są kolejnym przykładem praktycznego wykorzystania odnawialnych �
 ## 3. Wiatraki domowe
 
 Wiatraki domowe, zwane również przydomowymi elektrowniami wiatrowymi, to kolejna forma wykorzystania odnawialnych źródeł energii. Instalacja niewielkiego wiatraka na terenie posesji może generować energię elektryczną, która może być wykorzystywana w gospodarstwie domowym. To doskonałe rozwiązanie dla osób mieszkających na terenach o odpowiednich warunkach wiatrowych.
+![image](/covers/odnawialne.jpg)
 
 ## 4. Solarne ogrzewanie wody
 

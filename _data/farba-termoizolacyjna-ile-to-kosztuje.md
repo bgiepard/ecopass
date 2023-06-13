@@ -2,7 +2,7 @@
 title: 'Farba termoizolacyjna -'
 title_second_line: 'ile to kosztuje?'
 description: 'Farba termoizolacyjna to innowacyjne rozwiązanie, które może przyczynić się do poprawy efektywności energetycznej budynku. W tym artykule omówimy, czym jest farba termoizolacyjna i jakie są jej korzyści, a także przedstawimy przybliżone koszty jej zakupu i zastosowania.'
-tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+tags: ['termoizolacja', 'kalkulatory', 'oszczędzanie']
 cover: '/covers/fotowoltaika.jpg'
 date: 09.06.2023
 ---

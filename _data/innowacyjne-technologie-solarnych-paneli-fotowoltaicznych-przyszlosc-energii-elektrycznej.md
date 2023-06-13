@@ -16,6 +16,7 @@ Nowoczesne panele fotowoltaiczne charakteryzują się coraz wyższą sprawności
 ## Cienkowarstwowe panele fotowoltaiczne
 
 Technologia cienkowarstwowych paneli fotowoltaicznych rozwija się dynamicznie, umożliwiając produkcję elastycznych, lekkich i cienkich modułów. Dzięki temu panele mogą być zastosowane w różnych miejscach, włączając w to powierzchnie łukowe, elastyczne materiały, a nawet ubrania. Ta innowacyjna technologia otwiera nowe perspektywy dla integracji paneli fotowoltaicznych w codziennym życiu i przestrzeni publicznej.
+![image](/covers/solary.jpg)
 
 ## Panele bifacjalne
 

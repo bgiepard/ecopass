@@ -25,6 +25,11 @@ module.exports = {
               // Add your p styles here
               fontSize: theme('fontSize.base'),
               marginBottom: theme('margin.4')
+            },
+            img: {
+              width: 600,
+              marginLeft: '50%',
+              transform: 'translateX(-50%)'
             }
           }
         }

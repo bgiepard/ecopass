@@ -2,7 +2,7 @@
 title: 'Energooszczędne systemy grzewcze -'
 title_second_line: 'alternatywne rozwiązania dla tradycyjnych kotłów'
 description: 'W tym artykule przedstawimy różne energetyczne systemy grzewcze, które stanowią alternatywę dla tradycyjnych kotłów. Dowiedz się, jakie rozwiązania są dostępne na rynku i jak mogą przyczynić się do oszczędności energii oraz zmniejszenia wpływu na środowisko.'
-tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+tags: ['pompy ciepła', 'kalkulatory', 'oszczędzanie']
 cover: '/covers/green.jpg'
 date: 10.06.2023
 ---
@@ -16,6 +16,7 @@ Jednym z popularnych alternatywnych rozwiązań są pompy ciepła. Wykorzystują
 ## Piece na biomasę
 
 Kolejnym ekologicznym rozwiązaniem są piece grzewcze działające na biomasę, taką jak drewno czy pellet. Biopaliwa są odnawialnym źródłem energii i ich spalanie jest bardziej przyjazne dla środowiska. Piece na biomasę są również efektywne pod względem kosztów, ponieważ biomasa jest często tańszym źródłem energii w porównaniu do tradycyjnych paliw.
+![image](/covers/green.jpg)
 
 ## Systemy solaryczne
 

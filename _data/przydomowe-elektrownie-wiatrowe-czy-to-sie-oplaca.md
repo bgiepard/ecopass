@@ -2,7 +2,7 @@
 title: 'Przydomowe elektrownie wiatrowe -'
 title_second_line: 'czy to się opłaca?'
 description: 'Przydomowe elektrownie wiatrowe są coraz częstszym rozwiązaniem w dziedzinie produkcji energii elektrycznej. W tym artykule omówimy, dlaczego warto rozważyć instalację takiego systemu, jakie są korzyści z posiadania własnej elektrowni wiatrowej oraz czy inwestycja w nią jest opłacalna.'
-tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+tags: ['elektrownie wiatrowe', 'kalkulatory', 'oszczędzanie']
 cover: '/covers/wiatrowa.jpg'
 date: 08.06.2023
 ---
@@ -20,7 +20,7 @@ Instalacja przydomowej elektrowni wiatrowej może przynieść wiele korzyści:
 3. **Niezależność energetyczna** - Posiadanie własnej elektrowni wiatrowej daje niezależność energetyczną. Nie musisz polegać na dostawach energii z zewnątrz i jesteś bardziej samowystarczalny.
 
 4. **Możliwość sprzedaży nadwyżek energii** - Jeśli Twoja elektrownia wiatrowa wyprodukuje więcej energii, niż jesteś w stanie zużyć, możesz sprzedać nadwyżki do sieci energetycznej i zarobić na tym dodatkowe środki.
-   ![energia](/covers/bulb.jpg)
+   ![energia](/covers/wiatrowa.jpg)
 
 ## Opłacalność inwestycji
 

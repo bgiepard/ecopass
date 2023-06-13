@@ -2,7 +2,7 @@
 title: 'Pompy ciepła -'
 title_second_line: 'ile kosztuje instalacja?'
 description: 'Pompy ciepła są coraz popularniejszym rozwiązaniem w dziedzinie ogrzewania domów. Jednak wielu ludzi zastanawia się, ile kosztuje instalacja takiego systemu. W tym artykule omówimy czynniki wpływające na koszt instalacji pomp ciepła oraz przedstawimy przybliżone ceny.'
-tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+tags: ['pompy ciepła', 'kalkulatory', 'oszczędzanie']
 cover: '/covers/pompy.jpg'
 date: 07.06.2023
 ---
@@ -30,7 +30,7 @@ Koszt instalacji pomp ciepła zależy od wielu czynników. Oto kilka najważniej
 3. **Lokalizacja** - Warunki klimatyczne i dostępność odpowiedniego źródła energii (powietrze, woda gruntowa) mogą wpływać na koszty instalacji.
 
 4. **Dodatkowe prace instalacyjne** - Czasami konieczne jest wykonanie dodatkowych prac instalacyjnych, takich jak wykopanie studni czy przygotowanie instalacji grzewczej, co może zwiększyć koszty.
-   ![pompa ciepła](/covers/heat-pump.jpg)
+   ![pompa ciepła](/covers/pompy.jpg)
 
 ## Przybliżone ceny
 

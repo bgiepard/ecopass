@@ -3,6 +3,8 @@ import Layout from 'components/Layout';
 import HomePageSlider from '../components/HomePageSlider';
 import Post from 'components/Post';
 import { getRecentPosts } from 'services/getRecent';
+import categories from 'services/categories';
+import { useState } from 'react';
 
 export const getStaticProps = () => {
   const posts = getRecentPosts();
@@ -13,33 +15,9 @@ export const getStaticProps = () => {
 };
 
 export default function Home({ posts }) {
-  const categories = [
-    {
-      id: 1,
-      name: 'Wszystkie',
-      active: true
-    },
-    {
-      id: 2,
-      name: 'Fotowoltaika',
-      active: false
-    },
-    {
-      id: 3,
-      name: 'Pompy ciepła',
-      active: false
-    },
-    {
-      id: 4,
-      name: 'Dofinansowania',
-      active: false
-    },
-    {
-      id: 5,
-      name: 'Termoizolacja',
-      active: false
-    }
-  ];
+  const [category, setCategory] = useState(null);
+
+  const displayedPosts = category ? posts.filter((post) => post.tags.includes(category)) : posts;
 
   return (
     <>
@@ -64,14 +42,16 @@ export default function Home({ posts }) {
             <h2 className="whitespace-nowrap font-bold text-4xl opacity-80 mb-8 md:mb-0">
               Ostatnie artykuły
             </h2>
-            <div className="flex md:ml-10 items-center gap-x-3 gap-y-3 flex-wrap w-full">
+            <div className="flex md:ml-10 items-center gap-x-3 gap-y-3 flex-wrap">
               {categories.map((item) => {
                 return (
                   <button
                     key={item.id}
-                    className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl ${
-                      item.active ? 'border-2 border-secondary' : ''
-                    }`}>
+                    value={item.value}
+                    className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl border-2 ${
+                      item.value === category ? ' border-secondary' : ''
+                    }`}
+                    onClick={() => setCategory(item.value)}>
                     {item.name}
                   </button>
                 );
@@ -79,7 +59,7 @@ export default function Home({ posts }) {
             </div>
           </div>
           <div className="flex gap-5 flex-wrap gap-y-10">
-            {posts.map((post) => {
+            {displayedPosts.map((post) => {
               return <Post post={post} key={post.slug} />;
             })}
           </div>

@@ -28,15 +28,15 @@ const Articles = ({ article }) => {
         <title>{`Ecopass: ${article.title} ${article.title_second_line}`}</title>
 
         <meta name="description" content={article.description} />
-        <meta itemProp="name" content={article.title} />
+        <meta itemProp="name" content={`${article.title} ${article.title_second_line}`} />
         <meta itemProp="description" content={article.description} />
         <meta itemProp="image" content={article.cover} />
         <meta property="og:url" content={article.url} />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={article.title} />
+        <meta property="og:title" content={`${article.title} ${article.title_second_line}`} />
         <meta property="og:description" content={article.description} />
         <meta property="og:image" content={article.cover} />
-        <meta property="og:image:alt" content={article.title} />
+        <meta property="og:image:alt" content={`${article.title} ${article.title_second_line}`} />
         {article.tags && <meta property="article:tag" content={article.tags.join(',')} />}
       </Head>
       <div className="bg-primary border-t-2">
