@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { getFileBySlug } from '../../lib/markdownParser';
 import { getListOfArticles } from '../../services/articles';
 import Layout from 'components/Layout';
+import FeaturedProducts from 'components/FeaturedProducts';
+import { products } from 'services/products';
 
 export const getStaticPaths = () => {
   const articles = getListOfArticles();
@@ -55,10 +57,9 @@ const Articles = ({ article }) => {
           dangerouslySetInnerHTML={{ __html: article.content }}></div>
         <aside className="w-1/3">
           <h2 className="text-2xl font-bold pt-[50px]">Polecane produkty</h2>
-          <div className="border-2 w-full h-[240px] mt-10"></div>
-          <div className="border-2 w-full h-[240px] mt-10"></div>
-          <div className="border-2 w-full h-[240px] mt-10"></div>
-          <div className="border-2 w-full h-[240px] mt-10"></div>
+          {products.map((product) => {
+            return <FeaturedProducts product={product} key={product.id} />;
+          })}
         </aside>
       </div>
     </Layout>
