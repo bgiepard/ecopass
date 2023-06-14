@@ -42,7 +42,7 @@ const Articles = ({ article }) => {
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
-          <h1 className="sm:text-[40px] text-2xl font-bold text-white pt-[80px] pb-[50px] sm:pr-[50px] sm:w-2/3">
+          <h1 className="sm:text-[40px] sm:leading-[45px] text-2xl font-bold text-white pt-[80px] pb-[50px] sm:pr-[50px] sm:w-2/3">
             {article.title}
             <br />
             {article.title_second_line ? article.title_second_line : null}
