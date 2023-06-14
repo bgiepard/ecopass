@@ -5,7 +5,7 @@ import Post from 'components/Post';
 import { getRecentPosts } from 'services/getRecent';
 import categories from 'services/categories';
 import { useState } from 'react';
-import ContactForm from 'components/ContactForm';
+// import ContactForm from 'components/ContactForm';
 
 export const getStaticProps = () => {
   const posts = getRecentPosts();
