@@ -4,7 +4,7 @@ title_second_line: 'wydajne rozwiązanie dla zielonej energii'
 description: 'Fotowoltaika, czyli wykorzystanie energii słonecznej do wytwarzania elektryczności, jest coraz bardziej popularnym rozwiązaniem w dziedzinie odnawialnych źródeł energii. Jednak istnieje sposób, aby jeszcze bardziej zwiększyć jej efektywność i osiągnąć większe oszczędności energetyczne. Mowa tu o malowaniu dachów farbami termoizolacyjnymi. W tym artykule przedstawimy korzyści, jakie płyną z połączenia fotowoltaiki z farbami termoizolacyjnymi oraz wyjaśnimy, dlaczego jest to wydajne rozwiązanie dla zielonej energii.'
 tags: ['fotowoltaika', 'termoizolacja', 'oszczędzanie', 'ekologia']
 cover: '/covers/malowanie_dachu.png'
-date: 14.06.2023
+date: 12.06.2023
 ---
 
 Fotowoltaika, czyli wykorzystanie energii słonecznej do wytwarzania elektryczności, jest coraz bardziej popularnym rozwiązaniem w dziedzinie odnawialnych źródeł energii. Jednak istnieje sposób, aby jeszcze bardziej zwiększyć jej efektywność i osiągnąć większe oszczędności energetyczne. Mowa tu o malowaniu dachów farbami termoizolacyjnymi. W tym artykule przedstawimy korzyści, jakie płyną z połączenia fotowoltaiki z farbami termoizolacyjnymi oraz wyjaśnimy, dlaczego jest to wydajne rozwiązanie dla zielonej energii.

@@ -27,8 +27,7 @@ const Articles = ({ article }) => {
   return (
     <Layout>
       <Head>
-        <title>{`Ecopass.pl - ${article.title} ${article.title_second_line}`}</title>
-
+        <title>{`${article.title} ${article.title_second_line} - EcoPass.pl`}</title>
         <meta name="description" content={article.description} />
         <meta itemProp="name" content={`${article.title} ${article.title_second_line}`} />
         <meta itemProp="description" content={article.description} />
@@ -43,7 +42,7 @@ const Articles = ({ article }) => {
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
-          <h1 className="text-[40px] font-bold text-white pt-[80px] pb-[50px] pr-[50px] w-2/3">
+          <h1 className="sm:text-[40px] text-2xl font-bold text-white pt-[80px] pb-[50px] sm:pr-[50px] sm:w-2/3">
             {article.title}
             <br />
             {article.title_second_line ? article.title_second_line : null}
@@ -51,12 +50,12 @@ const Articles = ({ article }) => {
         </div>
       </div>
 
-      <div className="container m-auto flex">
+      <div className="container m-auto flex sm:flex-row flex-col">
         <div
-          className="max-w-[66%] text-[16px] pt-[50px] pb-[50px] pr-[80px] prose"
+          className="sm:max-w-[66%] sm:text-[16px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
           dangerouslySetInnerHTML={{ __html: article.content }}></div>
-        <aside className="w-1/3">
-          <h2 className="text-2xl font-bold pt-[50px]">Polecane produkty</h2>
+        <aside className="sm:w-1/3 py-[50px]">
+          <h2 className="text-2xl font-bold pt-[50px] sm:pt-2">Polecane produkty</h2>
           {products.map((product) => {
             return <FeaturedProducts product={product} key={product.id} />;
           })}

@@ -4,7 +4,7 @@ title_second_line: 'przykłady zastosowań w codziennym życiu'
 description: 'Odnawialne źródła energii odgrywają coraz większą rolę w naszym społeczeństwie, a ich zastosowanie ma wiele korzyści zarówno dla środowiska, jak i dla naszych portfeli. W tym artykule przedstawimy kilka przykładów praktycznych zastosowań odnawialnych źródeł energii, które można wprowadzić do codziennego życia.'
 tags: ['fotowoltaika', 'pompy ciepła', 'kalkulatory', 'oszczędzanie']
 cover: '/covers/odnawialne.jpg'
-date: 12.06.2023
+date: 13.06.2023
 ---
 
 Odnawialne źródła energii odgrywają coraz większą rolę w naszym społeczeństwie, a ich zastosowanie ma wiele korzyści zarówno dla środowiska, jak i dla naszych portfeli. W tym artykule przedstawimy kilka przykładów praktycznych zastosowań odnawialnych źródeł energii, które można wprowadzić do codziennego życia.

@@ -35,40 +35,42 @@ export default function Blog({ posts }) {
   return (
     <>
       <Head>
-        <title>Ecopass.pl - artykuły</title>
+        <title>EcoPass.pl - artykuły</title>
       </Head>
       <Layout>
-        <div className="flex md:ml-10 items-center gap-x-3 gap-y-3 flex-wrap mt-10">
-          {categories.map((item) => {
-            return (
+        <div className="container">
+          <div className="flex items-center gap-x-3 gap-y-3 flex-wrap mt-10">
+            {categories.map((item) => {
+              return (
+                <button
+                  key={item.id}
+                  value={item.value}
+                  className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl border-2 ${
+                    item.value === category ? ' border-secondary' : ''
+                  }`}
+                  onClick={() => setCategory(item.value)}>
+                  {item.name}
+                </button>
+              );
+            })}
+          </div>
+          <div className="flex gap-5 flex-wrap gap-y-10 mt-10">
+            {displayedPosts.map((post) => {
+              return <Post post={post} key={post.slug} />;
+            })}
+          </div>
+          <div className="my-8 flex justify-center">
+            {Array.from({ length: totalPages }, (_, i) => (
               <button
-                key={item.id}
-                value={item.value}
-                className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl border-2 ${
-                  item.value === category ? ' border-secondary' : ''
-                }`}
-                onClick={() => setCategory(item.value)}>
-                {item.name}
+                key={i}
+                onClick={() => goToPage(i + 1)}
+                className={`mx-1 rounded px-2 py-1 ${
+                  currentPage === i + 1 ? 'bg-primary text-white' : 'bg-gray-300'
+                }`}>
+                {i + 1}
               </button>
-            );
-          })}
-        </div>
-        <div className="flex gap-5 flex-wrap gap-y-10 m-10">
-          {displayedPosts.map((post) => {
-            return <Post post={post} key={post.slug} />;
-          })}
-        </div>
-        <div className="my-4 flex justify-center">
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => goToPage(i + 1)}
-              className={`mx-1 rounded px-2 py-1 ${
-                currentPage === i + 1 ? 'bg-blue-500 text-white' : 'bg-gray-300'
-              }`}>
-              {i + 1}
-            </button>
-          ))}
+            ))}
+          </div>
         </div>
       </Layout>
     </>

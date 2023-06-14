@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Temperature from '../assets/temperature.svg';
 import Statistics from '../assets/Statistics.svg';
 import Finance from '../assets/Finance.svg';
+import analytics from '../assets/analytics.svg';
+import lightbulb from '../assets/lightbulb.svg';
+import Link from 'next/link';
 export default function HomePageSlider() {
   const slides = [
     {
@@ -17,7 +20,9 @@ export default function HomePageSlider() {
           obniżyć swoje zużycie energii.
         </>
       ),
-      image: Temperature
+      image: Temperature,
+      article:
+        'https://ecopass.pl/blog/farby-termoizolacyjne-a-oszczednosci-energetyczne-czy-warto-inwestowac'
     },
     {
       id: 2,
@@ -45,7 +50,47 @@ export default function HomePageSlider() {
           <span className="text-white">Dołącz do nas i zacznij oszczędzać!</span>
         </>
       ),
-      image: Finance
+      image: Finance,
+      article:
+        'https://ecopass.pl/blog/jak-zaoszczedzic-na-ogrzewaniu-sposoby-na-izolacje-cieplna-swojego-mieszkania'
+    },
+    {
+      id: 4,
+      heading: <>Skorzystaj z ulgi podatkowej na termomodernizację!</>,
+      text: (
+        <>
+          Farby termoizolacyjne zapewniają ochronę przed nadmiernym przemarzaniem, redukują
+          skraplanie wilgoci i poprawiają efektywność energetyczną budynku.
+          <br /> Dodatkowo, dzięki uldze termomodernizacyjnej, inwestycja ta staje się jeszcze
+          bardziej atrakcyjna finansowo.
+          <br />
+          <br />
+          <span className="text-white">
+            Odwiedź nasz sklep <br />i zacznij termomodernizację swojego domu już teraz!
+          </span>
+        </>
+      ),
+      image: analytics,
+      article:
+        'https://ecopass.pl/blog/wykorzystaj-potencjal-farb-termoizolacyjnych-i-skorzystaj-z-ulgi-podatkowej-na-termomodernizacje-swojego-domu'
+    },
+    {
+      id: 5,
+      heading: <>Korzyści malowania dachów farbami termoizolacyjnymi</>,
+      text: (
+        <>
+          Fotowoltaika, czyli wykorzystanie energii słonecznej do wytwarzania elektryczności, jest
+          coraz bardziej popularnym rozwiązaniem w dziedzinie odnawialnych źródeł energii. <br />
+          Jednak istnieje sposób, aby jeszcze bardziej zwiększyć jej efektywność i osiągnąć większe
+          oszczędności energetyczne.
+          <br />
+          <br />
+          <span className="text-white">Dołącz do nas i zacznij oszczędzać!</span>
+        </>
+      ),
+      image: lightbulb,
+      article:
+        'https://ecopass.pl/blog/korzysci-malowania-dachow-farbami-termoizolacyjnymi-wydajne-rozwiazanie-dla-zielonej-energii'
     }
   ];
 
@@ -74,22 +119,26 @@ export default function HomePageSlider() {
       {slides.map((item) => {
         return (
           <div key={item.id} className="min-h-[500px] md:h-auto">
-            <div className="h-full flex items-center">
+            <div className="sm:h-[90vh] flex items-center h-[83vh]">
               <div className="pt-10 pb-10 flex items-center pr-5 md:pr-10 flex-wrap">
                 <div className="w-full md:w-1/2 md:pt-10 md:pb-10">
                   <h1 className="md:text-7xl text-3xl font-[700] text-white">{item.heading}</h1>
                   <p className="text-l mt-5 mb-5 text-gray-200 md:text-xl">{item.text}</p>
                   <div className="flex mt-8 flex-wrap gap-y-1">
-                    <button className="whitespace-nowrap text-white md:text-xl font-bold mr-1 md:mr-3 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
-                      Zobacz produkty
-                    </button>
-                    <button className="whitespace-nowrap text-white md:text-xl font-bold border-2 rounded-3xl pt-2 pb-2 pl-6 pr-6">
-                      Dowiedz się więcej
-                    </button>
+                    <Link href="https://sklep.ecopass.pl/">
+                      <button className="whitespace-nowrap text-white md:text-xl font-bold mr-1 md:mr-3 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
+                        Zobacz produkty
+                      </button>
+                    </Link>
+                    <Link href={`${item.article ? item.article : ''}`}>
+                      <button className="whitespace-nowrap text-white md:text-xl font-bold border-2 rounded-3xl pt-2 pb-2 pl-6 pr-6">
+                        Dowiedz się więcej
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-full hidden md:w-1/2 md:flex justify-end">
-                  <Image src={item.image} width={700} />
+                  <Image src={item.image} width={700} alt={item.heading} />
                 </div>
               </div>
             </div>

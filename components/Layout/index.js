@@ -24,7 +24,7 @@ export default function Layout({ children }) {
     {
       id: 3,
       name: 'sklep',
-      path: '',
+      path: 'https://sklep.ecopass.pl/',
       customClasses: 'font-semibold'
     }
   ];
@@ -81,8 +81,8 @@ export default function Layout({ children }) {
           <span className="flex-grow mt-8 md:mt-0">
             &copy; Ecopass.pl - Wszelkie prawa zastrzeżone
           </span>
-          <span>Regulamin</span>
-          <span>Polityka prywatności</span>
+          <Link href="https://sklep.ecopass.pl/regulamin-sklepu/">Regulamin</Link>
+          <Link href="https://sklep.ecopass.pl/polityka-prywatnosci/">Polityka prywatności</Link>
         </div>
       </footer>
     </>

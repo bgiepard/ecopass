@@ -26,7 +26,7 @@ export default function ContactForm() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="border-2 p-1 w-[300px] rounded-md shadow-sm focus:outline-green-500"
+            className="border-2 p-1 w-[300px] rounded-md shadow-sm focus:outline-secondary"
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -36,7 +36,7 @@ export default function ContactForm() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="border-2 p-1 w-[300px] rounded-md shadow-sm focus:outline-green-500"
+            className="border-2 p-1 w-[300px] rounded-md shadow-sm focus:outline-secondary"
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -45,10 +45,10 @@ export default function ContactForm() {
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="border-2 p-1 w-[400px] rounded-md shadow-sm focus:outline-green-500"
+            className="border-2 p-1 w-[400px] rounded-md shadow-sm focus:outline-secondary"
           />
         </div>
-        <button className="bg-green-500 px-5 py-[5px] rounded-2xl w-[100px] shadow-sm hover:shadow-md text-white font-bold self-end">
+        <button className="bg-secondary px-5 py-[5px] rounded-2xl w-[100px] shadow-sm hover:shadow-md text-white font-bold self-end">
           Wyślij
         </button>
       </form>

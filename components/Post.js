@@ -4,7 +4,9 @@ import Link from 'next/link';
 
 export default function Post({ post }) {
   return (
-    <div className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl">
+    <Link
+      href={`blog/${post.slug}`}
+      className="w-full md:w-[23%] border-2 bg-white rounded-xl border-white shadow-md overflow-hidden hover:shadow-xl">
       <div className="h-[200px] overflow-hidden">
         <Image
           src={post.cover}
@@ -14,10 +16,14 @@ export default function Post({ post }) {
           alt={`${post.title} ${post.title_second_line}`}
         />
       </div>
-      <Link href={`blog/${post.slug}`} className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5 block">
+      <h2 className="text-[18px] font-bold mb-3 mt-5 sm:mt-0 pl-5 pr-5 block sm:h-[120px]">
         {post.title} {post.title_second_line}
-      </Link>
+      </h2>
+      <div className="px-5 flex justify-between mb-3 text-xs">
+        <p>{post.date}</p>
+        <p className="text-primary">{post.tags[0]}</p>
+      </div>
       <p className="pl-5 pr-3 pb-5">{`${post.description.slice(0, 100)}...`}</p>
-    </div>
+    </Link>
   );
 }
