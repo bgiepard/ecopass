@@ -16,7 +16,7 @@ export default function Post({ post }) {
           alt={`${post.title} ${post.title_second_line}`}
         />
       </div>
-      <h2 className="text-[18px] font-bold mb-3 mt-5 sm:mt-0 pl-5 pr-5 block sm:h-[120px]">
+      <h2 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5 block sm:h-[120px]">
         {post.title} {post.title_second_line}
       </h2>
       <div className="px-5 flex justify-between mb-3 text-xs">

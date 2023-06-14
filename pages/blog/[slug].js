@@ -52,7 +52,7 @@ const Articles = ({ article }) => {
 
       <div className="container m-auto flex sm:flex-row flex-col">
         <div
-          className="sm:max-w-[66%] sm:text-[16px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
+          className="sm:max-w-[66%] sm:text-[16px] sm:leading-[25px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
           dangerouslySetInnerHTML={{ __html: article.content }}></div>
         <aside className="sm:w-1/3 py-[50px]">
           <h2 className="text-2xl font-bold pt-[50px] sm:pt-2">Polecane produkty</h2>
