@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { getFileBySlug, getList } from 'lib/markdownParser';
 import Link from 'next/link';
+import icons from 'services/icons';
 
 export const getStaticPaths = () => {
   const products = getList('_productData');
@@ -36,11 +37,20 @@ export default function ProductPage({ product }) {
           </h1>
         </div>
       </div>
-      <div className=" flex justify-evenly sm:flex-row flex-col mb-10">
+      <div className=" flex justify-evenly sm:flex-row flex-col">
         <Image src={product.src} width={400} height={400} alt={product.name} />
         <div className="mt-20 ml-10 flex flex-col gap-5 max-w-[500px]">
           <p>{product.desc_long}</p>
           <p className="text-primary text-sm">{product.category}</p>
+          <div className="flex gap-2">
+            {icons.map((icon) => {
+              return (
+                <div key={icon.id}>
+                  <Image src={icon.src} alt={icon.desc} width={40} height={40} />
+                </div>
+              );
+            })}
+          </div>
           <Link href={product.link}>
             <button className="bg-primary rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
               Zobacz w sklepie
@@ -48,6 +58,9 @@ export default function ProductPage({ product }) {
           </Link>
         </div>
       </div>
+      <div
+        className="container sm:max-w-[66%] sm:text-[16px] sm:leading-[25px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
+        dangerouslySetInnerHTML={{ __html: product.content }}></div>
     </Layout>
   );
 }
