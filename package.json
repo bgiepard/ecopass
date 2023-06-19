@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "@supabase/supabase-js": "^2.25.0",
     "gray-matter": "^4.0.3",
     "next": "13.1.6",
     "nextjs-google-analytics": "^2.3.0",

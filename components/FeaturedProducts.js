@@ -8,13 +8,13 @@ export default function FeaturedProducts({ product }) {
       <Image src={product.src} width={175} height={175} alt={product.name} />
       <div className="flex flex-col gap-2 mr-2">
         <h2 className="font-bold text-xl">{product.name}</h2>
-        <Link href={product.categoryLink} className="text-sm text-blue-500">
+        <Link href={product.categoryLink} className="text-sm text-primary">
           {product.category}
         </Link>
         <p>{product.description}</p>
         <div className="mt-3">
           <Link href={product.link}>
-            <button className="bg-blue-500 rounded-2xl text-white px-3 py-1 shadow-sm hover:shadow-md float-right sm:mr-5">
+            <button className="bg-primary rounded-2xl text-white px-3 py-1 shadow-sm hover:shadow-md float-right sm:mr-5">
               Sprawdź cenę
             </button>
           </Link>

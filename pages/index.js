@@ -5,7 +5,6 @@ import Post from 'components/Post';
 import { getRecentPosts } from 'services/getRecent';
 import categories from 'services/categories';
 import { useState } from 'react';
-// import ContactForm from 'components/ContactForm';
 
 export const getStaticProps = () => {
   const posts = getRecentPosts();
@@ -64,7 +63,6 @@ export default function Home({ posts }) {
             })}
           </div>
         </div>
-        {/* <ContactForm /> */}
         {/* Newsletter
         <div className="container m-auto pt-[100px] pb-[100px] flex items-center justify-between">
           <div className="w-[60%]">

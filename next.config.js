@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  reactStrictMode: true
+};
 
-module.exports = nextConfig
+module.exports = {
+  env: {
+    SUPABASE_KEY: process.env.SUPABASE_KEY
+  }
+};

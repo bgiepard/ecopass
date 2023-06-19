@@ -17,12 +17,18 @@ export default function Layout({ children }) {
     },
     {
       id: 2,
+      name: 'produkty',
+      path: '/products',
+      customClasses: ''
+    },
+    {
+      id: 3,
       name: 'kalkulatory',
       path: '',
       customClasses: ''
     },
     {
-      id: 3,
+      id: 4,
       name: 'sklep',
       path: 'https://sklep.ecopass.pl/',
       customClasses: 'font-semibold'
@@ -36,8 +42,7 @@ export default function Layout({ children }) {
       <header className="pt-7 pb-7 bg-primary">
         <div className="container flex justify-between items-center bg-primary">
           <Link href="/" className="text-5xl font-[700] text-white flex items-center">
-            <span className="mr-2">ecopass</span>
-            <Image src={Logo} alt="Ecopass logo" width={40} height={40} />
+            <Image src={Logo} alt="Ecopass logo" width={250} height={'auto'} />
           </Link>
           <nav
             className={`duration-500 fixed z-30 left-0 right-0 pb-5 pl-10 top-0 bottom-0 bg-white pt-[100px] ${

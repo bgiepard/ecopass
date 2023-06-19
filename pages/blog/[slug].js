@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { getFileBySlug } from '../../lib/markdownParser';
+import { getFileBySlug, getList } from '../../lib/markdownParser';
 import { getListOfArticles } from '../../services/articles';
 import Layout from 'components/Layout';
 import FeaturedProducts from 'components/FeaturedProducts';
-import { products } from 'services/products';
+import ContactForm from 'components/ContactForm';
 
 export const getStaticPaths = () => {
   const articles = getListOfArticles();
@@ -17,13 +17,14 @@ export const getStaticPaths = () => {
 export const getStaticProps = async (req) => {
   const { slug } = req.params;
   const article = await getFileBySlug('_data', slug);
+  const products = getList('_productData').reverse();
 
   return {
-    props: { article }
+    props: { article, products }
   };
 };
 
-const Articles = ({ article }) => {
+const Articles = ({ article, products }) => {
   return (
     <Layout>
       <Head>
@@ -61,6 +62,7 @@ const Articles = ({ article }) => {
           })}
         </aside>
       </div>
+      <ContactForm />
     </Layout>
   );
 };

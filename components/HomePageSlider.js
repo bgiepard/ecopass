@@ -126,12 +126,12 @@ export default function HomePageSlider() {
                   <p className="text-l mt-5 mb-5 text-gray-200 md:text-xl">{item.text}</p>
                   <div className="flex mt-8 flex-wrap gap-y-1">
                     <Link href="https://sklep.ecopass.pl/">
-                      <button className="whitespace-nowrap text-white md:text-xl font-bold mr-1 md:mr-3 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6">
+                      <button className="whitespace-nowrap hover:shadow-md text-white md:text-xl font-bold mr-1 md:mr-3 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6 w-60 border-2 border-secondary">
                         Zobacz produkty
                       </button>
                     </Link>
                     <Link href={`${item.article ? item.article : ''}`}>
-                      <button className="whitespace-nowrap text-white md:text-xl font-bold border-2 rounded-3xl pt-2 pb-2 pl-6 pr-6">
+                      <button className="whitespace-nowrap hover:shadow-md text-white md:text-xl font-bold border-2 rounded-3xl pt-2 pb-2 pl-6 pr-6 w-60">
                         Dowiedz się więcej
                       </button>
                     </Link>
