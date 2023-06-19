@@ -35,7 +35,7 @@ Malowanie elewacji farbami termoizolacyjnymi przyczynia się do znacznego zmniej
 
 ## 2. Refleksyjność
 
-Farby termoizolacyjne mają zdolność odbijania promieniowania cieplnego. Dzięki temu mogą skutecznie redukować nagrzewanie się elewacji pod wpływem promieni słonecznych. Właściwość ta utrzymuje się w szerokim zakresie temperatur od -40°C do +120°C, a zdolność odbijania energii cieplnej wynosi około 90%.
+Farby termoizolacyjne mają zdolność odbijania promieniowania cieplnego. Dzięki temu mogą skutecznie redukować nagrzewanie się elewacji pod wpływem promieni słonecznych. Właściwość ta utrzymuje się w szerokim zakresie temperatur od -40°C do +150°C, a zdolność odbijania energii cieplnej wynosi około 90%.
 
 ## 3. Elastyczność
 
