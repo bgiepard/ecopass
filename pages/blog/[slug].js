@@ -58,7 +58,7 @@ const Articles = ({ article, products }) => {
         <aside className="sm:w-1/3 py-[50px]">
           <h2 className="text-2xl font-bold pt-[50px] sm:pt-2">Polecane produkty</h2>
           {products.map((product) => {
-            return <FeaturedProducts product={product} key={product.id} />;
+            return <FeaturedProducts product={product} key={product.slug} />;
           })}
         </aside>
       </div>

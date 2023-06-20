@@ -39,7 +39,7 @@ export default function ProductPage({ product }) {
       </div>
       <div className=" flex justify-evenly sm:flex-row flex-col">
         <Image src={product.src} width={400} height={400} alt={product.name} />
-        <div className="mt-20 ml-10 flex flex-col gap-5 max-w-[500px]">
+        <div className="mt-20 sm:ml-10 sm:p-0 p-3 flex flex-col gap-5 max-w-[500px]">
           <p>{product.desc_long}</p>
           <p className="text-primary text-sm">{product.category}</p>
           <div className="flex gap-2">
@@ -52,7 +52,7 @@ export default function ProductPage({ product }) {
             })}
           </div>
           <Link href={product.link}>
-            <button className="bg-primary rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
+            <button className="bg-primary sm:mr-0 mr-3 rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
               Zobacz w sklepie
             </button>
           </Link>
