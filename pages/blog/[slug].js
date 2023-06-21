@@ -4,6 +4,7 @@ import { getListOfArticles } from '../../services/articles';
 import Layout from 'components/Layout';
 import FeaturedProducts from 'components/FeaturedProducts';
 import ContactForm from 'components/ContactForm';
+import { useEffect } from 'react';
 
 export const getStaticPaths = () => {
   const articles = getListOfArticles();
@@ -25,6 +26,13 @@ export const getStaticProps = async (req) => {
 };
 
 const Articles = ({ article, products }) => {
+  const modifiedCategory =
+    article.tags[0] === 'pompy ciepła'
+      ? article.tags[0].replace(/\s/g, '-').replace(/ł/g, 'l')
+      : article.tags[0] === 'dofinansowania'
+      ? 'leads'
+      : article.tags[0];
+
   return (
     <Layout>
       <Head>
@@ -62,7 +70,7 @@ const Articles = ({ article, products }) => {
           })}
         </aside>
       </div>
-      <ContactForm />
+      <ContactForm category={modifiedCategory} />
     </Layout>
   );
 };

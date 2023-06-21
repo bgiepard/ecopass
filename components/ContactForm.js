@@ -1,91 +1,88 @@
-import React, { useState } from 'react';
-import envelopes from 'assets/envelopes.png';
+import React, { useEffect, useState } from 'react';
+import mailbox from 'assets/mailbox.svg';
 import Image from 'next/image';
 import supabase from 'services/supabaseClient';
 
-export default function ContactForm() {
+export default function ContactForm({ category }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [number, setNumber] = useState('');
   const [text, setText] = useState('');
-  const [surname, setSurname] = useState('');
+  const [displayedText, setDisplayedText] = useState(<h2></h2>);
+  const [checked, setChecked] = useState(false);
 
   const saveLead = async () => {
     const { error } = await supabase
-      .from('leads')
-      .insert({ name: name, surname: surname, phone: number, email: email, message: message });
-    if (!error) {
-      console.log('sent');
+      .from(`${category}`)
+      .insert({ name: name, phone: number, email: email, message: message });
+    if (error) {
+      console.log(error);
     }
   };
 
-  function verifyEmail(email) {
-    const emailRegex = /\S+@\S+\.\S+/;
-    return emailRegex.test(email);
+  function validateField(value, pattern) {
+    return pattern.test(value);
   }
-  const isValidEmail = verifyEmail(email);
 
-  function validatePhoneNumber(number) {
-    const phoneNumberRegex = /^\d{9}$/;
-    return phoneNumberRegex.test(number);
-  }
-  const isValidPhoneNumber = validatePhoneNumber(number);
+  const isValidEmail = validateField(email, /\S+@\S+\.\S+/);
+  const isValidPhoneNumber = validateField(number, /^\d{9}$/);
+  const isValidName = validateField(
+    name,
+    /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{2,}\s[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{2,}$/
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      !isValidEmail ||
-      name.length <= 2 ||
-      surname.length <= 2 ||
-      !isValidPhoneNumber ||
-      message.length < 5
-    ) {
+    if (!isValidEmail || !isValidName || !isValidPhoneNumber || message.length < 5 || !checked) {
       setText('Popraw błędy i spróbuj jeszcze raz!');
     } else {
       saveLead();
       setName('');
-      setSurname('');
       setEmail('');
       setNumber('');
       setMessage('');
+      setChecked(false);
       setText('Wiadomość wysłana!');
     }
   };
 
+  const categoryTextMap = {
+    fotowoltaika: 'Chcesz zapytać o fotowoltaikę?',
+    'pompy-ciepla': 'Masz pytania odnośnie pomp ciepła?',
+    termoizolacja: 'Masz pytania na temat termoizolacji?',
+    default: 'Masz pytania? Potrzebujesz pomocy?'
+  };
+
+  useEffect(() => {
+    const text = categoryTextMap[category] || categoryTextMap['default'];
+    setDisplayedText(
+      <h2 className="font-bold text-lg">
+        {text}
+        <br />
+        Napisz do nas, skontaktujemy się z Tobą!
+      </h2>
+    );
+  }, [category]);
+
   return (
     <div className=" md:w-[900px] m-auto border-2 md:p-10 p-5 w-[90vw] mb-10 rounded-xl shadow-md flex flex-col md:flex-row gap-10 justify-evenly">
       <div className=" flex flex-col gap-10 items-center">
-        <h2 className="font-bold text-lg">
-          Masz pytania? Potrzebujesz pomocy?
-          <br />
-          Napisz do nas, skontaktujemy się z Tobą!
-        </h2>
-        <Image src={envelopes} height={180} width={340} alt="message" />
+        {displayedText}
+        <Image src={mailbox} height={'auto'} width={300} alt="message" />
       </div>
 
       <form className="flex flex-col gap-3 ">
         <div className="flex flex-col gap-1">
-          <label htmlFor="name">Imię:</label>
+          <label htmlFor="name">Imię i nazwisko:</label>
           <input
             id="name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            placeholder="np. Jan Kowalski"
             className={`border-2 p-1 md:w-[300px] w-[80vw] rounded-md shadow-sm focus:outline-secondary ${
-              name && name.length <= 2 ? 'border-red-500' : ''
-            }`}
-          />
-        </div>
-        <div className="flex flex-col gap-1">
-          <label htmlFor="name">Nazwisko:</label>
-          <input
-            id="surname"
-            type="text"
-            value={surname}
-            onChange={(e) => setSurname(e.target.value)}
-            className={`border-2 p-1 md:w-[300px] w-[80vw] rounded-md shadow-sm focus:outline-secondary ${
-              surname && surname.length <= 2 ? 'border-red-500' : ''
+              name && !isValidName ? 'border-red-500' : ''
             }`}
           />
         </div>
@@ -95,6 +92,7 @@ export default function ContactForm() {
             id="number"
             type="text"
             value={number}
+            placeholder="np. 123456789"
             onChange={(e) => setNumber(e.target.value)}
             className={`border-2 p-1 md:w-[300px] w-[80vw] rounded-md shadow-sm focus:outline-secondary ${
               number && !isValidPhoneNumber ? 'border-red-500' : ''
@@ -107,6 +105,7 @@ export default function ContactForm() {
             id="email"
             type="email"
             value={email}
+            placeholder="np. twoj@email.com"
             onChange={(e) => setEmail(e.target.value)}
             className={`border-2 p-1 md:w-[300px] w-[80vw] rounded-md shadow-sm focus:outline-secondary ${
               email && !isValidEmail ? 'border-red-500' : ''
@@ -118,11 +117,25 @@ export default function ContactForm() {
           <textarea
             id="message"
             value={message}
+            placeholder="Napisz wiadomość..."
             onChange={(e) => setMessage(e.target.value)}
             className={`border-2 p-1 md:w-[300px] w-[80vw] rounded-md shadow-sm focus:outline-secondary ${
               message && message.length <= 5 ? 'border-red-500' : ''
             }`}
           />
+        </div>
+        <div className="flex gap-5 cursor-pointer">
+          <input
+            type="checkbox"
+            value={checked}
+            id="checkbox"
+            onChange={(e) => setChecked(!checked)}
+            checked={checked}
+          />
+          <label htmlFor="checkbox" className="text-xs max-w-[270px] cursor-pointer">
+            Akceptuję regulamin i wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z
+            przepisami Rozporządzenia Parlamentu Europejskiego i Rady UE (RODO).
+          </label>
         </div>
         <button
           onClick={handleSubmit}

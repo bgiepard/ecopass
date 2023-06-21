@@ -27,9 +27,7 @@ module.exports = {
               marginBottom: theme('margin.4')
             },
             img: {
-              width: 600,
-              marginLeft: '50%',
-              transform: 'translateX(-50%)'
+              width: '100%'
             }
           }
         }
