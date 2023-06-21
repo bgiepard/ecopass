@@ -24,7 +24,7 @@ export default function Layout({ children }) {
     {
       id: 3,
       name: 'kalkulatory',
-      path: '',
+      path: '/calculator',
       customClasses: ''
     },
     {
