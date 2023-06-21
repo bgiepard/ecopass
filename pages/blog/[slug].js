@@ -4,7 +4,6 @@ import { getListOfArticles } from '../../services/articles';
 import Layout from 'components/Layout';
 import FeaturedProducts from 'components/FeaturedProducts';
 import ContactForm from 'components/ContactForm';
-import { useEffect } from 'react';
 
 export const getStaticPaths = () => {
   const articles = getListOfArticles();
