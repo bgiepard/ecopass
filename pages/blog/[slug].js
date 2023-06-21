@@ -25,6 +25,13 @@ export const getStaticProps = async (req) => {
 };
 
 const Articles = ({ article, products }) => {
+  const modifiedCategory =
+    article.tags[0] === 'pompy ciepła'
+      ? article.tags[0].replace(/\s/g, '-').replace(/ł/g, 'l')
+      : article.tags[0] === 'dofinansowania'
+      ? 'leads'
+      : article.tags[0];
+
   return (
     <Layout>
       <Head>
@@ -62,7 +69,7 @@ const Articles = ({ article, products }) => {
           })}
         </aside>
       </div>
-      <ContactForm />
+      <ContactForm category={modifiedCategory} />
     </Layout>
   );
 };
