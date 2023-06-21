@@ -4,6 +4,8 @@ import { getListOfArticles } from '../../services/articles';
 import Layout from 'components/Layout';
 import FeaturedProducts from 'components/FeaturedProducts';
 import ContactForm from 'components/ContactForm';
+import Image from 'next/image';
+import bgPhoto from '../../assets/bg-photo.svg';
 
 export const getStaticPaths = () => {
   const articles = getListOfArticles();
