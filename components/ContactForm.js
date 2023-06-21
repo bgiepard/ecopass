@@ -9,7 +9,7 @@ export default function ContactForm({ category }) {
   const [message, setMessage] = useState('');
   const [number, setNumber] = useState('');
   const [text, setText] = useState('');
-  const [displayedText, setDisplayedText] = useState(<h2></h2>);
+  const [displayedText, setDisplayedText] = useState(null);
   const [checked, setChecked] = useState(false);
 
   const saveLead = async () => {
@@ -68,7 +68,7 @@ export default function ContactForm({ category }) {
   return (
     <div className=" md:w-[900px] m-auto border-2 md:p-10 p-5 w-[90vw] mb-10 rounded-xl shadow-md flex flex-col md:flex-row gap-10 justify-evenly">
       <div className=" flex flex-col gap-10 items-center">
-        {displayedText}
+        {displayedText ? displayedText : null}
         <Image src={mailbox} height={'auto'} width={300} alt="message" />
       </div>
 
@@ -129,7 +129,7 @@ export default function ContactForm({ category }) {
             type="checkbox"
             value={checked}
             id="checkbox"
-            onChange={(e) => setChecked(!checked)}
+            onChange={() => setChecked(!checked)}
             checked={checked}
           />
           <label htmlFor="checkbox" className="text-xs max-w-[270px] cursor-pointer">
