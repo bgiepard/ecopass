@@ -119,7 +119,7 @@ export default function HomePageSlider() {
       {slides.map((item) => {
         return (
           <div key={item.id} className="min-h-[500px] md:h-auto">
-            <div className="sm:h-[90vh] flex items-center h-[83vh]">
+            <div className="sm:h-[80vh] flex items-center h-[83vh]">
               <div className="pt-10 pb-10 flex items-center pr-5 md:pr-10 flex-wrap">
                 <div className="w-full md:w-1/2 md:pt-10 md:pb-10">
                   <h1 className="md:text-7xl text-3xl font-[700] text-white">{item.heading}</h1>
