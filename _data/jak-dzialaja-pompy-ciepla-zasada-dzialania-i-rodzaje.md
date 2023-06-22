@@ -32,7 +32,7 @@ Proces działania pompy ciepła można podzielić na cztery podstawowe etapy:
 3. **Podgrzewanie cieczy**: Skroplona ciecz chłodnicza jest podgrzewana i pod wysokim ciśnieniem przekazywana do wymiennika ciepła znajdującego się w systemie grzewczym lub chłodniczym. Tam ciepło jest oddawane do powietrza lub wody, która dociera do pomieszczeń lub innych miejsc, które mają być ogrzewane lub ochładzane.
 
 4. **Rozprężanie cieczy**: Po oddaniu ciepła do medium docelowego, ciecz chłodnicza wraca do początkowego stanu niskiego ciśnienia i temperatury. Następnie wraca do etapu pobierania ciepła, aby rozpocząć cykl ponownie.
-   ![Pompa ciepła](covers/heatpump.jpg)
+   ![Pompa ciepła](/covers/heatpump.jpg)
 
 ## Rodzaje pomp ciepła
 
