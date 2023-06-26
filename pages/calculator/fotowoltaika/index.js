@@ -52,11 +52,12 @@ export default function PhotovoltaicsCalculator() {
       </div>
       <div className="sm:max-w-[70vw] max-w-[90vw] sm:p-10 p-5 mb-[50px] m-auto shadow-md rounded-2xl flex flex-col">
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-          <label>Podaj miesięczne zużycie prądu:</label>
+          <label htmlFor="usage">Podaj miesięczne zużycie prądu:</label>
           <div>
             <input
               value={usage}
               type="number"
+              id="usage"
               onChange={(e) => setUsage(e.target.value)}
               className="border-2 p-1 md:w-[150px] w-[50vw] shadow-sm focus:outline-secondary"
             />
