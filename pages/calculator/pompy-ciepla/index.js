@@ -2,10 +2,14 @@ import React from 'react';
 import heat from '../../../assets/Air-conditioner-repair.svg';
 import Image from 'next/image';
 import Layout from 'components/Layout';
+import Head from 'next/head';
 
 export default function HeatPumpsCalculator() {
   return (
     <Layout>
+      <Head>
+        <title>Kalkulator doboru pompy ciepła - EcoPass.pl</title>
+      </Head>
       <div className="container p-[50px] flex gap-[50px] sm:flex-row flex-col justify-center items-center">
         <Image src={heat} alt="kalkulator doboru pompy ciepła" width={300} height={'auto'} />
 

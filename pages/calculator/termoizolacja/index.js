@@ -2,10 +2,14 @@ import React from 'react';
 import thermo from '../../../assets/Home-Repairing.svg';
 import Image from 'next/image';
 import Layout from 'components/Layout';
+import Head from 'next/head';
 
 export default function ThermalInsulationCalculator() {
   return (
     <Layout>
+      <Head>
+        <title>Kalkulator zużycia farb termoizolacyjnych - EcoPass.pl</title>
+      </Head>
       <div className="container p-[50px] flex gap-[50px] sm:flex-row flex-col justify-center items-center">
         <Image
           src={thermo}

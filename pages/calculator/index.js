@@ -39,11 +39,10 @@ export default function Calculator() {
         <Image src={calc} alt="kalkulatory" width={400} height={'auto'} />
         <div className="sm:w-1/2 w-[90vw]">
           <p>
-            Odkryj nasze kalkulatory, które pomogą Ci w doborze odpowiednich farb termoizolacyjnych,
-            mocy fotowoltaiki oraz pomp ciepła. Wykorzystaj nasze narzędzia, aby obliczyć zużycie
-            farb, dobór mocy instalacji fotowoltaicznej i optymalną moc pompy ciepła. Znajdź
-            rozwiązania, które pozwolą Ci oszczędzać energię i poprawić efektywność energetyczną
-            Twojego budynku. Oszczędzaj, chroniąc zarówno środowisko, jak i swój portfel.
+            Wykorzystaj nasze narzędzia, aby obliczyć zużycie farb, dobór mocy instalacji
+            fotowoltaicznej i optymalną moc pompy ciepła. Znajdź rozwiązania, które pozwolą Ci
+            oszczędzać energię i poprawić efektywność energetyczną Twojego budynku. Oszczędzaj,
+            chroniąc zarówno środowisko, jak i swój portfel.
           </p>
         </div>
       </div>
