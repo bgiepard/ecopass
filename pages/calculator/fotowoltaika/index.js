@@ -59,10 +59,12 @@ export default function PhotovoltaicsCalculator() {
               type="number"
               id="usage"
               onChange={(e) => setUsage(e.target.value)}
+              style={{ borderRadius: '12px 0 0 12px' }}
               className="border-2 p-1 md:w-[150px] w-[50vw] shadow-sm focus:outline-secondary"
             />
             <select
               onChange={(e) => setUnit(e.target.value)}
+              style={{ borderRadius: '0 12px 12px 0' }}
               className="border-2 p-1 border-secondary bg-secondary text-white font-bold shadow-sm">
               <option value="zł">zł</option>
               <option value="kWh">kWh</option>
