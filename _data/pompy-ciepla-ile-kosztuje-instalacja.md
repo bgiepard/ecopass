@@ -2,7 +2,7 @@
 title: 'Pompy ciepła -'
 title_second_line: 'ile kosztuje instalacja?'
 description: 'Pompy ciepła są coraz popularniejszym rozwiązaniem w dziedzinie ogrzewania domów. Jednak wielu ludzi zastanawia się, ile kosztuje instalacja takiego systemu. W tym artykule omówimy czynniki wpływające na koszt instalacji pomp ciepła oraz przedstawimy przybliżone ceny.'
-tags: ['pompy ciepła', 'kalkulatory', 'oszczędzanie']
+tags: ['pompy ciepła', 'koszt pompy ciepła', 'oszczędzanie']
 cover: '/covers/pompy.jpg'
 date: 07.06.2023
 ---

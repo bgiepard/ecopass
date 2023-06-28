@@ -7,9 +7,6 @@ tags:
     'pompy ciepła',
     'systemy grzewcze',
     'rodzaje pomp ciepła',
-    'pompy ciepła powietrze-powietrze',
-    'pompy ciepła powietrze-woda',
-    'pompy ciepła grunt-woda',
     'zasada działania pomp ciepła',
     'proces działania pomp ciepła'
   ]

@@ -2,7 +2,7 @@
 title: 'Farby termoizolacyjne a korzyści dla alergików -'
 title_second_line: 'poprawa jakości powietrza w domu'
 description: 'Dowiedz się, jak farby termoizolacyjne mogą przyczynić się do poprawy jakości powietrza wewnątrz domu i jakie korzyści przynoszą dla osób z alergiami. Redukcja kondensacji, ograniczenie pyłków i roztoczy oraz możliwość stosowania bezpiecznych dla alergików składników to tylko niektóre z aspektów, które sprawiają, że farby termoizolacyjne są korzystne dla alergików.'
-tags: ['termoizolacja', 'kalkulatory', 'oszczędzanie']
+tags: ['termoizolacja', 'zdrowe powietrze w domu', 'farby dla alergików', 'farby termoizolacyjne']
 cover: '/covers/allergy.jpg'
 date: 11.06.2023
 ---

@@ -2,7 +2,7 @@
 title: 'Energooszczędne systemy grzewcze -'
 title_second_line: 'alternatywne rozwiązania dla tradycyjnych kotłów'
 description: 'W tym artykule przedstawimy różne energetyczne systemy grzewcze, które stanowią alternatywę dla tradycyjnych kotłów. Dowiedz się, jakie rozwiązania są dostępne na rynku i jak mogą przyczynić się do oszczędności energii oraz zmniejszenia wpływu na środowisko.'
-tags: ['pompy ciepła', 'kalkulatory', 'oszczędzanie']
+tags: ['pompy ciepła', 'energooszczędne systemy grzewcze', 'oszczędzanie']
 cover: '/covers/green.jpg'
 date: 10.06.2023
 ---

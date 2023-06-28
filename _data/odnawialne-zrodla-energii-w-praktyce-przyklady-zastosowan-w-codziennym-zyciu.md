@@ -2,7 +2,7 @@
 title: 'Odnawialne źródła energii w praktyce -'
 title_second_line: 'przykłady zastosowań w codziennym życiu'
 description: 'Odnawialne źródła energii odgrywają coraz większą rolę w naszym społeczeństwie, a ich zastosowanie ma wiele korzyści zarówno dla środowiska, jak i dla naszych portfeli. W tym artykule przedstawimy kilka przykładów praktycznych zastosowań odnawialnych źródeł energii, które można wprowadzić do codziennego życia.'
-tags: ['fotowoltaika', 'pompy ciepła', 'kalkulatory', 'oszczędzanie']
+tags: ['fotowoltaika', 'pompy ciepła', 'ekologiczne rozwiązania dla domu', 'oszczędzanie']
 cover: '/covers/odnawialne.jpg'
 date: 13.06.2023
 ---

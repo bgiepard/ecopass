@@ -7,15 +7,6 @@ tags:
     'termoizolacja',
     'farby termoizolacyjne',
     'właściwości antystatyczne',
-    'redukcja ładunków statycznych',
-    'ochrona przed ładunkami statycznymi',
-    'antystatyczne farby termoizolacyjne',
-    'eliminacja osadzania kurzu',
-    'komfort użytkowników',
-    'czystość powierzchni',
-    'farby antystatyczne',
-    'zdrowe środowisko',
-    'ochrona urządzeń przed ładunkami statycznymi',
     'zapobieganie uszkodzeniom elektronicznym',
     'redukcja elektryzowania powierzchni'
   ]

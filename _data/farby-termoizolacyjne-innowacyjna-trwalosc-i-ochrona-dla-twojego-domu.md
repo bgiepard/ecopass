@@ -2,22 +2,7 @@
 title: 'Farby termoizolacyjne -'
 title_second_line: 'innowacyjna trwałość i ochrona dla twojego domu'
 description: 'Farby termoizolacyjne zyskują coraz większą popularność wśród osób remontujących i budujących swoje domy. Oprócz ich głównej funkcji - zapewnienia izolacji termicznej - farby te mają wiele innych zalet, które warto poznać. Jednym z najważniejszych czynników, które przemawiają za ich wyborem, jest ich odporność na plamy, łatwość czyszczenia oraz długotrwałość, co znacznie zmniejsza konieczność częstego malowania.'
-tags:
-  [
-    'termoizolacja',
-    'farby termoizolacyjne',
-    'plamoodporność',
-    'odporność na plamy',
-    'łatwość czyszczenia',
-    'odporność na szorowanie',
-    'trwałość farb',
-    'rzadsza konieczność malowania',
-    'efektywność energetyczna budynków',
-    'izolacja termiczna',
-    'ochrona ścian',
-    'innowacyjne farby',
-    'długotrwałe wykończenie'
-  ]
+tags: ['termoizolacja', 'farby termoizolacyjne', 'plamoodporność', 'trwałość farb', 'ochrona ścian']
 cover: '/covers/cleaning.jpg'
 date: 22.06.2023
 ---

@@ -7,15 +7,7 @@ tags:
     'termoizolacja',
     'izolacja akustyczna',
     'poprawa akustyki',
-    'szkoły',
-    'biura',
-    'redukcja hałasu',
-    'redukcja echa',
     'poprawa komfortu akustycznego',
-    'sale konferencyjne',
-    'poprawa akustyki w szkołach',
-    'poprawa akustyki w biurach',
-    'poprawa akustyki w salach konferencyjnych',
     'farby termoizolacyjne'
   ]
 cover: '/covers/noise.jpg'

@@ -8,8 +8,7 @@ tags:
     'ochrona przed pleśnią',
     'farby termoizolacyjne',
     'ochrona przed grzybem',
-    'zdrowe powietrze w domu',
-    'oszczędzanie'
+    'zdrowe powietrze w domu'
   ]
 cover: '/covers/mold.png'
 date: 19.06.2023

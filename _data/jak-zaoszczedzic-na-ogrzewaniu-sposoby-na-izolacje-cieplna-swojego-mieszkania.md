@@ -2,7 +2,7 @@
 title: 'Jak zaoszczędzić na ogrzewaniu:'
 title_second_line: 'sposoby na izolację cieplną swojego mieszkania'
 description: 'Ogrzewanie mieszkania to jeden z największych wydatków w domowym budżecie. Jednak są sposoby, dzięki którym można znacznie obniżyć koszty ogrzewania i jednocześnie poprawić komfort termiczny w swoim mieszkaniu.'
-tags: ['fotowoltaika', 'termoizolacja', 'kalkulatory', 'oszczędzanie']
+tags: ['fotowoltaika', 'termoizolacja', 'izolacja cieplna', 'oszczędzanie']
 cover: '/covers/malowanie.jpg'
 date: 06.06.2023
 ---

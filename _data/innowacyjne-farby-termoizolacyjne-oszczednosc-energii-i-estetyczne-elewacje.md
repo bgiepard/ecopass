@@ -8,20 +8,7 @@ tags:
     'farby termoizolacyjne',
     'malowanie elewacji',
     'oszczędność energetyczna',
-    'oszczędzanie',
-    'ekologia',
-    'izolacja termiczna',
-    'energoefektywność',
-    'redukcja emisji CO2',
-    'ograniczenie strat ciepła',
-    'zrównoważony rozwój',
-    'technologie budowlane',
-    'zdrowy klimat wewnątrz pomieszczeń',
-    'efektywność cieplna',
-    'zwiększenie komfortu termicznego',
-    'zmniejszenie zużycia energii',
-    'ochrona środowiska',
-    'innowacyjne materiały budowlane'
+    'ograniczenie strat ciepła'
   ]
 cover: '/covers/house-painting.jpg'
 date: 19.06.2023

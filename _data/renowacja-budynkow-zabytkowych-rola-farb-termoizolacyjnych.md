@@ -6,17 +6,9 @@ tags:
   [
     'termoizolacja',
     'renowacja zabytkowych budynków',
-    'izolacja termiczna zabytkowych budowli',
-    'termomodernizacja',
-    'termomodernizacja zabytkowych budowli',
     'farby termoizolacyjne a architektura zabytkowa',
     'termoizolacja ciekowarstwowa',
-    'redukcja strat ciepła',
-    'efektywność energetyczna',
-    'ograniczenia architektoniczne',
-    'oszczędność energii',
-    'zrównoważony rozwój',
-    'poprawa komfortu termicznego'
+    'ograniczenia architektoniczne'
   ]
 cover: '/covers/zabytek.jpg'
 date: 27.06.2023

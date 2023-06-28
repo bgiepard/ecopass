@@ -7,17 +7,8 @@ tags:
     'fotowoltaika',
     'energia słoneczna',
     'panele fotowoltaiczne',
-    'promieniowanie słoneczne',
     'konwersja energii słonecznej',
-    'ogniwa fotowoltaiczne',
-    'prąd stały',
-    'prąd zmienny',
-    'zastosowanie energii słonecznej',
-    'zalety energii słonecznej',
-    'koszty eksploatacji fotowoltaiki',
-    'niezależność energetyczna',
-    'ochrona środowiska',
-    'odnawialne źródła energii'
+    'ogniwa fotowoltaiczne'
   ]
 cover: '/covers/panele.jpg'
 date: 22.06.2023

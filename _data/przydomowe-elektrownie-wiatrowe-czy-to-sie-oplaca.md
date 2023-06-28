@@ -2,7 +2,7 @@
 title: 'Przydomowe elektrownie wiatrowe -'
 title_second_line: 'czy to się opłaca?'
 description: 'Przydomowe elektrownie wiatrowe są coraz częstszym rozwiązaniem w dziedzinie produkcji energii elektrycznej. W tym artykule omówimy, dlaczego warto rozważyć instalację takiego systemu, jakie są korzyści z posiadania własnej elektrowni wiatrowej oraz czy inwestycja w nią jest opłacalna.'
-tags: ['elektrownie wiatrowe', 'kalkulatory', 'oszczędzanie']
+tags: ['elektrownie wiatrowe', 'przydomowe elektrownie wiatrowe', 'oszczędzanie']
 cover: '/covers/wiatrowa.jpg'
 date: 08.06.2023
 ---

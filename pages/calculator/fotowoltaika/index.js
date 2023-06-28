@@ -32,7 +32,14 @@ export default function PhotovoltaicsCalculator() {
       <Head>
         <title>Kalkulator doboru mocy fotowoltaiki - EcoPass.pl</title>
       </Head>
-      <div className="container p-[50px] flex gap-[50px] sm:flex-row flex-col justify-center items-center">
+      <div className="bg-primary border-t-2">
+        <div className="container m-auto">
+          <h1 className="sm:text-[30px] sm:leading-[45px] text-2xl font-bold text-white py-[30px] sm:pr-[50px] sm:w-2/3">
+            Kalkulator mocy fotowoltaiki
+          </h1>
+        </div>
+      </div>
+      <div className="container p-[50px] flex gap-[50px] mt-[50px] sm:flex-row flex-col justify-center items-center">
         <Image
           src={photovol}
           alt="kalkulator doboru mocy fotowoltaiki"

@@ -2,7 +2,7 @@
 title: 'Wykorzystaj potencjał farb termoizolacyjnych'
 title_second_line: 'i skorzystaj z ulgi podatkowej na termomodernizację swojego domu'
 description: 'Farby termoizolacyjne stanowią innowacyjne rozwiązanie, które pozwala nie tylko na ochronę przed nadmiernym przemarzaniem, ale także na poprawę efektywności energetycznej budynku. Dzięki nowej formule, farby termoizolacyjne są niezwykle lekkie i łatwe w aplikacji, co sprawia, że mogą być nakładane na różne powierzchnie, takie jak ściany murowane, płyty G/K, drewno, metal czy szkło.'
-tags: ['termoizolacja', 'dofinansowania', 'kalkulatory', 'oszczędzanie']
+tags: ['termoizolacja', 'dofinansowania', 'ulga podatkowa na termomodernizację', 'farby termoizolacyjne']
 cover: '/covers/ulga.jpg'
 date: 14.06.2023
 ---

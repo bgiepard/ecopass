@@ -8,15 +8,6 @@ tags:
     'farby termoizolacyjne',
     'efektywność energetyczna',
     'izolacja termiczna',
-    'innowacyjne rozwiązania',
-    'oszczędność energii',
-    'technologia kosmiczna',
-    'redukcja strat ciepła',
-    'komfort termiczny',
-    'zrównoważony rozwój',
-    'poprawa efektywności energetycznej',
-    'ochrona środowiska',
-    'skuteczna izolacja',
     'historia farb termoizolacyjnych'
   ]
 cover: '/covers/spaceship.jpg'

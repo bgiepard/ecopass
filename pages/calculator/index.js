@@ -35,6 +35,13 @@ export default function Calculator() {
       <Head>
         <title>Kalkulatory - EcoPass.pl</title>
       </Head>
+      <div className="bg-primary border-t-2">
+        <div className="container m-auto">
+          <h1 className="sm:text-[45px] sm:leading-[45px] text-2xl font-bold text-white py-[50px] sm:pr-[50px] sm:w-2/3">
+            Kalkulatory
+          </h1>
+        </div>
+      </div>
       <div className="container p-[50px] flex gap-[50px] sm:flex-row flex-col justify-center items-center">
         <Image src={calc} alt="kalkulatory" width={400} height={'auto'} />
         <div className="sm:w-1/2 w-[90vw]">
@@ -54,7 +61,7 @@ export default function Calculator() {
               className="shadow-md hover:shadow-lg rounded-lg p-5 sm:w-[350px] w-[90vw] h-[270px] flex flex-col justify-center items-center gap-5"
               key={d.id}>
               <Image src={d.src} width={200} height={'auto'} alt={d.title} />
-              <h3 className="text-md font-bold">{d.title}</h3>
+              <h3 className="text-md font-bold text-center">{d.title}</h3>
             </Link>
           );
         })}

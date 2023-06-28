@@ -2,7 +2,7 @@
 title: 'Sposoby na docieplenie domów modułowych -'
 title_second_line: 'farby termoizolacyjne jako rozwiązanie idealne'
 description: 'W dzisiejszych czasach coraz większą popularnością cieszą się domy modułowe. Są one atrakcyjnym rozwiązaniem dla osób szukających szybkiego i ekonomicznego sposobu na posiadanie własnego, nowoczesnego domu. Jednak jednym z kluczowych wyzwań związanych z budową takich domów jest utrzymanie odpowiedniej temperatury wewnątrz pomieszczeń i zapewnienie optymalnej izolacji cieplnej. Właśnie dlatego coraz częściej sięgamy po innowacyjne rozwiązania, takie jak farby termoizolacyjne, które oferują szereg szczególnych korzyści w kontekście domów modułowych'
-tags: ['termoizolacja', 'kalkulatory', 'oszczędzanie', 'domy modułowe', 'domy szkieletowe']
+tags: ['termoizolacja', 'sposoby docieplenia domów modułowych', 'domy modułowe', 'domy szkieletowe']
 cover: '/covers/modular.jpg'
 date: 15.06.2023
 ---

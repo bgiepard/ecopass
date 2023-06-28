@@ -2,7 +2,7 @@
 title: 'Innowacyjne technologie solarnych paneli fotowoltaicznych -'
 title_second_line: 'przyszłość energii elektrycznej'
 description: 'W tym artykule przedstawimy najnowsze innowacje w dziedzinie solarnych paneli fotowoltaicznych oraz ich znaczenie dla przyszłości energii elektrycznej. Dowiedz się, jakie nowe technologie są rozwijane i jak wpływają na wydajność, wygodę użytkowania i dostępność energii słonecznej.'
-tags: ['fotowoltaika', 'kalkulatory', 'oszczędzanie']
+tags: ['fotowoltaika', 'nowe rodzaje paneli fotowoltaicznych', 'przyszłość fotowoltaiki']
 cover: '/covers/solary.jpg'
 date: 09.06.2023
 ---

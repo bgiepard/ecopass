@@ -7,8 +7,7 @@ tags:
     'dofinansowania',
     'fotowoltaika',
     'pompy ciepła',
-    'czyste powietrze',
-    'energia odnawialna',
+    'program czyste powietrze',
     'zrównoważony rozwój'
   ]
 cover: '/covers/photovoltaics.jpg'

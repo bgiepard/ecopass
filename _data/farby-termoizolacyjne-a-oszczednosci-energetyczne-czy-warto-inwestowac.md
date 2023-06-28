@@ -2,7 +2,7 @@
 title: 'Farby termoizolacyjne a oszczędności energetyczne - '
 title_second_line: 'czy warto inwestować?'
 description: 'W tym artykule dowiesz się, jak farby termoizolacyjne mogą przyczynić się do oszczędności energetycznych w Twoim domu. Poznasz korzyści z ich stosowania oraz informacje na temat inwestycji w farby termoizolacyjne. Czy warto zainwestować w ten rodzaj produktu? Sprawdź sam!'
-tags: ['termoizolacja', 'kalkulatory', 'oszczędzanie']
+tags: ['termoizolacja', 'oszczędność energetyczna', 'farby termoizolacyjne']
 cover: '/covers/farba.jpg'
 date: 10.06.2023
 ---
