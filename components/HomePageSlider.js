@@ -35,7 +35,8 @@ export default function HomePageSlider() {
           <br />U nas zaoszczędzisz czas i pieniądze!
         </>
       ),
-      image: Statistics
+      image: Statistics,
+      article: '/kalkulatory'
     },
     {
       id: 3,
@@ -109,7 +110,7 @@ export default function HomePageSlider() {
     pauseOnHover: true,
     appendDots: (dots) => (
       <div style={{ position: 'absolute', top: 0, right: 0, width: '30px' }}>
-        <ul className="flex flex-col items-center justify-center h-[500px]">{dots}</ul>
+        <ul className="flex flex-col items-center justify-center h-[100%]">{dots}</ul>
       </div>
     )
   };
@@ -122,16 +123,18 @@ export default function HomePageSlider() {
             <div className="sm:h-[80vh] flex items-center h-[83vh]">
               <div className="pt-10 pb-10 flex items-center pr-5 md:pr-10 flex-wrap">
                 <div className="w-full md:w-1/2 md:pt-10 md:pb-10">
-                  <h1 className="md:text-7xl text-3xl font-[700] text-white">{item.heading}</h1>
-                  <p className="text-l mt-5 mb-5 text-gray-200 md:text-xl">{item.text}</p>
-                  <div className="flex mt-8 flex-wrap gap-y-1">
+                  <span className="lg:text-5xl text-3xl font-[700] text-white">{item.heading}</span>
+                  <p className="text-l mt-5 mb-5 text-gray-200 lg:text-xl">{item.text}</p>
+                  <div className="flex mt-8 flex-wrap gap-y-2">
                     <Link href="https://sklep.ecopass.pl/">
                       <button className="whitespace-nowrap hover:shadow-md text-white md:text-xl font-bold mr-1 md:mr-3 bg-secondary rounded-3xl pt-2 pb-2 pl-6 pr-6 w-60 border-2 border-secondary">
                         Zobacz produkty
                       </button>
                     </Link>
                     <Link href={`${item.article ? item.article : ''}`}>
-                      <button className="whitespace-nowrap hover:shadow-md text-white md:text-xl font-bold border-2 rounded-3xl pt-2 pb-2 pl-6 pr-6 w-60">
+                      <button
+                        aria-label="dowiedz się więcej"
+                        className="whitespace-nowrap hover:shadow-md text-white md:text-xl font-bold border-2 rounded-3xl pt-2 pb-2 pl-6 pr-6 w-60">
                         Dowiedz się więcej
                       </button>
                     </Link>

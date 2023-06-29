@@ -31,6 +31,10 @@ export default function PhotovoltaicsCalculator() {
     <Layout>
       <Head>
         <title>Kalkulator doboru mocy fotowoltaiki - EcoPass.pl</title>
+        <meta
+          name="description"
+          content="Nasz kalkulator doboru mocy fotowoltaiki pomoże Ci określić odpowiednią moc instalacji fotowoltaicznej dla Twojego domu lub przedsiębiorstwa. Wprowadź informacje dotyczące swojego miejsca zamieszkania, roczne zużycie energii elektrycznej oraz dostępną powierzchnię na instalację paneli słonecznych."
+        />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
@@ -57,8 +61,8 @@ export default function PhotovoltaicsCalculator() {
           </p>
         </div>
       </div>
-      <div className="sm:max-w-[70vw] max-w-[90vw] sm:p-10 p-5 mb-[50px] m-auto shadow-md rounded-2xl flex flex-col">
-        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <div className="sm:max-w-[60vw] border-2 mt-[50px] border-white bg-white max-w-[90vw] sm:p-10 p-5 mb-[50px] m-auto shadow-md rounded-2xl flex flex-col">
+        <div className="flex flex-col lg:flex-row gap-3 justify-center items-center">
           <label htmlFor="usage">Podaj miesięczne zużycie prądu:</label>
           <div>
             <input
@@ -68,18 +72,23 @@ export default function PhotovoltaicsCalculator() {
               onChange={(e) => setUsage(e.target.value)}
               style={{ borderRadius: '12px 0 0 12px' }}
               className="border-2 p-1 md:w-[150px] w-[50vw] shadow-sm focus:outline-secondary"
+              aria-label="Podaj miesięczne zużycie prądu"
+              aria-describedby="usage-description"
             />
             <select
               onChange={(e) => setUnit(e.target.value)}
               style={{ borderRadius: '0 12px 12px 0' }}
-              className="border-2 p-1 border-secondary bg-secondary text-white font-bold shadow-sm">
+              className="border-2 p-1 border-secondary bg-secondary text-white font-bold shadow-sm"
+              aria-label="Wybierz jednostkę">
               <option value="zł">zł</option>
               <option value="kWh">kWh</option>
             </select>
           </div>
         </div>
         {usage && (
-          <div className="mt-20 flex sm:flex-row flex-col sm:justify-between items-center gap-10">
+          <div
+            className="mt-20 flex lg:flex-row flex-col lg:justify-between items-center gap-10"
+            id="usage-description">
             <div className="flex flex-col gap-5 font-bold">
               <span>Minimalna ilość paneli: {result}</span>
               <span>Sugerowana moc instalacji fotowoltaicznej: {estimatedPower}kW</span>

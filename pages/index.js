@@ -2,12 +2,12 @@ import Head from 'next/head';
 import Layout from 'components/Layout';
 import HomePageSlider from '../components/HomePageSlider';
 import Post from 'components/Post';
-import { getRecentPosts } from 'services/getRecent';
 import categories from 'services/categories';
 import { useState } from 'react';
+import { getAllPosts } from 'services/posts';
 
 export const getStaticProps = () => {
-  const posts = getRecentPosts();
+  const posts = getAllPosts();
 
   return {
     props: { posts }
@@ -23,9 +23,12 @@ export default function Home({ posts }) {
     <>
       <Head>
         <title>EcoPass.pl - Zmniejsz rachunki i zacznij biernie oszczędzać</title>
-        <meta name="description" content="Bierne oszczędzanie" />
+        <meta
+          name="description"
+          content="Oszczędzanie, ekologia, zmniejszenie rachunków. Poradniki i artykuły w jednym miejscu. Kalkulatory do pomp ciepła, fotowoltaiki i farb termoizolacyjnych. Odkryj skuteczne sposoby na oszczędności i zielone życie."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       <Layout>
@@ -38,15 +41,16 @@ export default function Home({ posts }) {
         {/*Posts*/}
         <div className="container mt-[50px] mb-[50px] md:mb-[100px] md:mt-[100px]">
           <div className="mb-10 flex items-center flex-col md:flex-row">
-            <h2 className="whitespace-nowrap font-bold text-4xl opacity-80 mb-8 md:mb-0">
+            <h1 className="whitespace-nowrap font-bold text-4xl opacity-80 mb-8 md:mb-0">
               Ostatnie artykuły
-            </h2>
+            </h1>
             <div className="flex md:ml-10 items-center gap-x-3 gap-y-3 flex-wrap">
               {categories.map((item) => {
                 return (
                   <button
                     key={item.id}
                     value={item.value}
+                    aria-label="filtrowanie artykułów"
                     className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl border-2 ${
                       item.value === category ? ' border-secondary' : ''
                     }`}
@@ -58,7 +62,7 @@ export default function Home({ posts }) {
             </div>
           </div>
           <div className="flex gap-5 flex-wrap gap-y-10">
-            {displayedPosts.map((post) => {
+            {displayedPosts.slice(0, 8).map((post) => {
               return <Post post={post} key={post.slug} />;
             })}
           </div>

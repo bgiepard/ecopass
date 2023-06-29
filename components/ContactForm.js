@@ -76,6 +76,7 @@ export default function ContactForm({ category }) {
         <div className="flex flex-col gap-1">
           <label htmlFor="name">Imię i nazwisko:</label>
           <input
+            aria-label="imię i nazwisko"
             id="name"
             type="text"
             value={name}
@@ -89,6 +90,7 @@ export default function ContactForm({ category }) {
         <div className="flex flex-col gap-1">
           <label htmlFor="email">Numer telefonu:</label>
           <input
+            aria-label="numer telefonu"
             id="number"
             type="text"
             value={number}
@@ -102,6 +104,7 @@ export default function ContactForm({ category }) {
         <div className="flex flex-col gap-1">
           <label htmlFor="email">Email:</label>
           <input
+            aria-label="email"
             id="email"
             type="email"
             value={email}
@@ -115,6 +118,7 @@ export default function ContactForm({ category }) {
         <div className="flex flex-col gap-1">
           <label htmlFor="message">Wiadomość:</label>
           <textarea
+            aria-label="treść wiadomości"
             id="message"
             value={message}
             placeholder="Napisz wiadomość..."
@@ -126,6 +130,7 @@ export default function ContactForm({ category }) {
         </div>
         <div className="flex gap-5 cursor-pointer">
           <input
+            aria-label="zgoda na przetwarzanie danych"
             type="checkbox"
             value={checked}
             id="checkbox"
@@ -139,6 +144,7 @@ export default function ContactForm({ category }) {
         </div>
         <button
           onClick={handleSubmit}
+          aria-label="wyślij"
           className="bg-secondary px-5 py-[5px] rounded-2xl w-[100px] shadow-sm hover:shadow-md text-white font-bold self-end">
           Wyślij
         </button>

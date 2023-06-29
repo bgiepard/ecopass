@@ -32,21 +32,26 @@ const Articles = ({ article, products }) => {
       ? 'leads'
       : article.tags[0];
 
+  const fullTitle = `${article.title} ${article.title_second_line}`;
+  const fullDescription = `${article.description} ${article.tags.join(', ')}`;
+
   return (
     <Layout>
       <Head>
-        <title>{`${article.title} ${article.title_second_line} - EcoPass.pl`}</title>
-        <meta name="description" content={article.description} />
-        <meta itemProp="name" content={`${article.title} ${article.title_second_line}`} />
-        <meta itemProp="description" content={article.description} />
+        <title>{`${fullTitle} - EcoPass.pl`}</title>
+        <meta name="description" content={fullDescription} />
+        <meta itemProp="name" content={fullTitle} />
+        <meta itemProp="description" content={fullDescription} />
         <meta itemProp="image" content={article.cover} />
         <meta property="og:url" content={article.url} />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={`${article.title} ${article.title_second_line}`} />
-        <meta property="og:description" content={article.description} />
+        <meta property="og:title" content={fullTitle} />
+        <meta property="og:description" content={fullDescription} />
         <meta property="og:image" content={article.cover} />
-        <meta property="og:image:alt" content={`${article.title} ${article.title_second_line}`} />
-        {article.tags && <meta property="article:tag" content={article.tags.join(',')} />}
+        <meta property="og:image:alt" content={fullTitle} />
+        {article.tags && article.tags.length > 0 && (
+          <meta property="article:tag" content={article.tags.join(', ')} />
+        )}
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
@@ -58,11 +63,12 @@ const Articles = ({ article, products }) => {
         </div>
       </div>
 
-      <div className="container m-auto flex sm:flex-row flex-col">
+      <div className="container m-auto flex md:flex-row flex-col">
         <div
-          className="sm:max-w-[66%] sm:text-[16px] sm:leading-[25px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
-          dangerouslySetInnerHTML={{ __html: article.content }}></div>
-        <aside className="sm:w-1/3 py-[50px]">
+          className="md:max-w-[66%] sm:text-[16px] sm:leading-[25px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
+          dangerouslySetInnerHTML={{ __html: article.content }}
+          role="main"></div>
+        <aside className="sm:w-full py-[50px]">
           <h2 className="text-2xl font-bold pt-[50px] sm:pt-2">Polecane produkty</h2>
           {products.map((product) => {
             return <FeaturedProducts product={product} key={product.slug} />;

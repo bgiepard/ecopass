@@ -55,23 +55,23 @@ Ich obecność prowadzi do niekontrolowanego przepływu ciepła, co zwiększa st
 
 Farby termoizolacyjne stanowią skuteczne narzędzie w walce z mostkami cieplnymi. Dzięki swoim właściwościom termoizolacyjnym mogą skutecznie redukować przepływ ciepła przez elementy konstrukcyjne i poprawiać efektywność energetyczną budynków. Oto kilka powodów, dla których farby termoizolacyjne są idealnym rozwiązaniem:
 
-#### 1. Właściwości termoizolacyjne
+### 1. Właściwości termoizolacyjne
 
 Farby termoizolacyjne są specjalnie opracowanymi produktami, które posiadają wysoką zdolność do odbijania promieniowania cieplnego. Zawierają w sobie składniki, takie jak kapsułki ceramiczne lub mikrosfery, które mają właściwości izolacyjne i mogą skutecznie blokować przepływ ciepła. Dzięki temu, gdy farba termoizolacyjna zostaje nałożona na powierzchnię mostka cieplnego, działa jak bariera termiczna, ograniczając transfer ciepła do sąsiednich obszarów.
 
-#### 2. Redukcja strat ciepła
+### 2. Redukcja strat ciepła
 
 Zastosowanie farb termoizolacyjnych na obszarach dotkniętych mostkami cieplnymi pozwala skutecznie zmniejszyć straty ciepła. Dzięki izolacyjnym właściwościom farb, ciepło nie jest przewodzone w taki sam sposób przez elementy konstrukcyjne, co skutkuje mniejszymi stratami energii. To prowadzi do zmniejszenia kosztów ogrzewania lub chłodzenia budynku oraz poprawy jego efektywności energetycznej.
 
-#### 3. Eliminacja kondensacji
+### 3. Eliminacja kondensacji
 
 Mostki cieplne często powodują kondensację wilgoci, co może prowadzić do problemów z pleśnią i rozwoju mikroorganizmów. Farby termoizolacyjne, oprócz swoich właściwości izolacyjnych, często posiadają także właściwości antykonddensacyjne. Tworzą one powłokę o dużej zdolności do regulacji wilgotności powietrza, zapobiegając tym samym powstawaniu kondensacji na powierzchniach pokrytych farbą.
 
-#### 4. Łatwość aplikacji
+### 4. Łatwość aplikacji
 
 Farby termoizolacyjne są stosunkowo łatwe w aplikacji i mogą być nakładane na różne powierzchnie, takie jak ściany, dachy, okna, czy elementy konstrukcyjne. Są dostępne w różnych formach, takich jak farby na bazie wody, farby lateksowe czy powłoki ceramiczne. Można je stosować na zewnątrz i wewnątrz budynków, co pozwala na skuteczną izolację termiczną w różnych obszarach. Dodatkowo, farby termoizolacyjne są łatwe w użyciu i mogą być stosowane jako tradycyjne farby malarskie, co czyni je wygodnym rozwiązaniem do eliminacji mostków cieplnych w istniejących budynkach bez konieczności przeprowadzania skomplikowanych prac remontowych.
 
-#### 5. Trwałość i odporność
+### 5. Trwałość i odporność
 
 Farby termoizolacyjne charakteryzują się również trwałością i odpornością na czynniki atmosferyczne. Są odporne na promieniowanie UV, zmienne warunki atmosferyczne i czynniki chemiczne. Dzięki temu utrzymują swoje właściwości izolacyjne przez długi czas i nie ulegają degradacji pod wpływem warunków zewnętrznych.
 

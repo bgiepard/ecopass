@@ -34,10 +34,17 @@ export default function Calculator() {
     <Layout>
       <Head>
         <title>Kalkulatory - EcoPass.pl</title>
+        <meta
+          name="description"
+          content="Wykorzystaj nasze narzędzia, aby obliczyć zużycie farb, dobór mocy instalacji
+            fotowoltaicznej i optymalną moc pompy ciepła. Znajdź rozwiązania, które pozwolą Ci
+            oszczędzać energię i poprawić efektywność energetyczną Twojego budynku. Oszczędzaj,
+            chroniąc zarówno środowisko, jak i swój portfel."
+        />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
-          <h1 className="sm:text-[45px] sm:leading-[45px] text-2xl font-bold text-white py-[50px] sm:pr-[50px] sm:w-2/3">
+          <h1 className="sm:text-[30px] sm:leading-[45px] text-2xl font-bold text-white py-[30px] sm:pr-[50px] sm:w-2/3">
             Kalkulatory
           </h1>
         </div>
@@ -57,11 +64,11 @@ export default function Calculator() {
         {data.map((d) => {
           return (
             <Link
-              href={`/calculator/${d.path}`}
-              className="shadow-md hover:shadow-lg rounded-lg p-5 sm:w-[350px] w-[90vw] h-[270px] flex flex-col justify-center items-center gap-5"
+              href={`/kalkulatory/${d.path}`}
+              className="bg-white border-2 border-white shadow-md hover:shadow-lg rounded-lg p-5 sm:w-[350px] w-[90vw] h-[270px] flex flex-col justify-center items-center gap-5"
               key={d.id}>
               <Image src={d.src} width={200} height={'auto'} alt={d.title} />
-              <h3 className="text-md font-bold text-center">{d.title}</h3>
+              <h2 className="text-md font-bold text-center">{d.title}</h2>
             </Link>
           );
         })}

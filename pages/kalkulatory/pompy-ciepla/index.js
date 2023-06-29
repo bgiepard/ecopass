@@ -41,6 +41,12 @@ export default function HeatPumpsCalculator() {
     <Layout>
       <Head>
         <title>Kalkulator doboru pompy ciepła - EcoPass.pl</title>
+        <meta
+          name="description"
+          content="Nasz kalkulator doboru pompy ciepła pomoże Ci określić odpowiednią moc pompy ciepła dla
+          Twojego budynku. Pompy ciepła są efektywnym rozwiązaniem do ogrzewania i chłodzenia,
+          wykorzystującym energię odnawialną."
+        />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
@@ -62,15 +68,16 @@ export default function HeatPumpsCalculator() {
           </p>
         </div>
       </div>
-      <div className="sm:max-w-[70vw] max-w-[90vw] sm:p-10 p-5 mb-[50px] m-auto shadow-md rounded-2xl flex flex-col gap-5">
-        <div className="flex flex-col sm:flex-row sm:gap-3 gap-1 sm:items-center">
-          <label htmlFor="type" className="sm:w-[300px]">
+      <div className="sm:max-w-[50vw] mt-[50px] border-2 border-white bg-white max-w-[90vw] sm:p-10 p-5 mb-[50px] m-auto shadow-md rounded-2xl flex flex-col gap-5">
+        <div className="flex flex-col lg:flex-row lg:gap-3 gap-1 lg:items-center">
+          <label htmlFor="type" className="sm:w-1/2">
             Podaj typ energetyczny budynku:
           </label>
           <select
             id="type"
+            aria-label="wybierz typ energetyczny budynku"
             onChange={(e) => setEnergyType(e.target.value)}
-            className="sm:w-[300px] w-[80vw] focus:outline-secondary p-1 shadow-sm border-2 rounded-xl">
+            className="sm:w-[250px] w-[80vw] focus:outline-secondary p-1 shadow-sm border-2 rounded-xl">
             <option value="passive">pasywny</option>
             <option value="energy-efficient">energooszczędny</option>
             <option value="well-insulated">z dobrą izolacją</option>
@@ -78,39 +85,42 @@ export default function HeatPumpsCalculator() {
             <option value="non-insulated">budynek nieocieplony</option>
           </select>
         </div>
-        <div className="flex sm:flex-row flex-col sm:gap-3 gap-1 sm:items-center">
-          <label htmlFor="surface" className="sm:w-[300px]">
+        <div className="flex lg:flex-row flex-col lg:gap-3 gap-1 lg:items-center">
+          <label htmlFor="surface" className="sm:w-1/2">
             Powierzchnia budynku(m2):
           </label>
           <input
             placeholder="m2"
             id="surface"
-            className="border-2 p-1 md:w-[150px] w-[50vw] shadow-sm focus:outline-secondary rounded-xl"
+            aria-label="podaj powierzchnię budynku w metrach kwadratowych"
+            className="border-2 p-1 sm:w-[150px] w-[50vw] shadow-sm focus:outline-secondary rounded-xl"
             type="number"
             value={surfaceArea}
             onChange={(e) => setSurfaceArea(e.target.value)}
           />
         </div>
-        <div className="flex sm:flex-row flex-col sm:gap-3 gap-1 sm:items-center">
-          <label htmlFor="occupants" className="sm:w-[300px]">
+        <div className="flex lg:flex-row flex-col lg:gap-3 gap-1 lg:items-center">
+          <label htmlFor="occupants" className="sm:w-1/2">
             Liczba domowników:
           </label>
           <input
             placeholder="1"
             id="occupants"
-            className="border-2 p-1 md:w-[150px] w-[50vw] shadow-sm focus:outline-secondary rounded-xl"
+            aria-label="podaj liczbę domowników"
+            className="border-2 p-1 sm:w-[150px] w-[50vw] shadow-sm focus:outline-secondary rounded-xl"
             type="number"
             value={numOccupants}
             onChange={(e) => setNumOccupants(e.target.value)}
           />
         </div>
         <button
-          className="bg-secondary py-1 px-5 w-[120px] mt-[50px] text-white font-bold rounded-2xl shadow-sm hover:shadow-md self-center"
+          aria-label="oblicz moc pompy ciepła"
+          className="bg-secondary py-1 px-5 w-[120px] mt-[50px] text-white font-bold rounded-2xl shadow-sm hover:shadow-md self-end"
           onClick={calculatePower}>
           Oblicz
         </button>
         {power && numOccupants && surfaceArea && (
-          <div className="mt-20 flex sm:flex-row flex-col sm:justify-between items-center gap-10">
+          <div className="mt-20 flex lg:flex-row flex-col lg:justify-between items-center gap-10">
             <div className="flex flex-col gap-5 font-bold">
               <span>Sugerowana moc pompy ciepła: {power}kW</span>
             </div>

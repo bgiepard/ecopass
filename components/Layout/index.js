@@ -18,13 +18,13 @@ export default function Layout({ children }) {
     {
       id: 2,
       name: 'produkty',
-      path: '/products',
+      path: '/produkty',
       customClasses: ''
     },
     {
       id: 3,
       name: 'kalkulatory',
-      path: '/calculator',
+      path: '/kalkulatory',
       customClasses: ''
     },
     {
@@ -48,11 +48,11 @@ export default function Layout({ children }) {
             className={`duration-500 fixed z-30 left-0 right-0 pb-5 pl-10 top-0 bottom-0 bg-white pt-[100px] ${
               menuVisible ? 'translate-x-0' : 'translate-x-[100%]'
             }
-            md:translate-x-0 md:bg-transparent md:pb-0 md:pl-0 md:left-auto md:right-auto md:top-auto md:static md:pt-0`}>
-            <ul className="text-3xl font-[500] text-primary md:flex md:items-center md:gap-x-12 md:text-white md:text-2xl ">
+            lg:translate-x-0 lg:bg-transparent lg:pb-0 lg:pl-0 lg:left-auto lg:right-auto lg:top-auto lg:static lg:pt-0`}>
+            <ul className="text-3xl font-[500] text-primary lg:flex lg:items-center lg:gap-x-12 lg:text-white lg:text-2xl ">
               {links.map((item) => {
                 return (
-                  <li key={item.id} className="mb-5 md:mb-0">
+                  <li key={item.id} className="mb-5 lg:mb-0">
                     <Link href={item.path} className={item.customClasses}>
                       {item.name}
                     </Link>
@@ -62,7 +62,10 @@ export default function Layout({ children }) {
             </ul>
           </nav>
 
-          <button className="relative z-30 md:hidden" onClick={() => setMenuVisible(!menuVisible)}>
+          <button
+            aria-label="menu"
+            className="relative z-30 lg:hidden"
+            onClick={() => setMenuVisible(!menuVisible)}>
             {menuVisible ? (
               <span className="block rotate-45 mt-1">
                 <span className="w-[30px] h-[4px] block bg-black"></span>
@@ -82,8 +85,8 @@ export default function Layout({ children }) {
       <main className="flex-grow">{children}</main>
 
       <footer className="bg-primary border-t-2">
-        <div className="container p-5 pt-7 pb-7 flex gap-x-10 text-white flex-col-reverse md:flex-row">
-          <span className="flex-grow mt-8 md:mt-0">
+        <div className="container p-5 pt-7 pb-7 flex sm:gap-10 gap-5 text-white flex-col-reverse lg:flex-row">
+          <span className="flex-grow mt-8 lg:mt-0">
             &copy; Ecopass.pl - Wszelkie prawa zastrzeżone
           </span>
           <Link href="https://sklep.ecopass.pl/regulamin-sklepu/">Regulamin</Link>
