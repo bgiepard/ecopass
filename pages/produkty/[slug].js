@@ -29,7 +29,8 @@ export default function ProductPage({ product }) {
     <Layout>
       <Head>
         <title>{`${product.name} - EcoPass.pl`}</title>
-        <meta name="description" content={product.desc_long} />
+        <meta name="description" content={product.desc} />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">

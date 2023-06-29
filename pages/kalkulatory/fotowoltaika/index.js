@@ -33,8 +33,9 @@ export default function PhotovoltaicsCalculator() {
         <title>Kalkulator doboru mocy fotowoltaiki - EcoPass.pl</title>
         <meta
           name="description"
-          content="Nasz kalkulator doboru mocy fotowoltaiki pomoże Ci określić odpowiednią moc instalacji fotowoltaicznej dla Twojego domu lub przedsiębiorstwa. Wprowadź informacje dotyczące swojego miejsca zamieszkania, roczne zużycie energii elektrycznej oraz dostępną powierzchnię na instalację paneli słonecznych."
+          content="Nasz kalkulator doboru mocy fotowoltaiki pomoże Ci określić odpowiednią moc instalacji fotowoltaicznej dla Twojego domu lub przedsiębiorstwa."
         />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">

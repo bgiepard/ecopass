@@ -55,8 +55,9 @@ export default function Products({ products }) {
         <title>Produkty - EcoPass.pl</title>
         <meta
           name="description"
-          content="Odkryj naszą różnorodną kolekcję wysokiej jakości produktów, dostępnych w naszym sklepie. Znajdziesz u nas szeroki wybór atrakcyjnych opcji, dopasowanych do Twoich potrzeb. Zapewniamy produkty najwyższej jakości, które spełnią Twoje oczekiwania. Przekonaj się, dlaczego jesteśmy Twoim idealnym miejscem na zakupy."
+          content="Odkryj naszą różnorodną kolekcję wysokiej jakości produktów, dostępnych w naszym sklepie."
         />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">

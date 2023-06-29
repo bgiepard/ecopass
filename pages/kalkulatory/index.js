@@ -37,10 +37,9 @@ export default function Calculator() {
         <meta
           name="description"
           content="Wykorzystaj nasze narzędzia, aby obliczyć zużycie farb, dobór mocy instalacji
-            fotowoltaicznej i optymalną moc pompy ciepła. Znajdź rozwiązania, które pozwolą Ci
-            oszczędzać energię i poprawić efektywność energetyczną Twojego budynku. Oszczędzaj,
-            chroniąc zarówno środowisko, jak i swój portfel."
+            fotowoltaicznej i optymalną moc pompy ciepła."
         />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">

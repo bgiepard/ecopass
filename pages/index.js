@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         <title>EcoPass.pl - Zmniejsz rachunki i zacznij biernie oszczędzać</title>
         <meta
           name="description"
-          content="Oszczędzanie, ekologia, zmniejszenie rachunków. Poradniki i artykuły w jednym miejscu. Kalkulatory do pomp ciepła, fotowoltaiki i farb termoizolacyjnych. Odkryj skuteczne sposoby na oszczędności i zielone życie."
+          content="Oszczędzanie, ekologia, zmniejszenie rachunków. Poradniki i artykuły w jednym miejscu."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />

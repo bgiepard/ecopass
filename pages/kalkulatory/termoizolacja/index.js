@@ -33,9 +33,9 @@ export default function ThermalInsulationCalculator() {
         <meta
           name="description"
           content="Nasz kalkulator zużycia farb termoizolacyjnych pomoże Ci obliczyć ilość farby potrzebnej
-          do pokrycia powierzchni Twojego budynku. Farby termoizolacyjne są doskonałym narzędziem
-          do poprawy izolacji termicznej i zmniejszenia strat energii."
+          do pokrycia powierzchni Twojego budynku."
         />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">

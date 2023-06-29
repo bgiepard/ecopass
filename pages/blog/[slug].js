@@ -33,7 +33,7 @@ const Articles = ({ article, products }) => {
       : article.tags[0];
 
   const fullTitle = `${article.title} ${article.title_second_line}`;
-  const fullDescription = `${article.description} ${article.tags.join(', ')}`;
+  const fullDescription = `${article.description}}`;
 
   return (
     <Layout>
@@ -52,6 +52,26 @@ const Articles = ({ article, products }) => {
         {article.tags && article.tags.length > 0 && (
           <meta property="article:tag" content={article.tags.join(', ')} />
         )}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@type': 'Article',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': article.slug
+            },
+            headline: fullTitle,
+            description: fullDescription,
+            image: [article.cover],
+            publisher: {
+              '@type': 'Organization',
+              name: 'EcoPass'
+            },
+            datePublished: article.date,
+            articleSection: article.tags.join(', '),
+            url: article.slug
+          })}
+        </script>
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">

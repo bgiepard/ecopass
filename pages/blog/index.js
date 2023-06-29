@@ -4,6 +4,7 @@ import Post from 'components/Post';
 import Head from 'next/head';
 import { getAllPosts } from 'services/posts';
 import categories from 'services/categories';
+import banner from 'public/banner.png';
 
 export const getStaticProps = () => {
   const posts = getAllPosts();
@@ -36,14 +37,49 @@ export default function Blog({ posts }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
+  const seoData = {
+    title: 'EcoPass.pl - artykuły',
+    description:
+      'Odkryj fascynujący świat alternatywnych źródeł energii i zrównoważonego rozwoju na EcoPass.pl.',
+    url: 'https://ecopass.pl/blog',
+    image: banner,
+    tags: ['oszczędzanie', 'artykuły', 'zrównoważony rozwój', 'dom pasywny']
+  };
+
   return (
     <>
       <Head>
         <title>EcoPass.pl - artykuły</title>
         <meta
           name="description"
-          content="Odkryj fascynujący świat alternatywnych źródeł energii i zrównoważonego rozwoju na EcoPass.pl. Przeczytaj nasze najnowsze artykuły, które dostarczą Ci cennych informacji i inspiracji, aby w pełni wykorzystać potencjał ekologicznych rozwiązań. Dołącz do naszej społeczności i zacznij budować przyszłość przyjazną dla środowiska już dziś!"
+          content="Odkryj fascynujący świat alternatywnych źródeł energii i zrównoważonego rozwoju na EcoPass.pl."
         />
+        <meta itemProp="name" content={seoData.title} />
+        <meta itemProp="description" content={seoData.description} />
+        <meta itemProp="image" content={seoData.image} />
+        <meta property="og:url" content={seoData.url} />
+        <meta property="og:type" content="BlogPosting" />
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.description} />
+        <meta property="og:image" content={seoData.image} />
+        <meta property="og:image:alt" content={seoData.title} />
+        <link rel="icon" href="/icon.png" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            itemListElement: posts.map((post, index) => ({
+              '@type': 'BlogPosting',
+              position: index + 1,
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': `${seoData.url}/${post.slug}`
+              },
+              headline: post.title,
+              image: post.cover
+            }))
+          })}
+        </script>
       </Head>
       <Layout>
         <div className="bg-primary border-t-2">

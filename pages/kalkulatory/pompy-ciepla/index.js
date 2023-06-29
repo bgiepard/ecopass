@@ -44,9 +44,9 @@ export default function HeatPumpsCalculator() {
         <meta
           name="description"
           content="Nasz kalkulator doboru pompy ciepła pomoże Ci określić odpowiednią moc pompy ciepła dla
-          Twojego budynku. Pompy ciepła są efektywnym rozwiązaniem do ogrzewania i chłodzenia,
-          wykorzystującym energię odnawialną."
+          Twojego budynku."
         />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">
         <div className="container m-auto">
