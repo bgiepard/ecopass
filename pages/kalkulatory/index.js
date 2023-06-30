@@ -61,12 +61,12 @@ export default function Calculator() {
             url: seoData.url,
             name: seoData.title,
             description: seoData.description,
-            image: seoData.image,
             mainEntity: data.map((item, index) => ({
               '@type': 'WebPageElement',
               position: index + 1,
               name: item.title,
-              url: `https://ecopass.pl/kalkulatory/${item.path}`
+              url: `https://ecopass.pl/kalkulatory/${item.path}`,
+              image: data.src
             }))
           })}
         </script>

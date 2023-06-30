@@ -4,14 +4,13 @@ import Image from 'next/image';
 import Layout from 'components/Layout';
 import Head from 'next/head';
 import calc from '../../../assets/Financial-Management.svg';
-import banner from 'public/banner.png';
 
 const seoData = {
   title: 'Kalkulator doboru pompy ciepła - EcoPass.pl',
   description:
     'Nasz kalkulator doboru pompy ciepła pomoże Ci określić odpowiednią moc pompy ciepła dla Twojego budynku.',
   url: 'https://ecopass.pl/kalkulatory/pompy-ciepla',
-  image: banner,
+  image: 'public/banner.png',
   tags: [
     'kalkulatory',
     'kalkulator doboru pompy ciepła',

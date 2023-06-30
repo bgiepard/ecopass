@@ -76,16 +76,13 @@ export default function Products({ products }) {
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'WebPage',
-            url: seoData.url,
-            name: seoData.title,
-            description: seoData.description,
-            image: seoData.image,
-            mainEntity: products.map((item, index) => ({
-              '@type': 'WebPageElement',
+            '@type': 'ItemList',
+            itemListElement: displayedProducts.map((product, index) => ({
+              '@type': 'Product',
               position: index + 1,
-              name: item.title,
-              url: `https://ecopass.pl/produkty/${item.slug}`
+              url: `https://ecopass.pl/produkty/${product.slug}`,
+              name: product.title,
+              image: product.cover
             }))
           })}
         </script>
