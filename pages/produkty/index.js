@@ -78,11 +78,14 @@ export default function Products({ products }) {
             '@context': 'https://schema.org',
             '@type': 'ItemList',
             itemListElement: displayedProducts.map((product, index) => ({
-              '@type': 'Product',
+              '@type': 'ListItem',
               position: index + 1,
-              url: `https://ecopass.pl/produkty/${product.slug}`,
-              name: product.title,
-              image: product.cover
+              item: {
+                '@type': 'Product',
+                url: `https://ecopass.pl/produkty/${product.slug}`,
+                name: product.title,
+                image: product.cover
+              }
             }))
           })}
         </script>
