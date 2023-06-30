@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Layout from 'components/Layout';
 import Head from 'next/head';
 import calc from '../../../assets/Financial-Management.svg';
-import banner from 'public/banner.png';
 
 const seoData = {
   title: 'Kalkulator doboru mocy fotowoltaiki - EcoPass.pl',
