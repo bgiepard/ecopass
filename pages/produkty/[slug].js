@@ -25,11 +25,39 @@ export const getStaticProps = async (req) => {
 };
 
 export default function ProductPage({ product }) {
+  const fullTitle = `${product.name} - EcoPass.pl`;
+
   return (
     <Layout>
       <Head>
-        <title>{`${product.name} - EcoPass.pl`}</title>
-        <meta name="description" content={product.desc} />
+        <title>{fullTitle}</title>
+        <meta name="description" content={product.description} />
+        <meta itemProp="name" content={fullTitle} />
+        <meta itemProp="description" content={product.description} />
+        <meta itemProp="image" content={product.src} />
+        <meta property="og:url" content={product.slug} />
+        <meta property="og:type" content="Product" />
+        <meta property="og:title" content={fullTitle} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:image" content={product.src} />
+        <meta property="og:image:alt" content={fullTitle} />
+        {product.tags && product.tags.length > 0 && (
+          <meta property="product:tag" content={product.tags.join(', ')} />
+        )}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: product.name,
+            description: product.description,
+            image: product.src,
+            category: product.category,
+            offers: {
+              '@type': 'Offer',
+              url: product.link
+            }
+          })}
+        </script>
         <link rel="icon" href="/icon.png" />
       </Head>
       <div className="bg-primary border-t-2">

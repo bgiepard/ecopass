@@ -5,6 +5,16 @@ import Post from 'components/Post';
 import categories from 'services/categories';
 import { useState } from 'react';
 import { getAllPosts } from 'services/posts';
+import banner from 'public/banner.png';
+
+const seoData = {
+  title: 'EcoPass.pl - Zmniejsz rachunki i zacznij biernie oszczędzać',
+  description:
+    'Oszczędzanie, ekologia, zmniejszenie rachunków. Poradniki, artykuły i kalkulatory w jednym miejscu.',
+  url: 'https://ecopass.pl',
+  image: banner,
+  tags: ['bierne oszczędzanie', 'ekologia', 'poradniki', 'dom energooszczędny']
+};
 
 export const getStaticProps = () => {
   const posts = getAllPosts();
@@ -22,12 +32,28 @@ export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>EcoPass.pl - Zmniejsz rachunki i zacznij biernie oszczędzać</title>
-        <meta
-          name="description"
-          content="Oszczędzanie, ekologia, zmniejszenie rachunków. Poradniki i artykuły w jednym miejscu."
-        />
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta itemProp="name" content={seoData.title} />
+        <meta itemProp="description" content={seoData.description} />
+        <meta itemProp="image" content={seoData.image} />
+        <meta property="og:url" content={seoData.url} />
+        <meta property="og:type" content="WebPage" />
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.description} />
+        <meta property="og:image" content={seoData.image} />
+        <meta property="og:image:alt" content={seoData.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            url: seoData.url,
+            name: seoData.title,
+            description: seoData.description,
+            image: seoData.image
+          })}
+        </script>
         <link rel="icon" href="/icon.png" />
       </Head>
 

@@ -14,6 +14,7 @@ export default function Post({ post }) {
           height={150}
           className="mb-8 object-cover w-full h-full opacity-80"
           alt={`${post.title} ${post.title_second_line}`}
+          priority
         />
       </div>
       <h2 className="text-[18px] font-bold mb-3 mt-5 pl-5 pr-5 block sm:h-[120px]">

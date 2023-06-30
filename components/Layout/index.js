@@ -41,7 +41,7 @@ export default function Layout({ children }) {
 
       <header className="pt-7 pb-7 bg-primary">
         <div className="container flex justify-between items-center bg-primary">
-          <Link href="/" className="text-5xl font-[700] text-white flex items-center">
+          <Link href="/" className="text-5xl font-[700] text-white flex items-center -ml-3">
             <Image src={Logo} alt="Ecopass logo" width={250} height={'auto'} />
           </Link>
           <nav

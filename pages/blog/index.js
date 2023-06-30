@@ -6,6 +6,15 @@ import { getAllPosts } from 'services/posts';
 import categories from 'services/categories';
 import banner from 'public/banner.png';
 
+const seoData = {
+  title: 'Artykuły - EcoPass.pl',
+  description:
+    'Odkryj fascynujący świat alternatywnych źródeł energii i zrównoważonego rozwoju na EcoPass.pl',
+  url: 'https://ecopass.pl/blog',
+  image: banner,
+  tags: ['oszczędzanie', 'artykuły', 'zrównoważony rozwój', 'dom pasywny']
+};
+
 export const getStaticProps = () => {
   const posts = getAllPosts();
 
@@ -37,23 +46,11 @@ export default function Blog({ posts }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
-  const seoData = {
-    title: 'EcoPass.pl - artykuły',
-    description:
-      'Odkryj fascynujący świat alternatywnych źródeł energii i zrównoważonego rozwoju na EcoPass.pl.',
-    url: 'https://ecopass.pl/blog',
-    image: banner,
-    tags: ['oszczędzanie', 'artykuły', 'zrównoważony rozwój', 'dom pasywny']
-  };
-
   return (
     <>
       <Head>
-        <title>EcoPass.pl - artykuły</title>
-        <meta
-          name="description"
-          content="Odkryj fascynujący świat alternatywnych źródeł energii i zrównoważonego rozwoju na EcoPass.pl."
-        />
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
         <meta itemProp="name" content={seoData.title} />
         <meta itemProp="description" content={seoData.description} />
         <meta itemProp="image" content={seoData.image} />
@@ -63,6 +60,7 @@ export default function Blog({ posts }) {
         <meta property="og:description" content={seoData.description} />
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
+        <link rel="canonical" href={seoData.url} />
         <link rel="icon" href="/icon.png" />
         <script type="application/ld+json">
           {JSON.stringify({

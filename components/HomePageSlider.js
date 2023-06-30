@@ -141,7 +141,7 @@ export default function HomePageSlider() {
                   </div>
                 </div>
                 <div className="w-full hidden md:w-1/2 md:flex justify-end">
-                  <Image src={item.image} width={700} alt={item.heading} />
+                  <Image src={item.image} width={700} alt={item.heading} height={'auto'} priority />
                 </div>
               </div>
             </div>
