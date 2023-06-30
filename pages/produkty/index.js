@@ -84,11 +84,18 @@ export default function Products({ products }) {
                 '@type': 'Product',
                 url: `https://ecopass.pl/produkty/${product.slug}`,
                 name: product.title,
-                image: product.cover
+                image: product.cover,
+                offers: {
+                  '@type': 'Offer',
+                  price: product.price,
+                  priceCurrency: 'PLN',
+                  availability: 'https://schema.org/InStock'
+                }
               }
             }))
           })}
         </script>
+
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>

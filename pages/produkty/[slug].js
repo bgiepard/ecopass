@@ -54,7 +54,9 @@ export default function ProductPage({ product }) {
             category: product.category,
             offers: {
               '@type': 'Offer',
-              url: product.link
+              url: product.link,
+              price: product.price,
+              priceCurrency: 'PLN'
             }
           })}
         </script>
