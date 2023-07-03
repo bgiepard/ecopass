@@ -6,7 +6,6 @@ import categories from 'services/categories';
 import { useState } from 'react';
 import { getAllPosts } from 'services/posts';
 import banner from 'public/banner.png';
-import Seo from 'services/seo';
 
 const seoData = {
   title: 'EcoPass.pl - Zmniejsz rachunki i zacznij biernie oszczędzać',
@@ -45,7 +44,36 @@ export default function Home({ posts }) {
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Seo />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            url: seoData.url,
+            name: seoData.title,
+            description: seoData.description,
+            image: seoData.image,
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Artykuły - EcoPass.pl',
+                item: `${seoData.url}/blog`
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Produkty - EcoPass.pl',
+                item: `${seoData.url}/produkty`
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Kalkulatory - EcoPass.pl',
+                item: `${seoData.url}/kalkulatory`
+              }
+            ]
+          })}
+        </script>
         <link rel="icon" href="/icon.png" />
       </Head>
 
