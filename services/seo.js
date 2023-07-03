@@ -2,6 +2,10 @@ import React from 'react';
 import { getAllPosts } from './posts';
 import banner from 'public/banner.png';
 import { getList } from 'lib/markdownParser';
+import photovol from '../../assets/Light-bulb.svg';
+import heat from '../../assets/Air-conditioner-repair.svg';
+import termo from '../../assets/Home-Repairing.svg';
+import banner from 'public/banner.png';
 
 export const getStaticProps = () => {
   const posts = getAllPosts();
