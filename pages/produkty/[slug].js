@@ -54,9 +54,48 @@ export default function ProductPage({ product }) {
             category: product.category,
             offers: {
               '@type': 'Offer',
-              url: product.link,
               price: product.price,
-              priceCurrency: 'PLN'
+              priceCurrency: 'PLN',
+              availability: 'https://schema.org/InStoreOnly',
+              itemCondition: 'https://schema.org/NewCondition',
+              brand: {
+                '@type': 'Brand',
+                name: product.brand
+              },
+              hasMerchantReturnPolicy: {
+                '@type': 'MerchantReturnPolicy',
+                applicableCountry: 'PL',
+                returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+                merchantReturnDays: 30,
+                returnMethod: 'https://schema.org/ReturnByMail'
+              },
+              shippingDetails: {
+                '@type': 'OfferShippingDetails',
+                shippingRate: {
+                  '@type': 'MonetaryAmount',
+                  value: 24.99,
+                  currency: 'PLN'
+                },
+                shippingDestination: {
+                  '@type': 'DefinedRegion',
+                  addressCountry: 'PL'
+                },
+                deliveryTime: {
+                  '@type': 'ShippingDeliveryTime',
+                  handlingTime: {
+                    '@type': 'QuantitativeValue',
+                    minValue: 0,
+                    maxValue: 3,
+                    unitCode: 'DAY'
+                  },
+                  transitTime: {
+                    '@type': 'QuantitativeValue',
+                    minValue: 1,
+                    maxValue: 5,
+                    unitCode: 'DAY'
+                  }
+                }
+              }
             }
           })}
         </script>
