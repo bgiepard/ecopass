@@ -74,7 +74,14 @@ export default function Blog({ posts }) {
                 '@id': `${seoData.url}/${post.slug}`
               },
               headline: post.title,
-              image: post.cover
+              image: post.cover,
+              author: {
+                '@type': 'Organization',
+                name: 'EcoPass'
+              },
+              datePublished: post.date,
+              articleSection: post.tags.join(', '),
+              url: post.slug
             }))
           })}
         </script>

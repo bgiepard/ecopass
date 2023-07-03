@@ -14,19 +14,22 @@ const data = [
     id: 1,
     src: photovol,
     title: 'Kalkulator doboru mocy fotowoltaiki',
-    path: 'fotowoltaika'
+    path: 'fotowoltaika',
+    desc: 'Nasz kalkulator doboru mocy fotowoltaiki pomoże Ci określić odpowiednią moc instalacji fotowoltaicznej dla Twojego domu lub przedsiębiorstwa.'
   },
   {
     id: 2,
     src: heat,
     title: 'Kalkulator doboru pompy ciepła',
-    path: 'pompy-ciepla'
+    path: 'pompy-ciepla',
+    desc: 'Nasz kalkulator doboru pompy ciepła pomoże Ci określić odpowiednią moc pompy ciepła dla Twojego budynku.'
   },
   {
     id: 3,
     src: termo,
     title: 'Kalkulator zużycia farb termoizolacyjnych',
-    path: 'termoizolacja'
+    path: 'termoizolacja',
+    desc: 'Nasz kalkulator zużycia farb termoizolacyjnych pomoże Ci obliczyć ilość farby potrzebnej do pokrycia powierzchni Twojego budynku.'
   }
 ];
 
@@ -66,7 +69,24 @@ export default function Calculator() {
               position: index + 1,
               name: item.title,
               url: `https://ecopass.pl/kalkulatory/${item.path}`,
-              image: data.src
+              image: item.src,
+              mainContentOfPage: {
+                '@type': 'WebPageElement',
+                isAccessibleForFree: true,
+                speakable: {
+                  '@type': 'SpeakableSpecification',
+                  xpath: [
+                    'https://ecopass.pl/kalkulatory',
+                    `https://ecopass.pl/kalkulatory/${item.path}`
+                  ]
+                },
+                specialty: {
+                  '@type': 'Calculator',
+                  name: item.title,
+                  description: item.desc,
+                  url: `https://ecopass.pl/kalkulatory/${item.path}`
+                }
+              }
             }))
           })}
         </script>
