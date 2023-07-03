@@ -68,7 +68,7 @@ export default function HeatPumpsCalculator() {
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'WebPage',
+            '@type': 'WebPageElement',
             url: seoData.url,
             name: seoData.title,
             description: seoData.description,
