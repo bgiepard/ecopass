@@ -95,11 +95,11 @@ const Articles = ({ article, products }) => {
             },
             author: {
               '@type': 'Organization',
-              name: 'EcoPass'
+              name: 'EcoPass',
+              url: 'https://www.facebook.com/ecopass1'
             },
-            datePublished: article.date,
             articleSection: article.tags.join(', '),
-            url: article.slug
+            url: `https://ecopass.pl/blog/${article.slug}`
           })}
         </script>
         <link rel="icon" href="/icon.png" />

@@ -77,7 +77,7 @@ export default function Products({ products }) {
           {JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'ItemList',
-            itemListElement: displayedProducts.map((product, index) => ({
+            itemListElement: products.map((product, index) => ({
               '@type': 'ListItem',
               position: index + 1,
               item: {
@@ -86,9 +86,13 @@ export default function Products({ products }) {
                 name: product.name,
                 description: product.description,
                 image: product.src,
+                brand: {
+                  '@type': 'Brand',
+                  name: product.brand
+                },
                 offers: {
                   '@type': 'Offer',
-                  price: product.price,
+                  price: product.price_min,
                   priceCurrency: 'PLN',
                   availability: 'https://schema.org/InStoreOnly',
                   itemCondition: 'https://schema.org/NewCondition',
@@ -127,10 +131,6 @@ export default function Products({ products }) {
                     }
                   }
                 }
-              },
-              brand: {
-                '@type': 'Brand',
-                name: product.brand
               }
             }))
           })}

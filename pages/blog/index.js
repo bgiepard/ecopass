@@ -73,15 +73,16 @@ export default function Blog({ posts }) {
                 '@type': 'WebPage',
                 '@id': `${seoData.url}/${post.slug}`
               },
-              headline: post.title,
+              headline: `${post.title} ${post.title_second_line}`,
               image: post.cover,
+              description: post.description,
               author: {
                 '@type': 'Organization',
-                name: 'EcoPass'
+                name: 'EcoPass',
+                url: 'https://www.facebook.com/ecopass1'
               },
-              datePublished: post.date,
               articleSection: post.tags.join(', '),
-              url: post.slug
+              url: `${seoData.url}/${post.slug}`
             }))
           })}
         </script>

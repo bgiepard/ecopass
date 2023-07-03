@@ -54,7 +54,7 @@ export default function ProductPage({ product }) {
             category: product.category,
             offers: {
               '@type': 'Offer',
-              price: product.price,
+              price: product.price_min,
               priceCurrency: 'PLN',
               availability: 'https://schema.org/InStoreOnly',
               itemCondition: 'https://schema.org/NewCondition',
