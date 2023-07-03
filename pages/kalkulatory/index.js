@@ -35,7 +35,7 @@ const seoData = {
   description:
     'Wykorzystaj nasze narzędzia, aby obliczyć zużycie farb, dobór mocy instalacji fotowoltaicznej i optymalną moc pompy ciepła.',
   url: 'https://ecopass.pl/kalkulatory',
-  image: banner,
+  image: '/banner.png',
   tags: ['kalkulatory', 'oszczędzanie', 'alternatywne źródła energii', 'dom pasywny']
 };
 
@@ -49,7 +49,7 @@ export default function Calculator() {
         <meta itemProp="description" content={seoData.description} />
         <meta itemProp="image" content={seoData.image} />
         <meta property="og:url" content={seoData.url} />
-        <meta property="og:type" content="WebPage" />
+        <meta property="og:type" content="WebPageElement" />
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:image" content={seoData.image} />
@@ -57,13 +57,13 @@ export default function Calculator() {
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'WebPage',
+            '@type': 'WebPageElement',
             url: seoData.url,
             name: seoData.title,
             description: seoData.description,
             image: seoData.image,
             mainEntity: data.map((item, index) => ({
-              '@type': 'WebPage',
+              '@type': 'WebPageElement',
               position: index + 1,
               name: item.title,
               description: item.desc,
