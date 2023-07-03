@@ -10,7 +10,7 @@ const seoData = {
   description:
     'Nasz kalkulator zużycia farb termoizolacyjnych pomoże Ci obliczyć ilość farby potrzebnej do pokrycia powierzchni Twojego budynku.',
   url: 'https://ecopass.pl/kalkulatory/termoizolacja',
-  image: 'public/banner.png',
+  image: '/banner.png',
   tags: [
     'kalkulatory',
     'kalkulator zużycia farb termoizolacyjnych',

@@ -63,7 +63,7 @@ export default function Calculator() {
             description: seoData.description,
             image: seoData.image,
             mainEntity: data.map((item, index) => ({
-              '@type': 'WebPageElement',
+              '@type': 'WebPage',
               position: index + 1,
               name: item.title,
               description: item.desc,
