@@ -1,12 +1,24 @@
 import { GoogleAnalytics } from 'nextjs-google-analytics';
-
 import Link from 'next/link';
 import Image from 'next/image';
-
 import Logo from 'assets/logo.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 export default function Layout({ children }) {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [showCookieInfo, setShowCookieInfo] = useState(false);
+
+  useEffect(() => {
+    const hasAcceptedCookies = localStorage.getItem('cookiesAccepted');
+    if (!hasAcceptedCookies) {
+      setShowCookieInfo(true);
+    }
+  }, []);
+
+  const acceptCookies = () => {
+    localStorage.setItem('cookiesAccepted', true);
+    setShowCookieInfo(false);
+  };
 
   const links = [
     {
@@ -83,6 +95,16 @@ export default function Layout({ children }) {
       </header>
 
       <main className="flex-grow">{children}</main>
+
+      {showCookieInfo && (
+        <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center">
+          Ta strona korzysta z plików cookies. Kliknij{' '}
+          <button className="underline" onClick={acceptCookies}>
+            tutaj
+          </button>
+          , aby zaakceptować.
+        </div>
+      )}
 
       <footer className="bg-primary border-t-2">
         <div className="container p-5 pt-7 pb-7 flex sm:gap-10 gap-5 text-white flex-col-reverse lg:flex-row">
