@@ -61,17 +61,7 @@ export default function ThermalInsulationCalculator() {
             url: seoData.url,
             name: seoData.title,
             description: seoData.description,
-            image: seoData.image,
-            mainContentOfPage: {
-              '@type': 'WebPageElement',
-              isAccessibleForFree: true,
-              specialty: {
-                '@type': 'Calculator',
-                name: seoData.title,
-                description: seoData.description,
-                url: seoData.url
-              }
-            }
+            image: seoData.image
           })}
         </script>
         <link rel="icon" href="/icon.png" />

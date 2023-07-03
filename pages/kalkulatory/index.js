@@ -64,29 +64,14 @@ export default function Calculator() {
             url: seoData.url,
             name: seoData.title,
             description: seoData.description,
+            image: seoData.image,
             mainEntity: data.map((item, index) => ({
-              '@type': 'WebPageElement',
+              '@type': 'WebPage',
               position: index + 1,
               name: item.title,
+              description: item.desc,
               url: `https://ecopass.pl/kalkulatory/${item.path}`,
-              image: item.src,
-              mainContentOfPage: {
-                '@type': 'WebPageElement',
-                isAccessibleForFree: true,
-                speakable: {
-                  '@type': 'SpeakableSpecification',
-                  xpath: [
-                    'https://ecopass.pl/kalkulatory',
-                    `https://ecopass.pl/kalkulatory/${item.path}`
-                  ]
-                },
-                specialty: {
-                  '@type': 'Calculator',
-                  name: item.title,
-                  description: item.desc,
-                  url: `https://ecopass.pl/kalkulatory/${item.path}`
-                }
-              }
+              image: item.src
             }))
           })}
         </script>
