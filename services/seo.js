@@ -2,10 +2,9 @@ import React from 'react';
 import { getAllPosts } from './posts';
 import banner from 'public/banner.png';
 import { getList } from 'lib/markdownParser';
-import photovol from '../../assets/Light-bulb.svg';
-import heat from '../../assets/Air-conditioner-repair.svg';
-import termo from '../../assets/Home-Repairing.svg';
-import banner from 'public/banner.png';
+import photovol from '../assets/Light-bulb.svg';
+import heat from '../assets/Air-conditioner-repair.svg';
+import termo from '../assets/Home-Repairing.svg';
 
 export const getStaticProps = () => {
   const posts = getAllPosts();
@@ -16,7 +15,7 @@ export const getStaticProps = () => {
   };
 };
 
-export default function Seo({ posts, products }) {
+const Seo = ({ posts, products }) => {
   const seoDataMain = {
     title: 'EcoPass.pl - Zmniejsz rachunki i zacznij biernie oszczędzać',
     description:
@@ -219,4 +218,6 @@ export default function Seo({ posts, products }) {
       </script>
     </div>
   );
-}
+};
+
+export default Seo;
