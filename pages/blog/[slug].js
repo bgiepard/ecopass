@@ -106,7 +106,7 @@ const Articles = ({ article, products }) => {
       </Head>
       <Layout>
         <div
-          className="border-t-2 w-full bg-cover bg-no-repeat bg-center"
+          className=" bg-primary border-t-2 w-full bg-cover bg-no-repeat bg-center"
           style={{
             backgroundImage: `url(/backgrounds/${modifiedCategory}.png)`
           }}>

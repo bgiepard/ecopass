@@ -82,14 +82,54 @@ export default function Products({ products }) {
               position: index + 1,
               item: {
                 '@type': 'Product',
-                url: `https://ecopass.pl/produkty/${product.slug}`,
-                name: product.title,
+                url: `https://ecopass.pl/produkty/${product.link}`,
+                name: product.name,
+                description: product.description,
                 image: product.cover,
                 offers: {
                   '@type': 'Offer',
                   price: product.price,
                   priceCurrency: 'PLN',
-                  availability: 'https://schema.org/InStock'
+                  availability: 'https://schema.org/InStoreOnly',
+                  itemCondition: 'https://schema.org/NewCondition'
+                },
+                hasMerchantReturnPolicy: {
+                  '@type': 'MerchantReturnPolicy',
+                  applicableCountry: 'PL',
+                  returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+                  merchantReturnDays: 30,
+                  returnMethod: 'https://schema.org/ReturnByMail'
+                },
+                brand: {
+                  '@type': 'Brand',
+                  name: 'ClimateCoating'
+                },
+                shippingDetails: {
+                  '@type': 'OfferShippingDetails',
+                  shippingRate: {
+                    '@type': 'MonetaryAmount',
+                    value: 24.99,
+                    currency: 'PLN'
+                  },
+                  shippingDestination: {
+                    '@type': 'DefinedRegion',
+                    addressCountry: 'PL'
+                  },
+                  deliveryTime: {
+                    '@type': 'ShippingDeliveryTime',
+                    handlingTime: {
+                      '@type': 'QuantitativeValue',
+                      minValue: 0,
+                      maxValue: 3,
+                      unitCode: 'DAY'
+                    },
+                    transitTime: {
+                      '@type': 'QuantitativeValue',
+                      minValue: 1,
+                      maxValue: 5,
+                      unitCode: 'DAY'
+                    }
+                  }
                 }
               }
             }))
