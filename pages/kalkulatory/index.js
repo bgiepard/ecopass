@@ -4,7 +4,6 @@ import Image from 'next/image';
 import React from 'react';
 import calc from '../../assets/Financial-Management.svg';
 import Link from 'next/link';
-import banner from 'public/banner.png';
 
 const data = [
   {
