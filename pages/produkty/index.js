@@ -85,52 +85,52 @@ export default function Products({ products }) {
                 url: `https://ecopass.pl/produkty/${product.link}`,
                 name: product.name,
                 description: product.description,
-                image: product.cover,
+                image: product.src,
                 offers: {
                   '@type': 'Offer',
                   price: product.price,
                   priceCurrency: 'PLN',
                   availability: 'https://schema.org/InStoreOnly',
-                  itemCondition: 'https://schema.org/NewCondition'
-                },
-                hasMerchantReturnPolicy: {
-                  '@type': 'MerchantReturnPolicy',
-                  applicableCountry: 'PL',
-                  returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-                  merchantReturnDays: 30,
-                  returnMethod: 'https://schema.org/ReturnByMail'
-                },
-                brand: {
-                  '@type': 'Brand',
-                  name: 'ClimateCoating'
-                },
-                shippingDetails: {
-                  '@type': 'OfferShippingDetails',
-                  shippingRate: {
-                    '@type': 'MonetaryAmount',
-                    value: 24.99,
-                    currency: 'PLN'
+                  itemCondition: 'https://schema.org/NewCondition',
+                  hasMerchantReturnPolicy: {
+                    '@type': 'MerchantReturnPolicy',
+                    applicableCountry: 'PL',
+                    returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+                    merchantReturnDays: 30,
+                    returnMethod: 'https://schema.org/ReturnByMail'
                   },
-                  shippingDestination: {
-                    '@type': 'DefinedRegion',
-                    addressCountry: 'PL'
-                  },
-                  deliveryTime: {
-                    '@type': 'ShippingDeliveryTime',
-                    handlingTime: {
-                      '@type': 'QuantitativeValue',
-                      minValue: 0,
-                      maxValue: 3,
-                      unitCode: 'DAY'
+                  shippingDetails: {
+                    '@type': 'OfferShippingDetails',
+                    shippingRate: {
+                      '@type': 'MonetaryAmount',
+                      value: 24.99,
+                      currency: 'PLN'
                     },
-                    transitTime: {
-                      '@type': 'QuantitativeValue',
-                      minValue: 1,
-                      maxValue: 5,
-                      unitCode: 'DAY'
+                    shippingDestination: {
+                      '@type': 'DefinedRegion',
+                      addressCountry: 'PL'
+                    },
+                    deliveryTime: {
+                      '@type': 'ShippingDeliveryTime',
+                      handlingTime: {
+                        '@type': 'QuantitativeValue',
+                        minValue: 0,
+                        maxValue: 3,
+                        unitCode: 'DAY'
+                      },
+                      transitTime: {
+                        '@type': 'QuantitativeValue',
+                        minValue: 1,
+                        maxValue: 5,
+                        unitCode: 'DAY'
+                      }
                     }
                   }
                 }
+              },
+              brand: {
+                '@type': 'Brand',
+                name: product.brand
               }
             }))
           })}

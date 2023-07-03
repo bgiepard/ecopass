@@ -8,6 +8,7 @@ description: 'Gotowa do użycia powłoka elewacyjna, chroni przed działaniem cz
 desc_long: 'Gotowa do użycia powłoka elewacyjna chroni przed działaniem czynników atmosferycznych, porastaniem algami, mchem i grzybami oraz poprawia całoroczny bilans energetyczny budynku. ThermoProtect to farba fasadowa i wysokiej jakości dyspersja, która utrzymuje fasadę suchą, reguluje wilgotność i temperaturę oraz jest wyjątkowo wytrzymała i trwała.'
 tags: ['farby termoizolacyjne', 'termoizolacja', 'ThermoProtect', 'ClimateCoating']
 price: 1293.44
+brand: 'ClimateCoating'
 ---
 
 ## Opis

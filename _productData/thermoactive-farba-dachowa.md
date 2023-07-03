@@ -8,6 +8,7 @@ description: 'Wydłuża żywotność konstrukcji dachu i obniża temperaturę we
 desc_long: 'ThermoActive to klimatyczna powłoka dachowa. To sprawia, że w gorącym słońcu pomieszczenia są chłodne. ThermoActive wydłuża żywotność konstrukcji dachu i obniża temperaturę wewnątrz budynku. Oszczędza to środki na konserwację dachu i zmniejsza zużycie energii przez systemy klimatyzacyjne.'
 tags: ['farby termoizolacyjne', 'termoizolacja', 'ThermoActive', 'ClimateCoating']
 price: 1293.44
+brand: 'ClimateCoating'
 ---
 
 ## Opis
