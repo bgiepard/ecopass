@@ -22,6 +22,8 @@ ThermoPlus to farba innowacyjna, która nie tylko oferuje szeroką gamę koloró
 
 ThermoPlus jest w stanie kontrolować wilgotność powietrza w pomieszczeniu, absorbując nadmiar wilgoci w lecie i oddając ją do powietrza, gdy jest zbyt suche. Dzięki temu powłoka ThermoPlus utrzymuje wilgotność powietrza w idealnym zakresie, w okolicach 55%. Działanie to przyczynia się do zapewnienia optymalnego komfortu cieplnego w pomieszczeniach.
 
+![równomierny rozkład ciepła w pomieszczeniach](/covers/difference.png)
+
 ### Dłuższe okresy między remontami
 
 ThermoPlus działa również jako środek odstraszający brud i nikotynę, co ogranicza osadzanie się kurzu i nikotyny na powierzchniach ścian pokrytych farbą. Farba jest antyelektrostatyczna, co oznacza, że cząsteczki brudu nie tworzą trwałych wiązań chemicznych z powierzchnią, ułatwiając tym samym jej czyszczenie. Dodatkowo, wysokiej jakości surowce i pigmenty zapewniają doskonałą odporność na światło, zapobiegając blaknięciu, żółknięciu i kredowaniu. Dzięki technologii membran refleksyjnych, ThermoPlus przedłuża okresy między koniecznością przeprowadzenia remontu, przewyższając tradycyjne farby ścienne.
