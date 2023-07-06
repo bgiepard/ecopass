@@ -23,6 +23,11 @@ const categories = [
     id: 5,
     name: 'Termoizolacja',
     value: 'termoizolacja'
+  },
+  {
+    id: 6,
+    name: 'Rekuperatory',
+    value: 'rekuperatory'
   }
 ];
 

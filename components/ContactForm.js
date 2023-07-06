@@ -51,6 +51,7 @@ export default function ContactForm({ category }) {
     fotowoltaika: 'Chcesz zapytać o fotowoltaikę?',
     'pompy-ciepla': 'Masz pytania odnośnie pomp ciepła?',
     termoizolacja: 'Masz pytania na temat termoizolacji?',
+    rekuperatory: 'Chcesz się dowiedzieć więcej o rekuperatorach?',
     default: 'Masz pytania? Potrzebujesz pomocy?'
   };
 
