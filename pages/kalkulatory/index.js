@@ -82,7 +82,7 @@ export default function Calculator() {
           </div>
         </div>
         <div className="container p-[50px] flex gap-[50px] sm:flex-row flex-col justify-center items-center">
-          <Image src={calc} alt="kalkulatory" width={400} height={'auto'} />
+          <Image src={calc} alt="kalkulatory" width={400} height={100} />
           <div className="sm:w-1/2 w-[90vw]">
             <p>
               Wykorzystaj nasze narzędzia, aby obliczyć zużycie farb, dobór mocy instalacji
@@ -99,7 +99,7 @@ export default function Calculator() {
                 href={`/kalkulatory/${d.path}`}
                 className="bg-white border-2 border-white shadow-md hover:shadow-lg rounded-lg p-5 sm:w-[350px] w-[90vw] h-[270px] flex flex-col justify-center items-center gap-5"
                 key={d.id}>
-                <Image src={d.src} width={200} height={'auto'} alt={d.title} />
+                <Image src={d.src} width={200} height={100} alt={d.title} />
                 <h2 className="text-md font-bold text-center">{d.title}</h2>
               </Link>
             );
