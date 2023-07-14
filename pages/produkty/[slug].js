@@ -110,24 +110,36 @@ export default function ProductPage({ product }) {
       </div>
       <div className="container">
         <div className=" flex justify-evenly lg:flex-row flex-col mt-10">
-          <Image src={product.src} width={400} height={400} alt={product.name} />
+          <Image src={product.src} width={400} height={200} alt={product.name} />
           <div className="mt-[50px] lg:ml-10 lg:p-0 p-3 flex flex-col gap-5 max-w-[500px]">
             <p>{product.desc_long}</p>
             <p className="text-primary text-sm">{product.category}</p>
-            <div className="flex gap-2">
-              {icons.map((icon) => {
-                return (
-                  <div key={icon.id}>
-                    <Image src={icon.src} alt={icon.desc} width={40} height={40} />
-                  </div>
-                );
-              })}
-            </div>
-            <Link href={product.link}>
-              <button className="bg-primary lg:mr-0 mr-3 rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
-                Zobacz w sklepie
-              </button>
-            </Link>
+            {product.category !== 'Rekuperatory' ? (
+              <>
+                {' '}
+                <div className="flex gap-2">
+                  {icons.map((icon) => {
+                    return (
+                      <div key={icon.id}>
+                        <Image src={icon.src} alt={icon.desc} width={40} height={40} />
+                      </div>
+                    );
+                  })}
+                </div>
+                <Link href={product.link}>
+                  <button className="bg-primary lg:mr-0 mr-3 rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
+                    Zobacz w sklepie
+                  </button>
+                </Link>
+              </>
+            ) : (
+              <div className="flex flex-col bg-primary rounded-full text-white w-1/2 items-center justify-center py-3 self-end">
+                <span className="font-bold text-xl">Cena: 9890.00zł</span>
+                <p>dostawa: 199zł</p>
+                <p>kontakt@ecopass.pl</p>
+                <p>tel: +48 721 704 787</p>
+              </div>
+            )}
           </div>
         </div>
         <div
