@@ -2,13 +2,14 @@
 name: 'Rekuperator iZZi 402 ERV'
 category: 'Rekuperatory'
 categoryLink: ''
-src: '/paints/iZZi402.png'
+src: '/izzi402/iZZi402.png'
 link: '/produkty/rekuperator-izzi-402-erv'
 description: 'Rekuperator modułowy wyposażony w entalpiczny wymiennik ciepła.'
 desc_long: 'iZZi 402 ERV to innowacyjny, kompaktowy rekuperator o modułowej konstrukcji, który charakteryzuje się zaawansowanym entalpicznym wymiennikiem ciepła wykonanym z membrany polimerowej. Dzięki tej technologii, urządzenie nie tylko odzyskuje ciepło, ale także wilgoć. Niezwykła obudowa, pozbawiona potrzeby odprowadzania skroplin, umożliwia łatwy montaż centrali, nawet w pojedynkę. Już w standardzie iZZi 402 ERV posiada energooszczędne wentylatory EC, rozbudowaną automatykę oraz pełne przełączanie na bypass o wartości 100%. W zestawie znajduje się również dotykowy panel sterowania, zapewniający wygodną obsługę urządzenia.'
 tags: ['rekuperator', 'odzysk ciepła', 'iZZi 402 ERV', 'reQnet']
 price_min: 9890.00
 brand: 'reQnet'
+shipping: 199
 ---
 
 ## iZZi 402 ERV
@@ -21,7 +22,7 @@ Ten innowacyjny rekuperator zapewnia nie tylko efektywną wentylację, ale równ
 
 Dodatkowym atutem iZZi 402 ERV jest jego wysoka wydajność, która gwarantuje skuteczne odzyskiwanie ciepła i wilgoci z odprowadzanego powietrza. Dzięki temu, rekuperator ten pozwala na utrzymanie optymalnej jakości powietrza w pomieszczeniach, co przekłada się na zdrowie i komfort użytkowników.
 
-![przekrój](/paints/wymienniki402przekrój.png)
+![przekrój](/izzi402/wymienniki402przekrój.png)
 
 ## MODUŁOWA KONSTRUKCJA
 
@@ -31,15 +32,15 @@ Dzięki modułowej konstrukcji rekuperatora, montaż tego urządzenia na ściani
 
 Dzięki zastosowaniu elastycznej piankowej izolacji oraz wysokiej jakości wentylatorów na prąd stały, centrala rekuperacyjna iZZi 402 ERV działa niezwykle cicho. Dzięki temu, można ją bez obaw zamontować nawet w części mieszkalnej.
 
-![schemat działania iZZi 402](/paints/schemat.jpg)
+![schemat działania iZZi 402](/rekuperatory/schemat.jpg)
 
 ### WERSJA LEWA
 
-![wersja lewa](/paints/werlewa.jpg)
+![wersja lewa](/izzi402/werlewa.jpg)
 
 ### WERSJA PRAWA
 
-![wersja prawa](/paints/werprawa.jpg)
+![wersja prawa](/izzi402/werprawa.jpg)
 
 ## WYMIENNIK ENTALPICZNY
 
@@ -51,7 +52,7 @@ W standardowym wymienniku entalpicznym ERV zastosowano zaawansowany mechanizm od
 
 Ważnym aspektem tego rozwiązania jest fakt, że cząsteczki wilgoci przenoszą również tzw. energię utajoną. Dzięki temu, mimo nieco niższej sprawności temperaturowej w porównaniu do standardowych wymienników przeciwprądowych HRV, całkowita efektywność odzysku energii w przypadku wymiennika entalpicznego jest wyższa. Oznacza to, że rekuperator ERV zapewnia znaczące oszczędności energetyczne i skutecznie utrzymuje komfortowe warunki wewnątrz budynku.
 
-![wymiary](/paints/wymiary.jpg)
+![wymiary](/izzi402/wymiary.jpg)
 
 ## NAJWAŻNIEJSZE CECHY PRODUKTU
 
@@ -71,7 +72,7 @@ Ważnym aspektem tego rozwiązania jest fakt, że cząsteczki wilgoci przenoszą
 - Kompaktowa obudowa wykonana ze stali nierdzewnej.
 - Wygodna konsola montażowa umożliwiająca sprawny montaż, nawet w małych przestrzeniach.
 
-![przepływ](/paints/przepływ.jpg)
+![przepływ](/izzi402/przepływ.jpg)
 
 ## CECHY PANELU STEROWANIA CENTRALI iZZi 402 ERV
 
@@ -92,7 +93,7 @@ Ważnym aspektem tego rozwiązania jest fakt, że cząsteczki wilgoci przenoszą
 - Menu dostępne w języku polskim.
 - Dodatkowe menu dostępne w językach: angielskim, niemieckim, holenderskim, rosyjskim, węgierskim, słowackim i francuskim.
 
-![panel](/paints/panel.jpg)
+![panel](/panel/panel.jpg)
 
 | Specyfikacja                                                          | Wartość                                                                       |
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -150,4 +151,4 @@ Ważnym aspektem tego rozwiązania jest fakt, że cząsteczki wilgoci przenoszą
 
 \*\*\*\* wg EN779
 
-**\*** wg ISO 16890
+\*\*\*\*\* wg ISO 16890

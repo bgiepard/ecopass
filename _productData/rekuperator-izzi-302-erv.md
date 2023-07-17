@@ -2,20 +2,21 @@
 name: 'Rekuperator iZZi 302 ERV'
 category: 'Rekuperatory'
 categoryLink: ''
-src: '/paints/izzi302.png'
+src: '/izzi302/izzi302.png'
 link: '/produkty/rekuperator-izzi-302-erv'
 description: 'Rekuperator modułowy wyposażony w entalpiczny wymiennik ciepła.'
 desc_long: 'iZZi 302 ERV to następca popularnego rekuperatora iZZi 300 ERV. Podobnie jak jego poprzednik, posiada jedną z najbardziej innowacyjnych technologii wymiennika ciepła na świecie - wymiennik entalpiczny firmy Core, który jest wykonany z zaawansowanej membrany polimerowej. Dzięki temu rekuperator może odzyskiwać wilgoć wraz z energią cieplną. Brak odpływu skroplin oraz łatwy, szybki i uniwersalny montaż w różnych pozycjach, dzięki sprytnej konsoli montażowej, umożliwiają samodzielne zainstalowanie systemu. iZZi 302 ERV jest wyposażony w efektywne wentylatory EC, automatyczny izolowany bypass 100% oraz intuicyjny panel sterujący dotykowy. Zalecamy także montaż dodatkowych modułów, które są dostępne w specjalnych zestawach.'
 tags: ['rekuperator', 'odzysk ciepła', 'iZZi 302 ERV', 'reQnet']
 price_min: 8590.00
 brand: 'reQnet'
+shipping: 199
 ---
 
 ## iZZi 302 ERV
 
 iZZi 302 ERV to niewielki, kompaktowy system wentylacji, który można zamontować w różnych pozycjach - na suficie, ścianie lub podłodze. System posiada entalpowy wymiennik ciepła o nazwie CORE ERV, który wykorzystuje nowoczesną membranę polimerową, umożliwiającą odzysk zarówno ciepła, jak i wilgoci. Dzięki temu nie ma potrzeby odprowadzania skroplin. Dodatkowo, płaski design i intuicyjne sterowanie panelem dotykowym umożliwiają instalację systemu wentylacji w miejscach, gdzie wcześniej było to niemożliwe. Rekuperator iZZi 302 ERV doskonale nadaje się do montażu w już wykończonych i zamieszkałych mieszkanach oraz domach. Dzięki cichemu działaniu urządzenia, m.in. dzięki izolacji z pianki polietylenowej oraz nowoczesnym silnikom prądu stałego EBM-papst, można go umieścić w przestrzeni mieszkalnej, na przykład nad podwieszanym sufitem. Rekuperator jest standardowo wyposażony w filtry plisowane klasy M5 wysokiej jakości, a całość jest zamknięta w estetyczną obudowę ze stali nierdzewnej.
 
-![przekrój](/paints/wymiennik302przekrój.png)
+![przekrój](/izzi302/wymiennik302przekrój.png)
 
 ## NAJWAŻNIEJSZE CECHY
 
@@ -31,7 +32,7 @@ iZZi 302 ERV to niewielki, kompaktowy system wentylacji, który można zamontowa
 - Izolacja z pianki polietylenowej o doskonałych właściwościach akustycznych sprawia, że praca rekuperatora jest cicha i nieinwazyjna dla domowego otoczenia.
 - W zestawie znajduje się wygodna konsola montażowa, ułatwiająca proces instalacji iZZi 302 ERV.
 
-![schemat działania iZZi 302](/paints/schemat.jpg)
+![schemat działania iZZi 302](/rekuperatory/schemat.jpg)
 
 ## DLACZEGO WARTO WYBRAĆ WYMIENNIK ENTALPICZNY?
 
@@ -63,7 +64,7 @@ Wymiennik entalpowy z membraną polimerową używaną w naszym rekuperatorze ma 
 
 7. **Brak wzajemnego zanieczyszczania się zanieczyszczeniami**: Wymiennik entalpowy ERV z membraną polimerową jest szczelny i zapobiega przenoszeniu zanieczyszczeń między strumieniami powietrza. Oznacza to, że dostarczone powietrze jest oczyszczone i wolne od szkodliwych cząstek, zapewniając zdrowe środowisko wewnętrzne.
 
-![przepływ](/paints/izzi_302_wykres_wydajnosci.png)
+![przepływ](/izzi302/izzi_302_wykres_wydajnosci.png)
 
 ## SZYBKI MONTAŻ
 
@@ -75,9 +76,9 @@ W rezultacie montaż rekuperatora iZZi 302 ERV jest szybki, bezproblemowy i dost
 
 ### WERSJE REKUPERATORA iZZi 302 ERV
 
-![wersje rekuperators izzi 302 erv](/paints/izzi302_rekuperator_opis.jpg)
+![wersje rekuperators izzi 302 erv](/izzi302/izzi302_rekuperator_opis.jpg)
 
-![wymiary](/paints/reqnet_izzi_302_wymiary.png)
+![wymiary](/izzi302/reqnet_izzi_302_wymiary.png)
 
 ## CECHY PANELU STEROWANIA CENTRALI iZZi 302 ERV
 
@@ -98,7 +99,7 @@ W rezultacie montaż rekuperatora iZZi 302 ERV jest szybki, bezproblemowy i dost
 - Menu dostępne w języku polskim.
 - Dodatkowe menu dostępne w językach: angielskim, niemieckim, holenderskim, rosyjskim, węgierskim, słowackim i francuskim.
 
-![panel](/paints/panel.jpg)
+![panel](/panel/panel.jpg)
 
 | Dane techniczne                      | Wartość                                                                        |
 | ------------------------------------ | ------------------------------------------------------------------------------ |
@@ -152,4 +153,4 @@ W rezultacie montaż rekuperatora iZZi 302 ERV jest szybki, bezproblemowy i dost
 
 \*\*\*\*Odpowiedni wg normy EN779.
 
-**\***Zgodnie z normą ISO 16890.
+\*\*\*\*\*Zgodnie z normą ISO 16890.

@@ -110,7 +110,7 @@ export default function ProductPage({ product }) {
       </div>
       <div className="container">
         <div className=" flex justify-evenly lg:flex-row flex-col mt-10">
-          <Image src={product.src} width={500} height={400} alt={product.name} />
+          <Image src={product.src} width={500} height={300} alt={product.name} />
           <div className="mt-[50px] lg:ml-10 lg:p-0 p-3 flex flex-col gap-5 max-w-[500px]">
             <p>{product.desc_long}</p>
             <p className="text-primary text-sm">{product.category}</p>
