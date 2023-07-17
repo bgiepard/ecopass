@@ -7,7 +7,6 @@ link: '/produkty/rekuperator-izzi-402-erv'
 description: 'Rekuperator modułowy wyposażony w entalpiczny wymiennik ciepła.'
 desc_long: 'iZZi 402 ERV to innowacyjny, kompaktowy rekuperator o modułowej konstrukcji, który charakteryzuje się zaawansowanym entalpicznym wymiennikiem ciepła wykonanym z membrany polimerowej. Dzięki tej technologii, urządzenie nie tylko odzyskuje ciepło, ale także wilgoć. Niezwykła obudowa, pozbawiona potrzeby odprowadzania skroplin, umożliwia łatwy montaż centrali, nawet w pojedynkę. Już w standardzie iZZi 402 ERV posiada energooszczędne wentylatory EC, rozbudowaną automatykę oraz pełne przełączanie na bypass o wartości 100%. W zestawie znajduje się również dotykowy panel sterowania, zapewniający wygodną obsługę urządzenia.'
 tags: ['rekuperator', 'odzysk ciepła', 'iZZi 402 ERV', 'reQnet']
-price_max: 347.48
 price_min: 9890.00
 brand: 'reQnet'
 ---
@@ -22,7 +21,7 @@ Ten innowacyjny rekuperator zapewnia nie tylko efektywną wentylację, ale równ
 
 Dodatkowym atutem iZZi 402 ERV jest jego wysoka wydajność, która gwarantuje skuteczne odzyskiwanie ciepła i wilgoci z odprowadzanego powietrza. Dzięki temu, rekuperator ten pozwala na utrzymanie optymalnej jakości powietrza w pomieszczeniach, co przekłada się na zdrowie i komfort użytkowników.
 
-![schemat działania iZZi 402](/paints/schemat.jpg)
+![przekrój](/paints/wymienniki402przekrój.png)
 
 ## MODUŁOWA KONSTRUKCJA
 
@@ -31,6 +30,8 @@ W dolnej, podwieszanej sekcji znajduje się wymiennik entalpiczny, który odzysk
 Dzięki modułowej konstrukcji rekuperatora, montaż tego urządzenia na ścianie jest prosty i można go przeprowadzić samodzielnie. Górna obudowa jest zawieszana na specjalnym uchwycie ściennym, a następnie dolna część jest do niej przymocowywana.
 
 Dzięki zastosowaniu elastycznej piankowej izolacji oraz wysokiej jakości wentylatorów na prąd stały, centrala rekuperacyjna iZZi 402 ERV działa niezwykle cicho. Dzięki temu, można ją bez obaw zamontować nawet w części mieszkalnej.
+
+![schemat działania iZZi 402](/paints/schemat.jpg)
 
 ### WERSJA LEWA
 
@@ -92,3 +93,61 @@ Ważnym aspektem tego rozwiązania jest fakt, że cząsteczki wilgoci przenoszą
 - Dodatkowe menu dostępne w językach: angielskim, niemieckim, holenderskim, rosyjskim, węgierskim, słowackim i francuskim.
 
 ![panel](/paints/panel.jpg)
+
+| Specyfikacja                                                          | Wartość                                                                       |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Marka                                                                 | reQnet                                                                        |
+| Model                                                                 | iZZi 402 ERV                                                                  |
+| Maksymalny wydatek powietrza                                          | 400 m³/h przy 150 Pa                                                          |
+| Sprawność odzysku ciepła                                              | Do 85%\*                                                                      |
+| Typ wymiennika                                                        | Krzyżowo-przeciwprądowy                                                       |
+| Rodzaj wymiennika                                                     | Entalpiczny (z odzyskiem wilgoci)                                             |
+| Materiał wymiennika                                                   | Tworzywo sztuczne + membrana polimerowa                                       |
+| Sprawność odzysku wilgoci                                             | Do 65%                                                                        |
+| Maksymalna moc wentylatorów                                           | 210 W                                                                         |
+| Biegi                                                                 | I bieg (100 m³/h przy 50 Pa)                                                  |
+|                                                                       | II bieg (250 m³/h przy 100 Pa)                                                |
+|                                                                       | III bieg (400 m³/h przy 150 Pa)                                               |
+| Zużycie energii                                                       | 20 W                                                                          |
+|                                                                       | 73 W                                                                          |
+|                                                                       | 205 W                                                                         |
+| Poziom mocy akustycznej emitowanej przez obudowę w odległości 1 metra | 28 dB (A)                                                                     |
+| Poziom mocy akustycznej - wartość nominalna                           | 41 dB (A)                                                                     |
+| Wentylatory                                                           | Promieniowe Redical z silnikami EC prądu stałego (ebm-papst)                  |
+| Klasa efektywności energetycznej                                      | A\*\*                                                                         |
+| Bypass                                                                | Automatyczny, izolowany, 100% obejścia powietrza nawiewanego                  |
+| System antyzamrożeniowy                                               | Podciśnieniowy, reagujący poniżej temperatury -7°C                            |
+| Sterownik                                                             | LCD 3,2" z kolorowym panelem dotykowym                                        |
+| Podłączenie sterownika z urządzeniem                                  | Przewód ekranowany 4x0,5\*\*\* (3 metry w komplecie)                          |
+| Filtry                                                                | Plisowane klasy M5\*\*\*\* / ePM10 75%\*\*\*\*\*                              |
+| Średnica króćców przyłączeniowych                                     | Izolowany (EPP) 4 x Ø200 mm                                                   |
+| Odpływ kondensatu                                                     | Brak                                                                          |
+| Stopień ochrony                                                       | IP 40                                                                         |
+| Klasa izolacji urządzenia                                             | I                                                                             |
+| Napięcie zasilania                                                    | 230V (AC), 50Hz                                                               |
+| Materiał obudowy                                                      | Stal nierdzewna + klapa przednia kompozytowa                                  |
+| Masa (z dedykowanym stelażem)                                         | 36 kg                                                                         |
+| Wymiary (wys. x szer. x gł)                                           | 750 x 635 x 610 mm                                                            |
+| Wyposażenie                                                           | Panel dotykowy z kolorowym wyświetlaczem 3,2"                                 |
+|                                                                       | Króćce przyłączeniowe Ø200 mm ze stali nierdzewnej                            |
+|                                                                       | Kabel zasilający o długości 2,8 m                                             |
+|                                                                       | Kabel sterownika o długości 3 m                                               |
+|                                                                       | Konsola montażowa ze stali nierdzewnej do montażu na ścianie                  |
+|                                                                       | Ścienna puszka podtynkowa do panelu sterowania (wyłącznie z panelem STANDARD) |
+| Opcjonalne urządzenia peryferyjne                                     | Moduł stałego przepływu                                                       |
+|                                                                       | Moduł CO2/higro                                                               |
+|                                                                       | Przycisk przewietrzania                                                       |
+|                                                                       | Elektryczna kanałowa nagrzewnica wstępna                                      |
+|                                                                       | Elektryczna kanałowa nagrzewnica wtórna                                       |
+|                                                                       | Siłownik przepustnicy GWC                                                     |
+|                                                                       | Chłodnica kanałowa                                                            |
+
+\*Rekuperator iZZi 402 ERV ze względu na wymiennik entalpiczny nie spełnia wymogów programu "Czyste powietrze 2019" dla wniosków złożonych przed 15.05.2020.
+
+\*\* dla klimatu umiarkowanego zgodnie z Dyrektywą 2009/125/EC oraz Rozporządzeniem Komisji Europejskiej nr 1254/2014
+
+\*\*\* powyżej długości 10 m zalecany 4x0,75 (ekranowany)
+
+\*\*\*\* wg EN779
+
+**\*** wg ISO 16890

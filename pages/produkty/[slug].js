@@ -110,7 +110,7 @@ export default function ProductPage({ product }) {
       </div>
       <div className="container">
         <div className=" flex justify-evenly lg:flex-row flex-col mt-10">
-          <Image src={product.src} width={400} height={200} alt={product.name} />
+          <Image src={product.src} width={500} height={400} alt={product.name} />
           <div className="mt-[50px] lg:ml-10 lg:p-0 p-3 flex flex-col gap-5 max-w-[500px]">
             <p>{product.desc_long}</p>
             <p className="text-primary text-sm">{product.category}</p>
@@ -134,7 +134,7 @@ export default function ProductPage({ product }) {
               </>
             ) : (
               <div className="flex flex-col bg-primary rounded-full text-white w-1/2 items-center justify-center py-3 self-end">
-                <span className="font-bold text-xl">Cena: 9890.00zł</span>
+                <span className="font-bold text-xl">Cena: {product.price_min}zł</span>
                 <p>dostawa: 199zł</p>
                 <p>kontakt@ecopass.pl</p>
                 <p>tel: +48 721 704 787</p>
