@@ -1,5 +1,5 @@
 ---
-name: 'Antysmogowa skrzynka filtracyjna iZZi SF200'
+name: 'iZZi SF200 z nagrzewnicą'
 category: 'Rekuperatory'
 categoryLink: ''
 src: '/sf200/sf200.png'
@@ -98,6 +98,7 @@ Dlatego, wybierając filtry plisowane o dużej powierzchni czynnej, możemy być
 
 | Model skrzynki                 | Przepływ powietrza 100 m³/h | Przepływ powietrza 300 m³/h |
 | ------------------------------ | --------------------------- | --------------------------- |
+| iZZi SF 200                    |                             |                             |
 | Filtr M5 (wstępny)             | 7 Pa                        | 26 Pa                       |
 | Filtr M5 + F7 (przeciwpyłkowy) | 17 Pa                       | 70 Pa                       |
 | Filtr M5 + F9 (antysmogowy)    | 22 Pa                       | 90 Pa                       |
