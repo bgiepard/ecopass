@@ -9,7 +9,7 @@ desc_long: 'Izolowane skrzynki filtracyjne antysmogowe do wentylacji mechaniczne
 tags: ['rekuperator', 'odzysk ciepła', 'skrzynka antysmogowa', 'reQnet']
 price_min: 615/900
 brand: 'reQnet'
-shipping: 199
+shipping: 14.99
 ---
 
 ## Ochrona przed smogiem

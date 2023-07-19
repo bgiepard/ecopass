@@ -10,6 +10,7 @@ tags: ['farby termoizolacyjne', 'preparat gruntujący', 'FixPlus', 'ClimateCoati
 price_max: 347.48
 price_min: 186.83
 brand: 'ClimateCoating'
+shipping: 24.99
 ---
 
 ## Opis

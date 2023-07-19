@@ -73,7 +73,7 @@ export default function ProductPage({ product }) {
                 '@type': 'OfferShippingDetails',
                 shippingRate: {
                   '@type': 'MonetaryAmount',
-                  value: 24.99,
+                  value: product.shipping,
                   currency: 'PLN'
                 },
                 shippingDestination: {
@@ -135,7 +135,7 @@ export default function ProductPage({ product }) {
             ) : (
               <div className="flex flex-col bg-primary rounded-full text-white w-1/2 items-center justify-center py-3 self-end">
                 <span className="font-bold text-xl">Cena: {product.price_min}zł</span>
-                <p>dostawa: 199zł</p>
+                <p>Dostawa: {product.shipping}zł</p>
                 <p>kontakt@ecopass.pl</p>
                 <p>tel: +48 721 704 787</p>
               </div>

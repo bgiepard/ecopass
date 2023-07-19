@@ -10,6 +10,7 @@ tags: ['farby termoizolacyjne', 'termoizolacja', 'ThermoProtect', 'ClimateCoatin
 price_max: 1293.44
 price_min: 493.86
 brand: 'ClimateCoating'
+shipping: 24.99
 ---
 
 ## Opis

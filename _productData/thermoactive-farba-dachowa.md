@@ -9,6 +9,7 @@ desc_long: 'ThermoActive to klimatyczna powłoka dachowa. To sprawia, że w gor�
 tags: ['farby termoizolacyjne', 'termoizolacja', 'ThermoActive', 'ClimateCoating']
 price_min: 1293.44
 brand: 'ClimateCoating'
+shipping: 24.99
 ---
 
 ## Opis

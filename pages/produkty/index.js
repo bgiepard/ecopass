@@ -107,7 +107,7 @@ export default function Products({ products }) {
                     '@type': 'OfferShippingDetails',
                     shippingRate: {
                       '@type': 'MonetaryAmount',
-                      value: 24.99,
+                      value: product.shipping,
                       currency: 'PLN'
                     },
                     shippingDestination: {

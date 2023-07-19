@@ -9,7 +9,7 @@ desc_long: 'Skrzynka filtracyjna z wbudowaną nagrzewnicą PTC, dedykowana do re
 tags: ['rekuperator', 'odzysk ciepła', 'skrzynka antysmogowa', 'reQnet']
 price_min: 1250.00
 brand: 'reQnet'
-shipping: 199
+shipping: 14.99
 ---
 
 Skrzynka iZZi SF 200 w wersji z nagrzewnicą to hybryda, która łączy zalety skrzynki filtracyjnej z kompletem filtrów antysmogowych lub przeciwpyłkowych, oczyszczających powietrze nawiewane do domu z niebezpiecznych zanieczyszczeń, oraz nagrzewnicy wstępnej z nowoczesną grzałką PTC o płynnie sterowanym działaniu. Ta kombinacja doskonale wspomaga system przeciwzamrożeniowy w rekuperatorach iZZi.

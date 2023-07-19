@@ -9,7 +9,7 @@ desc_long: 'Panele dotykowe z kolorowym wyświetlaczem do sterowania rekuperator
 tags: ['rekuperator', 'odzysk ciepła', 'panel sterowania', 'reQnet']
 price_min: 1230/930
 brand: 'reQnet'
-shipping: 24.99
+shipping: 14.99
 ---
 
 Panele służą do kontrolowania rekuperatorów reQnet z serii iZZi i posiadają kolorowy ekran dotykowy o przekątnej 3,2 cala. Sterowniki mogą być wymienne, ale jednocześnie tylko jeden panel może być podłączony do jednego rekuperatora.
