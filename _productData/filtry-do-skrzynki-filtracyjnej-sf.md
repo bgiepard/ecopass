@@ -1,6 +1,7 @@
 ---
 name: 'Filtry do skrzynki filtracyjnej iZZi'
 category: 'Rekuperatory'
+sub: 'Filtry'
 categoryLink: ''
 src: '/rekuperatory/filtry-skrzynka.jpg'
 link: '/produkty/filtry-do-skrzynki-filtracyjnej-sf'

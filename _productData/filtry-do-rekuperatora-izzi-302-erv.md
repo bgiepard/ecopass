@@ -1,6 +1,7 @@
 ---
 name: 'Filtry do rekuperatora iZZi 302 ERV'
 category: 'Rekuperatory'
+sub: 'Filtry'
 categoryLink: ''
 src: '/rekuperatory/filtry-m5-do-reku.jpg'
 link: '/produkty/filtry-do-rekuperatora-izzi-302-erv'

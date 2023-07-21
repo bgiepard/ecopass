@@ -1,6 +1,7 @@
 ---
 name: 'Przewód do panelu sterowania iZZi'
 category: 'Rekuperatory'
+sub: 'Akcesoria'
 categoryLink: ''
 src: '/panel/przewód.jpg'
 link: '/produkty/przewod-do-panelu-sterowania-izzi'

@@ -1,6 +1,7 @@
 ---
 name: 'Panel sterowania do rekuperatorów iZZi'
 category: 'Rekuperatory'
+sub: 'Akcesoria'
 categoryLink: ''
 src: '/panel/panel.jpg'
 link: '/produkty/panel-sterowania-do-rekuperatorow-izzi'

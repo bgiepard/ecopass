@@ -1,6 +1,7 @@
 ---
 name: 'Moduł stałego przepływu'
 category: 'Rekuperatory'
+sub: 'Akcesoria'
 categoryLink: ''
 src: '/rekuperatory/moduł1.jpg'
 link: '/produkty/modul-stalego-przeplywu-izzi'

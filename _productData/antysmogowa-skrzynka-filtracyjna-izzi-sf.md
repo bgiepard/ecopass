@@ -1,6 +1,7 @@
 ---
 name: 'Skrzynka filtracyjna iZZi SF'
 category: 'Rekuperatory'
+sub: 'Skrzynki filtracyjne'
 categoryLink: ''
 src: '/sf160/sf160.png'
 link: '/produkty/antysmogowa-skrzynka-filtracyjna-izzi-sf'

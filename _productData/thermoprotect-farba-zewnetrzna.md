@@ -1,6 +1,7 @@
 ---
 name: 'ThermoProtect'
-category: 'Farby zewnętrzne'
+category: 'Farby'
+sub: 'Farby zewnętrzne'
 categoryLink: 'https://sklep.ecopass.pl/c/farby-zewnetrzne/'
 src: '/paints/thermoprotect-outside.webp'
 link: 'https://sklep.ecopass.pl/produkt/thermoprotect-125l/'

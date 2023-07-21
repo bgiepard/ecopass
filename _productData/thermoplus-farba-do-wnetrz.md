@@ -1,6 +1,7 @@
 ---
 name: 'ThermoPlus'
-category: 'Farby do wnętrz'
+category: 'Farby'
+sub: 'Farby do wnętrz'
 categoryLink: 'https://sklep.ecopass.pl/c/farby-do-wnetrz/'
 src: '/paints/thermoplus-inside.webp'
 link: 'https://sklep.ecopass.pl/produkt/thermoplus-12-5l/'

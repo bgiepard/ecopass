@@ -1,6 +1,7 @@
 ---
 name: 'FixPlus'
-category: 'Preparaty gruntujące'
+category: 'Farby'
+sub: 'Preparaty gruntujące'
 categoryLink: 'https://sklep.ecopass.pl/c/preparaty-gruntujace/'
 src: '/paints/fixplus-grunt.webp'
 link: 'https://sklep.ecopass.pl/produkt/fixplus-10l/'

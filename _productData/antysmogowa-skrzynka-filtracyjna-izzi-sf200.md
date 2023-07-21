@@ -1,6 +1,7 @@
 ---
 name: 'iZZi SF200 z nagrzewnicą'
 category: 'Rekuperatory'
+sub: 'Skrzynki filtracyjne'
 categoryLink: ''
 src: '/sf200/sf200.png'
 link: '/produkty/antysmogowa-skrzynka-filtracyjna-izzi-sf200'

@@ -1,6 +1,7 @@
 ---
 name: 'ThermoActive'
-category: 'Farby dachowe'
+category: 'Farby'
+sub: 'Farby dachowe'
 categoryLink: 'https://sklep.ecopass.pl/c/farby-dachowe/'
 src: '/paints/thermoactive-roof.webp'
 link: 'https://sklep.ecopass.pl/produkt/thermoactive-125l/'

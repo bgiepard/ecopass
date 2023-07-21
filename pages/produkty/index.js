@@ -3,14 +3,13 @@ import Product from 'components/Product';
 import { getList } from 'lib/markdownParser';
 import Head from 'next/head';
 import React, { useState } from 'react';
-import banner from 'public/banner.png';
+import ProductsNav from 'components/ProductsNav';
 
 const seoData = {
   title: 'Produkty - EcoPass.pl',
   description:
     'Odkryj naszą różnorodną kolekcję wysokiej jakości produktów, dostępnych w naszym sklepie.',
   url: 'https://ecopass.pl/produkty',
-  image: banner,
   tags: ['termoizolacja', 'farby termoizolacyjne', 'dom energooszczędny', 'oszczędzanie']
 };
 
@@ -25,39 +24,24 @@ export const getStaticProps = () => {
 };
 
 export default function Products({ products }) {
-  const [category, setCategory] = useState(null);
+  const [category, setCategory] = useState('');
+  const [sub, setSub] = useState('');
 
-  const categories = [
-    {
-      id: 1,
-      name: 'Wszystkie',
-      value: null
-    },
-    {
-      id: 2,
-      name: 'Farby do wnętrz',
-      value: 'farby do wnętrz'
-    },
-    {
-      id: 3,
-      name: 'Farby zewnętrzne',
-      value: 'farby zewnętrzne'
-    },
-    {
-      id: 4,
-      name: 'Farby dachowe',
-      value: 'farby dachowe'
-    },
-    {
-      id: 5,
-      name: 'Preparaty gruntujące',
-      value: 'preparaty gruntujące'
+  const displayedProducts = products.filter((prod) => {
+    if (category === 'Wszystkie') {
+      return true;
+    } else if (category !== '' && sub !== '') {
+      return (
+        prod.category && prod.category.includes(category) && prod.sub && prod.sub.includes(sub)
+      );
+    } else if (category !== '') {
+      return prod.category && prod.category.includes(category);
+    } else if (sub !== '') {
+      return prod.sub && prod.sub.includes(sub);
+    } else {
+      return true;
     }
-  ];
-
-  const displayedProducts = category
-    ? products.filter((prod) => prod.category.toLowerCase().includes(category))
-    : products;
+  });
 
   return (
     <>
@@ -146,26 +130,11 @@ export default function Products({ products }) {
             </h1>
           </div>
         </div>
-        <div className="container m-auto">
-          <div className="py-10 flex gap-3 flex-wrap">
-            {categories.map((item) => {
-              return (
-                <button
-                  key={item.id}
-                  value={item.value}
-                  aria-label="filtering products button"
-                  className={`whitespace-nowrap p-2 pt-1 pb-1 md:p-4 md:pt-2 md:pb-1 text-[12px] md:text-[16px] rounded-2xl bg-white shadow-lg font-bold hover:shadow-xl border-2 ${
-                    item.value === category ? ' border-secondary' : ''
-                  }`}
-                  onClick={() => setCategory(item.value)}>
-                  {item.name}
-                </button>
-              );
-            })}
-          </div>
+        <div className="container m-auto flex gap-10 lg:flex-row flex-col">
+          <ProductsNav setCategory={setCategory} setSub={setSub} />
           <div className="flex gap-5 flex-wrap gap-y-10 mb-[50px]">
             {displayedProducts.map((p) => {
-              return <Product product={p} key={p.name} />;
+              return <Product product={p} key={`key-${p.name + p.id}`} />;
             })}
           </div>
         </div>

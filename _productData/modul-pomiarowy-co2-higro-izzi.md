@@ -1,6 +1,7 @@
 ---
 name: 'Moduł pomiarowy CO2/higro'
 category: 'Rekuperatory'
+sub: 'Akcesoria'
 categoryLink: ''
 src: '/rekuperatory/modułco2higro.jpg'
 link: '/produkty/modul-pomiarowy-co2-higro-izzi'

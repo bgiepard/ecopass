@@ -1,6 +1,7 @@
 ---
 name: 'Puszka podtynkowa do panelu standard - iZZi'
 category: 'Rekuperatory'
+sub: 'Akcesoria'
 categoryLink: ''
 src: '/panel/puszka.jpg'
 link: '/produkty/puszka-podtynkowa-panel-standard-izzi'

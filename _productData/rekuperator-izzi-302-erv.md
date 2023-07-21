@@ -1,6 +1,7 @@
 ---
 name: 'Rekuperator iZZi 302 ERV'
 category: 'Rekuperatory'
+sub: 'Rekuperatory modułowe'
 categoryLink: ''
 src: '/izzi302/izzi302.png'
 link: '/produkty/rekuperator-izzi-302-erv'

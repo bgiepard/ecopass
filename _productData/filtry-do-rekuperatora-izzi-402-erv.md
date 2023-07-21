@@ -1,6 +1,7 @@
 ---
 name: 'Filtry do rekuperatora iZZi 402 ERV'
 category: 'Rekuperatory'
+sub: 'Filtry'
 categoryLink: ''
 src: '/rekuperatory/filtry-402-reku.jpg'
 link: '/produkty/filtry-do-rekuperatora-izzi-402-erv'
