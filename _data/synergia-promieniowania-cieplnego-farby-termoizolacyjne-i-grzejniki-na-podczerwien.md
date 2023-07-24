@@ -8,7 +8,7 @@ tags:
     'grzejniki na podczerwień',
     'farby termoizolcyjne',
     'promieniowanie cieplne',
-    'błyskawiczne ogrzewanie pomieszczeń'
+    'promienniki'
   ]
 cover: '/covers/infrared.png'
 date: 10.07.2023

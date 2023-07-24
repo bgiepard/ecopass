@@ -52,6 +52,7 @@ export default function ContactForm({ category }) {
     'pompy-ciepla': 'Masz pytania odnośnie pomp ciepła?',
     termoizolacja: 'Masz pytania na temat termoizolacji?',
     rekuperatory: 'Chcesz się dowiedzieć więcej o rekuperatorach?',
+    promienniki: 'Interesują Cię promienniki podczerwieni?',
     default: 'Masz pytania? Potrzebujesz pomocy?'
   };
 

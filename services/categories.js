@@ -28,6 +28,11 @@ const categories = [
     id: 6,
     name: 'Rekuperatory',
     value: 'rekuperatory'
+  },
+  {
+    id: 7,
+    name: 'Promienniki',
+    value: 'promienniki'
   }
 ];
 
