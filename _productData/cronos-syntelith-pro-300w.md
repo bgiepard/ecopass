@@ -7,9 +7,16 @@ src: '/cronos-syntelith-300w/main.png'
 link: '/produkty/cronos-syntelith-pro-300w'
 description: 'Promiennik podczerwieni Cronos Synthelith Pro z WiFi i pilotem 300W.'
 desc_long: 'Grzejnik na podczerwień firmy Cronos to rozwiązanie pozwalające efektywnie ogrzewać pomieszczenia przy użyciu promieniowania podczerwonego. Zastosowanie tego grzejnika jest niezwykle elastyczne, gdyż jego moc dostosowuje się do poziomu ocieplenia budynku, w którym jest zamontowany. Co więcej, panel podczerwieni został wyposażony w najnowocześniejsze technologie, pozwalając na łatwe sterowanie za pomocą sieci WiFi z poziomu telefonu komórkowego lub pilota, który jest dołączony do zestawu.'
-tags: ['rekuperator', 'odzysk ciepła', 'skrzynka antysmogowa', 'reQnet']
+tags:
+  [
+    'promienniki',
+    'promiennik podczerwieni',
+    'ogrzewanie na podczerwień',
+    'cronos',
+    'panel na podczerwień'
+  ]
 price_min: 409
-brand: 'reQnet'
+brand: 'Cronos'
 shipping: 0
 ---
 
