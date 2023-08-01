@@ -15,7 +15,7 @@ tags:
     'cronos',
     'panel na podczerwień'
   ]
-price_min: 719
+price_min: 729
 brand: 'Cronos'
 shipping: 0
 ---
