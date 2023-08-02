@@ -132,9 +132,23 @@ const Articles = ({ article, products }) => {
             role="main"></div>
           <aside className="sm:w-full py-[50px]">
             <h2 className="text-2xl font-bold pt-[50px] sm:pt-2">Polecane produkty</h2>
-            {products.map((product) => {
-              return <FeaturedProducts product={product} key={product.slug} />;
-            })}
+            {(() => {
+              const filteredProducts = products.filter((product) => {
+                const lowerCaseCategory = product.category.toLowerCase();
+                const articleTag = article.tags[0].toLowerCase();
+                return lowerCaseCategory.includes(articleTag);
+              });
+
+              if (filteredProducts.length > 0) {
+                return filteredProducts
+                  .slice(0, 5)
+                  .map((product) => <FeaturedProducts product={product} key={product.slug} />);
+              } else {
+                return products
+                  .slice(0, 5)
+                  .map((product) => <FeaturedProducts product={product} key={product.slug} />);
+              }
+            })()}
           </aside>
         </div>
         <ContactForm category={modifiedCategory} />

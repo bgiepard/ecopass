@@ -87,6 +87,7 @@ export default function ProductsNav({ setCategory, setSub }) {
     } else {
       setSelectedCategory(categoryId);
     }
+    setSelectedSubCategory(null);
   };
 
   const handleSubCategoryClick = (subCategoryId) => {
@@ -119,20 +120,19 @@ export default function ProductsNav({ setCategory, setSub }) {
       {categories.map((cat) => (
         <div
           key={`category-${cat.id + cat.name}`}
-          className="sm:w-[250px] p-3 flex flex-col bg-white shadow-md"
-          style={{
-            cursor: 'pointer',
-            fontWeight: cat.id === selectedCategory ? 'bold' : 'normal'
-          }}>
+          className="sm:w-[250px] p-3 flex flex-col bg-white shadow-md">
           <button
-            className="flex justify-between"
             onClick={() => {
               handleCategoryClick(cat.id);
               setCategory(cat.name);
               setSub('');
             }}
+            className="flex justify-between cursor-pointer"
             onKeyDown={(e) => handleCategoryKeyPress(cat.id, e)}
-            tabIndex={0}>
+            tabIndex={0}
+            style={{
+              fontWeight: cat.id === selectedCategory ? 'bold' : 'normal'
+            }}>
             {cat.name}
             {cat.name !== 'Wszystkie' && (
               <svg
@@ -140,7 +140,11 @@ export default function ProductsNav({ setCategory, setSub }) {
                 height={16}
                 width={16}
                 alt="arrow-down"
-                viewBox="0 0 512 512">
+                viewBox="0 0 512 512"
+                style={{
+                  transform: selectedCategory === cat.id ? 'rotate(180deg)' : 'rotate(0deg)',
+                  transition: 'transform 0.2s ease-in-out'
+                }}>
                 <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
               </svg>
             )}
