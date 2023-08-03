@@ -11,12 +11,7 @@ const seoData = {
     'Nasz kalkulator doboru mocy fotowoltaiki pomoże Ci określić odpowiednią moc instalacji fotowoltaicznej dla Twojego domu lub przedsiębiorstwa.',
   url: 'https://ecopass.pl/kalkulatory/fotowoltaika',
   image: '/banner.png',
-  tags: [
-    'kalkulatory',
-    'kalkulator mocy fotowoltaiki',
-    'jak obliczyć moc fotowoltaiki',
-    'fotowoltaika'
-  ]
+  tags: ['kalkulator', 'kalkulator mocy fotowoltaiki', 'jaka fotowoltaika', 'fotowoltaika']
 };
 
 export default function PhotovoltaicsCalculator() {

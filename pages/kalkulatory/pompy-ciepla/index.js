@@ -12,10 +12,10 @@ const seoData = {
   url: 'https://ecopass.pl/kalkulatory/pompy-ciepla',
   image: 'public/banner.png',
   tags: [
-    'kalkulatory',
-    'kalkulator doboru pompy ciepła',
+    'kalkulator',
+    'jak dobrać moc pompy ciepła',
     'jak obliczyć moc pompy ciepła',
-    'pompy ciepła'
+    'pompa ciepła'
   ]
 };
 
