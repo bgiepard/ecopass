@@ -158,6 +158,8 @@ Przeanalizowane oszczędności na przestrzeni 5 lat wskazują, że wybór grzejn
 
 _Należy pamiętać, że powyższe obliczenia są jedynie szacunkowe i opierają się na dostarczonych danych i założeniach. Rzeczywiste oszczędności mogą się różnić w zależności od wielu czynników, takich jak zmiany cen energii i paliwa, efektywność energetyczna budynku czy dokładność obliczeń._
 
+![porównanie działania](/cronos-600w/porównanie.jpg)
+
 ## Efektywność energetyczna a oszczędności finansowe
 
 Efektywność energetyczna stanowi kluczowy czynnik wpływający na długoterminowe oszczędności finansowe związane z systemami grzewczymi. Wprowadzenie do budynku efektywnego energetycznie systemu ogrzewania, takiego jak grzejniki na podczerwień, może prowadzić do znacznych korzyści finansowych, zarówno w krótkim, jak i długim okresie użytkowania.
