@@ -133,7 +133,7 @@ export default function ProductPage({ product }) {
                 </Link>
               </>
             ) : (
-              <div className="flex flex-col bg-primary rounded-full text-white w-1/2 items-center justify-center py-3 self-end">
+              <div className="flex flex-col bg-primary rounded-full text-white lg:w-1/2 w-full items-center justify-center py-3 self-end">
                 <span className="font-bold text-xl">Cena: {product.price_min}zł</span>
                 <p>Dostawa: {product.shipping}zł</p>
                 <p>kontakt@ecopass.pl</p>
