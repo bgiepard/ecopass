@@ -2,9 +2,9 @@
 name: 'Cronos GRAFEN PRO z WiFi i pilotem 700W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki ścienne'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-grafen-300w/main.jpg'
-link: '/produkty/cronos-grafen-pro-700w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-grafen-pro-z-wifi-i-pilotem-700w/'
 description: 'Promiennik podczerwieni Cronos Grafen Pro z WiFi i pilotem 700W.'
 desc_long: 'Cronos GRAFEN Pro 700W to innowacyjny panel grzewczy, który korzysta z zaawansowanej technologii ogrzewania energią dalekiej podczerwieni, zapewniając wygodę, zdrowie i oszczędność w Twoim życiu. Dzięki nowoczesnemu designowi, doskonale wkomponuje się w wystrój każdego pomieszczenia, dodając mu elegancji. Cronos jest pierwszą firmą w Polsce, która wprowadziła na rynek panele grzewcze wykorzystujące elementy grzewcze z wysoką zawartością rodzimego grafenu. Dzięki temu nasze panele osiągają najwyższą możliwą skuteczność grzewczą, co sprawia, że są nie tylko wydajne, ale również przyjazne dla środowiska. Zamontowanie panelu grzewczego Cronos GRAFEN Pro 700W na ścianie lub suficie jest proste i szybkie, dzięki czemu możesz cieszyć się przyjemnym ciepłem w swoim domu w krótkim czasie.'
 tags:

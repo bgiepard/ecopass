@@ -2,9 +2,9 @@
 name: 'Moduł pomiarowy CO2/higro'
 category: 'Rekuperatory'
 sub: 'Akcesoria'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/rekuperatory/modułco2higro.jpg'
-link: '/produkty/modul-pomiarowy-co2-higro-izzi'
+link: 'https://sklep.ecopass.pl/produkt/modul-pomiarowy-co2-higro/'
 description: 'Moduł pomiarowy do rekuperatora reQnet iZZi 302/402 ERV.'
 desc_long: 'Moduł pomiarowy dla rekuperatora reQnet iZZi 302/402 ERV (niekompatybilny z rekuperatorem iZZi 300 ERV) służy do pomiaru stężenia dwutlenku węgla i wilgotności wewnątrz budynku. Moduł umożliwia automatyczną regulację pracy rekuperatora w oparciu o jakość powietrza w domu. Jest przeznaczony do samodzielnego montażu wewnątrz centrali.'
 tags: ['rekuperator', 'odzysk ciepła', 'moduł pomiarowy', 'reQnet']

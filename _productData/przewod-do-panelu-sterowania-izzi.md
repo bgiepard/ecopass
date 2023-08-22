@@ -2,9 +2,9 @@
 name: 'Przewód do panelu sterowania iZZi'
 category: 'Rekuperatory'
 sub: 'Akcesoria'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/panel/przewód.jpg'
-link: '/produkty/przewod-do-panelu-sterowania-izzi'
+link: 'https://sklep.ecopass.pl/produkt/przewod-do-panelu-sterowania-izzi/'
 description: 'Przewód sygnałowy (15 m) do panelu sterowania iZZi 302/402 ERV'
 desc_long: 'Dedykowany ekranowany przewód sygnałowy o długości 15 metrów został specjalnie zaprojektowany do podłączenia wyświetlacza z automatyką rekuperatora iZZi 300/302/402 ERV. Przewód jest wyposażony w oryginalną wtyczkę, umożliwiającą łatwe i bezproblemowe podłączenie panelu sterowania. Z drugiej strony przewodu znajduje się oczko do przyłączenia ekranu kabla z obudową urządzenia, zapewniając skuteczną ekranację sygnałów. Dzięki temu przewód zapewnia niezawodne połączenie między wyświetlaczem a automatyką rekuperatora, umożliwiając wygodne sterowanie i monitorowanie pracy urządzenia.'
 tags: ['rekuperator', 'odzysk ciepła', 'przewód do panelu', 'reQnet']

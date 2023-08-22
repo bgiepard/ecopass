@@ -2,9 +2,9 @@
 name: 'Cronos Synthelith Pro z WiFi i pilotem 770W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki podłogowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-syntelith-500w/main.png'
-link: '/produkty/cronos-syntelith-pro-770w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-synthelith-pro-z-wifi-i-pilotem-770w/'
 description: 'Promiennik podczerwieni Cronos Synthelith Pro z WiFi i pilotem 770W.'
 desc_long: 'Firma Cronos prezentuje nowatorski, ultracienki grzejnik oparty na technologii podczerwonej, który rewolucjonizuje sposób ogrzewania pomieszczeń. Dzięki wykorzystaniu promieniowania podczerwonego, ten innowacyjny grzejnik zapewnia niezrównany komfort ciepła, jednocześnie korzystnie wpływając na zdrowie osób cierpiących na alergie i astmę. Wyposażony w najnowocześniejsze rozwiązania, grzejnik Cronos daje użytkownikom pełną kontrolę nad temperaturą w pomieszczeniach. Łatwo można go sterować za pośrednictwem sieci WiFi z poziomu telefonu komórkowego lub za pomocą dołączonego pilota. To nowa era w skutecznym, komfortowym i zdrowym ogrzewaniu!'
 tags:

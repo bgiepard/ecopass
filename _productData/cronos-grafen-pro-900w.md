@@ -2,9 +2,9 @@
 name: 'Cronos GRAFEN PRO z WiFi i pilotem 900W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki ścienne'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-grafen-300w/main.jpg'
-link: '/produkty/cronos-grafen-pro-900w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-grafen-pro-z-wifi-i-pilotem-900w/'
 description: 'Promiennik podczerwieni Cronos Grafen Pro z WiFi i pilotem 900W.'
 desc_long: 'Cronos GRAFEN Pro 900W to rewolucyjny promiennik podczerwieni, który zapewnia niezrównane korzyści dla Twojego komfortu, zdrowia i oszczędności. Dzięki innowacyjnej technologii ogrzewania energią dalekiej podczerwieni, ten panel grzewczy przynosi wyjątkowe ciepło do Twojego domu. Jego wyjątkowy design wkomponuje się w każde pomieszczenie, dodając mu nowoczesności i elegancji. Możesz go zamontować zarówno na ścianie, jak i na suficie, dostosowując go do swoich preferencji. Cronos GRAFEN Pro 900W jest pierwszym w Polsce, który wykorzystuje element grzewczy z wysoką zawartością rodzimego grafenu. Dzięki temu osiąga najwyższą możliwą skuteczność grzewczą, przynosząc Ci wydajne i ekonomiczne ogrzewanie. Zarządzaj temperaturą i ustawieniami za pomocą pilota, który umożliwia pełną kontrolę nad promiennikiem. Ciesz się ciepłem bez kompromisów, dbając o swoje zdrowie, wygodę i portfel.'
 tags:

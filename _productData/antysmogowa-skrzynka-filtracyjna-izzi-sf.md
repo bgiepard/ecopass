@@ -2,9 +2,9 @@
 name: 'Skrzynka filtracyjna iZZi SF'
 category: 'Rekuperatory'
 sub: 'Skrzynki filtracyjne'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/sf160/sf160.png'
-link: '/produkty/antysmogowa-skrzynka-filtracyjna-izzi-sf'
+link: 'https://sklep.ecopass.pl/produkt/skrzynka-filtracyjna-izzi-sf-200-160/'
 description: 'Antysmogowa izolowana skrzynka filtracyjna M5/F9 iZZi SF.'
 desc_long: 'Izolowane skrzynki filtracyjne antysmogowe do wentylacji mechanicznej z rekuperacją, z kompletem filtrów klasy M5 i F9 w zestawie. Przeznaczone do skutecznego oczyszczania powietrza nawiewanego do budynków z ultradrobnych cząstek PM10, PM2,5 i PM1, które są najbardziej niebezpieczne dla zdrowia człowieka. Skrzynka przeznaczona do użytku w domowych systemach wentylacji.'
 tags: ['rekuperator', 'odzysk ciepła', 'skrzynka antysmogowa', 'reQnet']

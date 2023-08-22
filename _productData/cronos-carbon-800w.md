@@ -2,9 +2,9 @@
 name: 'Cronos Carbon 800W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki podłogowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-carbon-800w/main.jpg'
-link: '/produkty/cronos-carbon-800w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-carbon-800w/'
 description: 'Promiennik podczerwieni Cronos Carbon 800W.'
 desc_long: 'Panel grzewczy Cronos to zaawansowane urządzenie, które stosuje innowacyjną metodę ogrzewania za pomocą energii dalekiej podczerwieni. Dzięki temu zapewnia nie tylko wygodę, ale także dba o zdrowie użytkowników i portfel. Jego nowoczesny design doskonale uzupełnia wystrój każdego pomieszczenia, a dodatkowo oferuje elastyczność montażu na ścianie, podłodze lub suficie. Warto jednak pamiętać, że podczas pracy grzejnik może osiągnąć wysokie temperatury. Powierzchnia grzejnika może nagrzewać się nawet do 110°C, a tylna płyta do temperatury 65°C. Dlatego zaleca się zachowanie ostrożności i unikanie bezpośredniego kontaktu z gorącymi powierzchniami. To ważne ostrzeżenie, które pozwoli cieszyć się komfortem ogrzewania, jednocześnie dbając o bezpieczeństwo użytkowania.'
 tags:

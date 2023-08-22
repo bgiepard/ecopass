@@ -2,9 +2,9 @@
 name: 'iZZi SF200 z nagrzewnicą'
 category: 'Rekuperatory'
 sub: 'Skrzynki filtracyjne'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/sf200/sf200.png'
-link: '/produkty/antysmogowa-skrzynka-filtracyjna-izzi-sf200'
+link: 'https://sklep.ecopass.pl/produkt/antysmogowa-skrzynka-filtracyjna-izzi-sf200-z-nagrzewnica-wstepna/'
 description: 'Antysmogowa izolowana skrzynka filtracyjna iZZi SF200 z nagrzewnicą wstępną.'
 desc_long: 'Skrzynka filtracyjna z wbudowaną nagrzewnicą PTC, dedykowana do rekuperatorów z serii iZZi oraz systemów wentylacji mechanicznej z odzyskiem ciepła. Nagrzewnica o mocy 500W wspomaga działanie systemu przeciwzamrożeniowego rekuperatorów iZZi. Dodatkowo, zestaw filtrów antysmogowych lub przeciwpyłkowych dba przez cały rok o wysoką jakość powietrza w domu, eliminując groźne dla zdrowia zanieczyszczenia.'
 tags: ['rekuperator', 'odzysk ciepła', 'skrzynka antysmogowa', 'reQnet']

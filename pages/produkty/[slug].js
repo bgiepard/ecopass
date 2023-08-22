@@ -116,7 +116,6 @@ export default function ProductPage({ product }) {
             <p className="text-primary text-sm">{product.category}</p>
             {product.category === 'Farby' ? (
               <>
-                {' '}
                 <div className="flex gap-2">
                   {icons.map((icon) => {
                     return (
@@ -126,20 +125,13 @@ export default function ProductPage({ product }) {
                     );
                   })}
                 </div>
-                <Link href={product.link}>
-                  <button className="bg-primary lg:mr-0 mr-3 rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
-                    Zobacz w sklepie
-                  </button>
-                </Link>
               </>
-            ) : (
-              <div className="flex flex-col bg-primary rounded-full text-white lg:w-1/2 w-full items-center justify-center py-3 self-end">
-                <span className="font-bold text-xl">Cena: {product.price_min}zł</span>
-                <p>Dostawa: {product.shipping}zł</p>
-                <p>kontakt@ecopass.pl</p>
-                <p>tel: +48 721 704 787</p>
-              </div>
-            )}
+            ) : null}
+            <Link href={product.link}>
+              <button className="bg-primary lg:mr-0 mr-3 rounded-full float-right text-white px-3 py-2 shadow-sm hover:shadow-md">
+                Zobacz w sklepie
+              </button>
+            </Link>
           </div>
         </div>
         <div

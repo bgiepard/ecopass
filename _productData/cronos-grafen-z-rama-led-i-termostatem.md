@@ -2,9 +2,9 @@
 name: 'Cronos GRAFEN z ramą LED i termostatem 420W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki sufitowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-led/main.png'
-link: '/produkty/cronos-grafen-z-rama-led-i-termostatem'
+link: 'https://sklep.ecopass.pl/produkt/cronos-grafen-z-rama-led-i-termostatem-420w/'
 description: 'Promiennik podczerwieni Cronos Grafen 420W z podświetlaną ramą LED i termostatem.'
 desc_long: 'Grafenowy sufitowy panel grzewczy Cronos z podświetlaną ramą LED 420W - termostat i akcesoria montażowe w zestawie! Cronos to rewolucyjny panel grzewczy sufitowy, który korzysta z zaawansowanej technologii ogrzewania energią dalekiej podczerwieni, dbając o Twoją wygodę, zdrowie i oszczędności finansowe. Pierwsze w Polsce panele grzewcze wykorzystującego element grzewczy z wysoką zawartością grafenu, co przekłada się na najwyższą skuteczność grzewczą.'
 tags:

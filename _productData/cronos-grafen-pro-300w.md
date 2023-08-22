@@ -2,9 +2,9 @@
 name: 'Cronos GRAFEN PRO z WiFi i pilotem 300W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki ścienne'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-grafen-300w/main.jpg'
-link: '/produkty/cronos-grafen-pro-300w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-grafen-pro-z-wifi-i-pilotem-300w/'
 description: 'Promiennik podczerwieni Cronos Grafen Pro z WiFi i pilotem 300W.'
 desc_long: 'Grzejnik na podczerwień firmy Cronos to rozwiązanie pozwalające efektywnie ogrzewać pomieszczenia przy użyciu promieniowania podczerwonego. Zastosowanie tego grzejnika jest niezwykle elastyczne, gdyż jego moc dostosowuje się do poziomu ocieplenia budynku, w którym jest zamontowany. Co więcej, panel podczerwieni został wyposażony w najnowocześniejsze technologie, pozwalając na łatwe sterowanie za pomocą sieci WiFi z poziomu telefonu komórkowego lub pilota, który jest dołączony do zestawu.'
 tags:

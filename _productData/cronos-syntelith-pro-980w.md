@@ -2,9 +2,9 @@
 name: 'Cronos Synthelith Pro z WiFi i pilotem 980W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki podłogowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-syntelith-500w/main.png'
-link: '/produkty/cronos-syntelith-pro-980w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-synthelith-pro-z-wifi-i-pilotem-980w/'
 description: 'Promiennik podczerwieni Cronos Synthelith Pro z WiFi i pilotem 980W.'
 desc_long: 'Cronos oferuje ultracienki grzejnik na podczerwień, który rewolucjonizuje sposób ogrzewania pomieszczeń. Dzięki wykorzystaniu energii dalekiej podczerwieni, grzejnik pozwala na skuteczne i równomierne ogrzewanie, jednocześnie korzystnie wpływając na zdrowie alergików i astmatyków. W przeciwieństwie do tradycyjnych grzejników, promieniowanie podczerwone nie ogrzewa powietrza, co eliminuje suszenie powietrza oraz unoszenie się kurzu i pyłków. Panel można montować na ścianie, podłodze lub suficie, co pozwala na elastyczne dostosowanie ich do indywidualnych preferencji i potrzeb użytkownika. To wyjątkowe rozwiązanie, które zapewnia komfortowe i efektywne ogrzewanie bez względu na rodzaj i wielkość pomieszczenia.'
 tags:

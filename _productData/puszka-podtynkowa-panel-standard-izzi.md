@@ -2,9 +2,9 @@
 name: 'Puszka podtynkowa do panelu standard - iZZi'
 category: 'Rekuperatory'
 sub: 'Akcesoria'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/panel/puszka.jpg'
-link: '/produkty/puszka-podtynkowa-panel-standard-izzi'
+link: 'https://sklep.ecopass.pl/produkt/puszka-podtynkowa-do-panelu-standard-izzi/'
 description: 'Puszka podtynkowa dedykowana do wyświetlacza STANDARD.'
 desc_long: 'Puszka podtynkowa dedykowana do wyświetlacza STANDARD została specjalnie zaprojektowana dla rekuperatorów iZZi 302/402 ERV. Jest to praktyczne rozwiązanie, które umożliwia estetyczny montaż sterownika rekuperatora, idealnie zintegrowany ze ścianą. Dzięki wcześniejszemu wmurowaniu puszki podtynkowej w ścianie, montaż wyświetlacza STANDARD staje się prosty i estetyczny. Puszka zapewnia stabilne mocowanie i dokładne dopasowanie do ściany, co daje efekt harmonijnej integracji z otoczeniem.'
 tags: ['rekuperator', 'odzysk ciepła', 'puszka podtynkowa do panelu', 'reQnet']

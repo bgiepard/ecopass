@@ -2,9 +2,9 @@
 name: 'Rekuperator iZZi 402 ERV'
 category: 'Rekuperatory'
 sub: 'Rekuperatory modułowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/izzi402/iZZi402.png'
-link: '/produkty/rekuperator-izzi-402-erv'
+link: 'https://sklep.ecopass.pl/produkt/rekuperator-izzi-402erv/'
 description: 'Rekuperator modułowy wyposażony w entalpiczny wymiennik ciepła.'
 desc_long: 'iZZi 402 ERV to innowacyjny, kompaktowy rekuperator o modułowej konstrukcji, który charakteryzuje się zaawansowanym entalpicznym wymiennikiem ciepła wykonanym z membrany polimerowej. Dzięki tej technologii, urządzenie nie tylko odzyskuje ciepło, ale także wilgoć. Niezwykła obudowa, pozbawiona potrzeby odprowadzania skroplin, umożliwia łatwy montaż centrali, nawet w pojedynkę. Już w standardzie iZZi 402 ERV posiada energooszczędne wentylatory EC, rozbudowaną automatykę oraz pełne przełączanie na bypass o wartości 100%. W zestawie znajduje się również dotykowy panel sterowania, zapewniający wygodną obsługę urządzenia.'
 tags: ['rekuperator', 'odzysk ciepła', 'iZZi 402 ERV', 'reQnet']

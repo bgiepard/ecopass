@@ -2,9 +2,9 @@
 name: 'Rekuperator iZZi 302 ERV'
 category: 'Rekuperatory'
 sub: 'Rekuperatory modułowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/izzi302/izzi302.png'
-link: '/produkty/rekuperator-izzi-302-erv'
+link: 'https://sklep.ecopass.pl/produkt/rekuperator-izzi-302-erv/'
 description: 'Rekuperator modułowy wyposażony w entalpiczny wymiennik ciepła.'
 desc_long: 'iZZi 302 ERV to następca popularnego rekuperatora iZZi 300 ERV. Podobnie jak jego poprzednik, posiada jedną z najbardziej innowacyjnych technologii wymiennika ciepła na świecie - wymiennik entalpiczny firmy Core, który jest wykonany z zaawansowanej membrany polimerowej. Dzięki temu rekuperator może odzyskiwać wilgoć wraz z energią cieplną. Brak odpływu skroplin oraz łatwy, szybki i uniwersalny montaż w różnych pozycjach, dzięki sprytnej konsoli montażowej, umożliwiają samodzielne zainstalowanie systemu. iZZi 302 ERV jest wyposażony w efektywne wentylatory EC, automatyczny izolowany bypass 100% oraz intuicyjny panel sterujący dotykowy. Zalecamy także montaż dodatkowych modułów, które są dostępne w specjalnych zestawach.'
 tags: ['rekuperator', 'odzysk ciepła', 'iZZi 302 ERV', 'reQnet']

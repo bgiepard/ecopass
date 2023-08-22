@@ -2,9 +2,9 @@
 name: 'Filtry do rekuperatora iZZi 402 ERV'
 category: 'Rekuperatory'
 sub: 'Filtry'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/rekuperatory/filtry-402-reku.jpg'
-link: '/produkty/filtry-do-rekuperatora-izzi-402-erv'
+link: 'https://sklep.ecopass.pl/produkt/filtry-do-rekuperatora-izzi-402-erv/'
 description: 'Filtry plisowane M5 przeznaczone do rekuperatora iZZi 402 ERV.'
 desc_long: 'Filtry plisowane są skutecznym narzędziem do oczyszczania powietrza w systemach wentylacyjnych. Klasyfikowane jako M5, te filtry są w stanie zatrzymać drobne cząstki o wielkości 0,5 μm, w tym pyłki, kurz, sierść zwierząt i inne zanieczyszczenia powietrza. Odpowiednio dobrany filtr M5 pomaga poprawić jakość powietrza nawiewanego do pomieszczeń, co przekłada się na zdrowsze i bardziej komfortowe warunki życia. Do użytku w rekuperatorach iZZi 402 ERV. Cena dotyczy jednej sztuki filtra.'
 tags: ['rekuperator', 'odzysk ciepła', 'filtry plisowane M5', 'reQnet']

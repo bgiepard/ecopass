@@ -2,9 +2,9 @@
 name: 'Cronos z WiFi i pilotem 600W'
 category: 'Promienniki podczerwieni'
 sub: 'Promienniki podłogowe'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/promienniki-podczerwieni/'
 src: '/cronos-600w/main.jpg'
-link: '/produkty/cronos-z-wifi-600w'
+link: 'https://sklep.ecopass.pl/produkt/cronos-z-wifi-i-pilotem-600w/'
 description: 'Promiennik podczerwieni Cronos z WiFi i pilotem 600W.'
 desc_long: 'Ultracienki grzejnik na podczerwień od firmy Cronos oferuje innowacyjny sposób ogrzewania pomieszczeń za pomocą promieniowania podczerwonego. Dzięki temu, że promieniowanie nie ogrzewa powietrza, a jedynie organizmy żywe i przedmioty, osiągnięcie wzrostu temperatury jest bardziej efektywne i skuteczne. W szczególności, promiennik podczerwieni korzystnie wpływa na zdrowie alergików i astmatyków, ponieważ nie wprowadza do powietrza pyłków i innych alergenów, co jest częstym problemem przy tradycyjnych metodach ogrzewania.'
 tags:

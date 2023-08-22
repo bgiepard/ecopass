@@ -2,9 +2,9 @@
 name: 'Moduł stałego przepływu'
 category: 'Rekuperatory'
 sub: 'Akcesoria'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/rekuperatory/moduł1.jpg'
-link: '/produkty/modul-stalego-przeplywu-izzi'
+link: 'https://sklep.ecopass.pl/produkt/modul-stalego-przeplywu-do-rekuperatorow-izzi/'
 description: 'Moduł stałego przepływu do rekuperatorów reQnet iZZi 302/402 ERV.'
 desc_long: 'Moduł stałego przepływu został specjalnie zaprojektowany dla rekuperatorów reQnet iZZi 302/402 ERV. Jego głównym celem jest automatyczne zbilansowanie instalacji wentylacyjnej poprzez wyrównanie strumieni powietrza nawiewanego i wywiewanego. Moduł można samodzielnie zamontować wewnątrz centrali wentylacyjnej. Przed dokonaniem zakupu upewnij się, który moduł jest kompatybilny z Twoją wersją rekuperatora. Szczegółowy opis modułu znajduje się poniżej.'
 tags: ['rekuperator', 'odzysk ciepła', 'moduł stałego przepływu', 'reQnet']

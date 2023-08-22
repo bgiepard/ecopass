@@ -2,9 +2,9 @@
 name: 'Filtry do skrzynki filtracyjnej iZZi'
 category: 'Rekuperatory'
 sub: 'Filtry'
-categoryLink: ''
+categoryLink: 'https://sklep.ecopass.pl/c/rekuperatory/'
 src: '/rekuperatory/filtry-skrzynka.jpg'
-link: '/produkty/filtry-do-skrzynki-filtracyjnej-sf'
+link: 'https://sklep.ecopass.pl/produkt/filtry-do-skrzynki-filtracyjnej-izzi/'
 description: 'Filtry plisowane M5, F7 i F9 do antysmogowych skrzynek iZZi. '
 desc_long: 'Filtry plisowane w ramce poliestrowej oferują skuteczną filtrację powietrza w antysmogowych skrzynkach filtracyjnych iZZi. Dostępne są w trzech klasach filtracji: M5, F7 (nowość) i F9. Każdy filtr został starannie zaprojektowany, aby zatrzymywać różne rodzaje zanieczyszczeń, takie jak pyłki, drobne cząstki smogu i inne substancje szkodliwe. Cena dotyczy pojedynczej sztuki.'
 tags: ['rekuperator', 'odzysk ciepła', 'filtry plisowane M5', 'reQnet']
