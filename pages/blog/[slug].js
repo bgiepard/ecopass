@@ -6,6 +6,7 @@ import FeaturedProducts from 'components/FeaturedProducts';
 import ContactForm from 'components/ContactForm';
 import { useEffect, useState } from 'react';
 import { calculateTimeAgo } from 'services/timeAgo';
+import ShareButtons from 'components/ShareButtons';
 
 export const getStaticPaths = () => {
   const articles = getListOfArticles();
@@ -126,10 +127,18 @@ const Articles = ({ article, products }) => {
         </div>
 
         <div className="container m-auto flex md:flex-row flex-col">
-          <div
-            className="md:max-w-[66%] sm:text-[16px] sm:leading-[25px] text-sm pt-[50px] pb-[50px] sm:pr-[80px] prose"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-            role="main"></div>
+          <div className="md:max-w-[66%] pt-[50px] pb-[50px] sm:pr-[80px]">
+            <div
+              className="sm:text-[16px] max-w-full sm:leading-[25px] text-sm prose"
+              dangerouslySetInnerHTML={{ __html: article.content }}
+              role="main"></div>
+            <div className="mt-[50px]">
+              <span className="font-semibold">
+                Podobał Ci się ten artykuł? Podziel się nim na swoich mediach społecznościowych:
+              </span>
+              <ShareButtons />
+            </div>
+          </div>
           <aside className="sm:w-full py-[50px]">
             <h2 className="text-2xl font-bold pt-[50px] sm:pt-2">Polecane produkty</h2>
             {(() => {

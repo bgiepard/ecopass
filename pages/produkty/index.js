@@ -43,6 +43,23 @@ export default function Products({ products }) {
     }
   });
 
+  const categoryCounts = {};
+  const subCategoryCounts = {};
+
+  products.forEach((product) => {
+    const productCategory = product.category;
+    const productSubCategory = product.sub;
+
+    if (productCategory) {
+      categoryCounts[productCategory] = (categoryCounts[productCategory] || 0) + 1;
+    }
+
+    if (productSubCategory) {
+      subCategoryCounts[productSubCategory] = (subCategoryCounts[productSubCategory] || 0) + 1;
+    }
+  });
+  const totalProductCount = products.length;
+
   return (
     <>
       <Head>
@@ -131,7 +148,13 @@ export default function Products({ products }) {
           </div>
         </div>
         <div className="container m-auto flex gap-10 lg:flex-row flex-col">
-          <ProductsNav setCategory={setCategory} setSub={setSub} />
+          <ProductsNav
+            setCategory={setCategory}
+            setSub={setSub}
+            categoryCounts={categoryCounts}
+            subCategoryCounts={subCategoryCounts}
+            totalProductCount={totalProductCount}
+          />
           <div className="flex gap-5 flex-wrap gap-y-10 mb-[50px]">
             {displayedProducts.map((p) => {
               return <Product product={p} key={`key-${p.name + p.id}`} />;
