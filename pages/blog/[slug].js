@@ -64,7 +64,7 @@ const Articles = ({ article, products }) => {
   const fullDescription = `${article.description}`;
 
   const structuredData = {
-    '@context': 'http://schema.org',
+    '@context': 'https://schema.org',
     '@type': 'Article',
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -73,16 +73,23 @@ const Articles = ({ article, products }) => {
     headline: fullTitle,
     description: fullDescription,
     image: `https://ecopass.pl${article.cover}`,
-    publisher: {
-      '@type': 'Organization',
-      name: 'EcoPass'
-    },
     author: {
       '@type': 'Organization',
-      name: 'EcoPass',
-      url: 'https://www.facebook.com/ecopass1'
-    }
+      name: 'Ecopass',
+      url: 'https://facebook.com/ecopass1'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Ecopass',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/352793559_102930962840130_6898468156285511381_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=g6pn0_N8agYAX_6cDWw&_nc_ht=scontent.fpoz4-1.fna&oh=00_AfAV_FxaA8RlhBWY3pLZT5i4eR6jL67l18EnryKtLsYf9Q&oe=64FCBA4C'
+      }
+    },
+    datePublished: article.date
   };
+
+  const structuredDataString = JSON.stringify(structuredData);
 
   return (
     <>
@@ -101,7 +108,10 @@ const Articles = ({ article, products }) => {
         {article.tags && article.tags.length > 0 && (
           <meta property="article:tag" content={article.tags.join(', ')} />
         )}
-        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: structuredDataString }}></script>
+
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>
