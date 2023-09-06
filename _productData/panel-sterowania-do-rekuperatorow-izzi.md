@@ -8,7 +8,7 @@ link: 'https://sklep.ecopass.pl/produkt/panel-sterowania-do-rekuperatorow-izzi/'
 description: 'Panel dostępny w dwóch wersjach, standard i lite.'
 desc_long: 'Panele dotykowe z kolorowym wyświetlaczem do sterowania rekuperatorami z serii iZZi. Są dostępne w dwóch wariantach: uproszczonym lite oraz standardowym. Panele są kompatybilne z centralami iZZi 302/402 ERV i można je stosować wzajemnie. Przy zakupie rekuperatorów iZZi zawsze otrzymasz panel sterowania w komplecie. Panele w wersji lite tylko na zapytanie.'
 tags: ['rekuperator', 'odzysk ciepła', 'panel sterowania', 'reQnet']
-price_min: 1230/930
+price_min: 1230
 brand: 'reQnet'
 shipping: 14.99
 ---

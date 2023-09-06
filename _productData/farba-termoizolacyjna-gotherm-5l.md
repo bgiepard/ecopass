@@ -8,7 +8,7 @@ link: 'https://sklep.ecopass.pl/produkt/farba-termoizolacyjna-gotherm-5l/'
 description: 'Ochronna powłoka izolująca termicznie, działanie grzybo- i bakteriobójcze, redukcja kondensacji.'
 desc_long: 'GoTherm znajduje zastosowanie zarówno w izolacji termicznej zewnętrznej, jak i wewnętrznej, a także jako ochronna powłoka na przegrody budowlane, zapewniając ochronę przed poparzeniem na gorących powierzchniach. Produkt ten wykazuje także właściwości grzybo- i bakteriobójcze oraz skutecznie redukuje kondensację w przypadku znacznych fluktuacji temperatury.'
 tags: ['farby termoizolacyjne', 'termoizolacja', 'GoTherm', 'FCOM']
-price_max: 236.50
+price_min: 236.50
 brand: 'FCOM'
 shipping: 24.99
 ---

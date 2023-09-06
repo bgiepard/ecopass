@@ -8,7 +8,7 @@ link: 'https://sklep.ecopass.pl/produkt/masa-termoizolacyjna-gotherm-1l/'
 description: 'GoTherm® znajduje zastosowanie w zarówno zewnętrznej, jak i wewnętrznej izolacji termicznej.'
 desc_long: 'GoTherm® znajduje zastosowanie w zarówno zewnętrznej, jak i wewnętrznej izolacji termicznej, a także jako ochronna powłoka przegród budowlanych, skutecznie zabezpieczająca przed oparzeniami od gorących powierzchni. Produkt wykazuje właściwości grzybo- i bakteriobójcze, dodatkowo przeciwdziałając wytrącaniu się kondensatu w przypadku znacznych różnic temperatur.'
 tags: ['masy termoizolacyjne', 'termoizolacja', 'GoTherm', 'FCOM']
-price_max: 55
+price_min: 55
 brand: 'FCOM'
 shipping: 24.99
 ---

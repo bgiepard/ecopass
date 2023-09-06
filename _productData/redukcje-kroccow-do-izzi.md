@@ -8,7 +8,7 @@ link: 'https://sklep.ecopass.pl/produkt/redukcje-kroccow-do-izzi-302-402-erv/'
 description: 'Redukcje króćców o średnicy Ø 198/158 mm do rekuperatora iZZi 302/402 ERV.'
 desc_long: 'Redukcje nyplowe Ø 198/158 mm to niezawodne rozwiązanie, które umożliwia bezpośrednie podłączenie Twojego rekuperatora iZZi 302/402 ERV do kanałów wentylacyjnych o średnicy Ø 160 mm. Dzięki temu możesz łatwo dostosować swoją instalację i zaoszczędzić czas. Ta redukcja zastępuje standardowe króćce nyplowe o średnicy Ø 200 mm, które są dołączane w komplecie z rekuperatorem. Dzięki temu unikasz konieczności zakupu dodatkowych elementów i masz pewność, że Twoja instalacja będzie odpowiednio dopasowana.'
 tags: ['rekuperator', 'odzysk ciepła', 'redukcje króćców', 'reQnet']
-price_min: 45.01/180.02
+price_min: 45.01
 brand: 'reQnet'
 shipping: 14.99
 ---

@@ -8,7 +8,7 @@ link: 'https://sklep.ecopass.pl/produkt/ciq-farba-termoizolacyjna-do-scian-10l/'
 description: 'Farba °CIQ to rewolucyjna powłoka o zaawansowanych właściwościach termoizolacyjnych.'
 desc_long: 'Farba °CIQ to rewolucyjna powłoka o zaawansowanych właściwościach termoizolacyjnych. Dzięki systemowi mikrosfer wypełnionych neutralnym gazem, farba °CIQ stanowi wyjątkowe rozwiązanie, które odbija promieniowanie cieplne. W zimie pomaga zatrzymać ciepło we wnętrzu, a latem skutecznie odpycha nadmiar ciepła przenikającego przez ściany. Farba niweluje także wpływ mostków termicznych, ograniczając ryzyko rozwoju grzybów i pleśni.'
 tags: ['farby termoizolacyjne', 'termoizolacja', 'CIQ', 'Polifarb Kalisz']
-price_max: 369.00
+price_min: 369
 brand: 'Polifarb Kalisz'
 shipping: 24.99
 ---
