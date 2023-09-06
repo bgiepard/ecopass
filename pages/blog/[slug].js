@@ -63,6 +63,29 @@ const Articles = ({ article, products }) => {
   const fullTitle = `${article.title} ${article.title_second_line}`;
   const fullDescription = `${article.description}}`;
 
+  const structuredData = {
+    '@context': 'http://schema.org',
+    '@type': 'Article',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': article.slug
+    },
+    headline: fullTitle,
+    description: fullDescription,
+    image: article.cover,
+    publisher: {
+      '@type': 'Organization',
+      name: 'EcoPass'
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'EcoPass',
+      url: 'https://www.facebook.com/ecopass1'
+    },
+    articleSection: article.tags.join(', '),
+    url: `https://ecopass.pl/blog/${article.slug}`
+  };
+
   return (
     <>
       <Head>
@@ -80,29 +103,7 @@ const Articles = ({ article, products }) => {
         {article.tags && article.tags.length > 0 && (
           <meta property="article:tag" content={article.tags.join(', ')} />
         )}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@type': 'Article',
-            mainEntityOfPage: {
-              '@type': 'WebPage',
-              '@id': article.slug
-            },
-            headline: fullTitle,
-            description: fullDescription,
-            image: article.cover,
-            publisher: {
-              '@type': 'Organization',
-              name: 'EcoPass'
-            },
-            author: {
-              '@type': 'Organization',
-              name: 'EcoPass',
-              url: 'https://www.facebook.com/ecopass1'
-            },
-            articleSection: article.tags.join(', '),
-            url: `https://ecopass.pl/blog/${article.slug}`
-          })}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>
