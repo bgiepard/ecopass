@@ -61,7 +61,7 @@ const Articles = ({ article, products }) => {
       : article.tags[0];
 
   const fullTitle = `${article.title} ${article.title_second_line}`;
-  const fullDescription = `${article.description}}`;
+  const fullDescription = `${article.description}`;
 
   const structuredData = {
     '@context': 'http://schema.org',
@@ -70,8 +70,8 @@ const Articles = ({ article, products }) => {
       '@type': 'WebPage',
       '@id': article.slug
     },
-    headline: fullTitle,
-    description: fullDescription,
+    headline: fullTitle.replace(/"/g, '\\"'),
+    description: fullDescription.replace(/"/g, '\\"'),
     image: article.cover,
     publisher: {
       '@type': 'Organization',
