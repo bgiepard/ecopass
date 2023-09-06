@@ -46,6 +46,30 @@ export default function Blog({ posts }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
+  const itemListStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: posts.map((post, index) => ({
+      '@type': 'BlogPosting',
+      position: index + 1,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `${seoData.url}/${post.slug}`
+      },
+      headline: `${post.title} ${post.title_second_line}`,
+      image: `https://ecopass.pl${post.cover}`,
+      description: post.description,
+      author: {
+        '@type': 'Organization',
+        name: 'EcoPass',
+        url: 'https://www.facebook.com/ecopass1'
+      },
+      articleSection: post.tags.join(', '),
+      url: `${seoData.url}/${post.slug}`
+    }))
+  };
+  const itemListStructuredDataString = JSON.stringify(itemListStructuredData);
+
   return (
     <>
       <Head>
@@ -62,30 +86,9 @@ export default function Blog({ posts }) {
         <meta property="og:image:alt" content={seoData.title} />
         <link rel="canonical" href={seoData.url} />
         <link rel="icon" href="/icon.png" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            itemListElement: posts.map((post, index) => ({
-              '@type': 'BlogPosting',
-              position: index + 1,
-              mainEntityOfPage: {
-                '@type': 'WebPage',
-                '@id': `${seoData.url}/${post.slug}`
-              },
-              headline: `${post.title} ${post.title_second_line}`,
-              image: post.cover,
-              description: post.description,
-              author: {
-                '@type': 'Organization',
-                name: 'EcoPass',
-                url: 'https://www.facebook.com/ecopass1'
-              },
-              articleSection: post.tags.join(', '),
-              url: `${seoData.url}/${post.slug}`
-            }))
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: itemListStructuredDataString }}></script>
       </Head>
       <Layout>
         <div className="bg-primary border-t-2">

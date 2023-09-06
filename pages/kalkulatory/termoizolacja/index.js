@@ -35,6 +35,17 @@ export default function ThermalInsulationCalculator() {
     }
   }, [effect, height, width, thickness]);
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPageElement',
+    url: seoData.url,
+    name: seoData.title,
+    description: seoData.description,
+    image: seoData.image
+  };
+
+  const dataString = JSON.stringify(structuredData);
+
   return (
     <>
       <Head>
@@ -49,16 +60,9 @@ export default function ThermalInsulationCalculator() {
         <meta property="og:description" content={seoData.description} />
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'WebPageElement',
-            url: seoData.url,
-            name: seoData.title,
-            description: seoData.description,
-            image: seoData.image
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: dataString }}></script>
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>

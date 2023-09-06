@@ -60,6 +60,69 @@ export default function Products({ products }) {
   });
   const totalProductCount = products.length;
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: products.map((product, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Product',
+        url: `https://ecopass.pl/produkty/${product.link}`,
+        name: product.name,
+        description: product.description,
+        image: `https://ecopass.pl${product.src}`,
+        brand: {
+          '@type': 'Brand',
+          name: product.brand
+        },
+        offers: {
+          '@type': 'Offer',
+          price: product.price_min,
+          priceCurrency: 'PLN',
+          availability: 'https://schema.org/InStoreOnly',
+          itemCondition: 'https://schema.org/NewCondition',
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            applicableCountry: 'PL',
+            returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+            merchantReturnDays: 30,
+            returnMethod: 'https://schema.org/ReturnByMail'
+          },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: product.shipping,
+              currency: 'PLN'
+            },
+            shippingDestination: {
+              '@type': 'DefinedRegion',
+              addressCountry: 'PL'
+            },
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 0,
+                maxValue: 3,
+                unitCode: 'DAY'
+              },
+              transitTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 1,
+                maxValue: 5,
+                unitCode: 'DAY'
+              }
+            }
+          }
+        }
+      }
+    }))
+  };
+
+  const dataString = JSON.stringify(structuredData);
+
   return (
     <>
       <Head>
@@ -74,68 +137,9 @@ export default function Products({ products }) {
         <meta property="og:description" content={seoData.description} />
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            itemListElement: products.map((product, index) => ({
-              '@type': 'ListItem',
-              position: index + 1,
-              item: {
-                '@type': 'Product',
-                url: `https://ecopass.pl/produkty/${product.link}`,
-                name: product.name,
-                description: product.description,
-                image: product.src,
-                brand: {
-                  '@type': 'Brand',
-                  name: product.brand
-                },
-                offers: {
-                  '@type': 'Offer',
-                  price: product.price_min,
-                  priceCurrency: 'PLN',
-                  availability: 'https://schema.org/InStoreOnly',
-                  itemCondition: 'https://schema.org/NewCondition',
-                  hasMerchantReturnPolicy: {
-                    '@type': 'MerchantReturnPolicy',
-                    applicableCountry: 'PL',
-                    returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-                    merchantReturnDays: 30,
-                    returnMethod: 'https://schema.org/ReturnByMail'
-                  },
-                  shippingDetails: {
-                    '@type': 'OfferShippingDetails',
-                    shippingRate: {
-                      '@type': 'MonetaryAmount',
-                      value: product.shipping,
-                      currency: 'PLN'
-                    },
-                    shippingDestination: {
-                      '@type': 'DefinedRegion',
-                      addressCountry: 'PL'
-                    },
-                    deliveryTime: {
-                      '@type': 'ShippingDeliveryTime',
-                      handlingTime: {
-                        '@type': 'QuantitativeValue',
-                        minValue: 0,
-                        maxValue: 3,
-                        unitCode: 'DAY'
-                      },
-                      transitTime: {
-                        '@type': 'QuantitativeValue',
-                        minValue: 1,
-                        maxValue: 5,
-                        unitCode: 'DAY'
-                      }
-                    }
-                  }
-                }
-              }
-            }))
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: dataString }}></script>
 
         <link rel="icon" href="/icon.png" />
       </Head>

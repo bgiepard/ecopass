@@ -30,6 +30,37 @@ export default function Home({ posts }) {
 
   const displayedPosts = category ? posts.filter((post) => post.tags.includes(category)) : posts;
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    url: seoData.url,
+    name: seoData.title,
+    description: seoData.description,
+    image: seoData.image,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Artykuły - EcoPass.pl',
+        item: `${seoData.url}/blog`
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Produkty - EcoPass.pl',
+        item: `${seoData.url}/produkty`
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Kalkulatory - EcoPass.pl',
+        item: `${seoData.url}/kalkulatory`
+      }
+    ]
+  };
+
+  const dataString = JSON.stringify(structuredData);
+
   return (
     <>
       <Head>
@@ -45,36 +76,9 @@ export default function Home({ posts }) {
         <meta property="og:image" content={seoData.image} />
         <meta property="og:image:alt" content={seoData.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            url: seoData.url,
-            name: seoData.title,
-            description: seoData.description,
-            image: seoData.image,
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Artykuły - EcoPass.pl',
-                item: `${seoData.url}/blog`
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'Produkty - EcoPass.pl',
-                item: `${seoData.url}/produkty`
-              },
-              {
-                '@type': 'ListItem',
-                position: 3,
-                name: 'Kalkulatory - EcoPass.pl',
-                item: `${seoData.url}/kalkulatory`
-              }
-            ]
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: dataString }}></script>
         <link rel="icon" href="/icon.png" />
       </Head>
 
