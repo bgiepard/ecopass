@@ -68,11 +68,11 @@ const Articles = ({ article, products }) => {
     '@type': 'Article',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': article.slug
+      '@id': `https://ecopass.pl/blog/${article.slug}`
     },
-    headline: fullTitle.replace(/"/g, '\\"'),
-    description: fullDescription.replace(/"/g, '\\"'),
-    image: article.cover,
+    headline: fullTitle,
+    description: fullDescription,
+    image: `https://ecopass.pl${article.cover}`,
     publisher: {
       '@type': 'Organization',
       name: 'EcoPass'
@@ -81,9 +81,7 @@ const Articles = ({ article, products }) => {
       '@type': 'Organization',
       name: 'EcoPass',
       url: 'https://www.facebook.com/ecopass1'
-    },
-    articleSection: article.tags.join(', '),
-    url: `https://ecopass.pl/blog/${article.slug}`
+    }
   };
 
   return (
