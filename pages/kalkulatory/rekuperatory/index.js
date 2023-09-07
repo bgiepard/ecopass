@@ -129,10 +129,18 @@ export default function Recuperators() {
             <input type="checkbox" className="mr-3 cursor-pointer" />
             Grzyb
           </label>
-          <label className="w-fit cursor-pointer">
+          <label className="w-fit cursor-pointer mb-3">
             <input type="checkbox" className="mr-3 cursor-pointer" />
             Parowanie okien
           </label>
+          <label htmlFor="thickness">Podaj grubość ściany (w mm):</label>
+          <input
+            type="number"
+            id="thickness"
+            placeholder="mm"
+            aria-label="Podaj grubość ściany (w milimetrach)"
+            className="border-2 p-1 sm:w-[150px] w-[50vw] shadow-sm focus:outline-secondary rounded-xl mb-3"
+          />
         </div>
       </Layout>
     </>
