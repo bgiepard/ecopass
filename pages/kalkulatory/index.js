@@ -26,6 +26,13 @@ const data = [
     title: 'Kalkulator zużycia farb termoizolacyjnych',
     path: 'termoizolacja',
     desc: 'Nasz kalkulator zużycia farb termoizolacyjnych pomoże Ci obliczyć ilość farby potrzebnej do pokrycia powierzchni Twojego budynku.'
+  },
+  {
+    id: 4,
+    src: '/recuperation.png',
+    title: 'Kalkulator doboru rekuperatora',
+    path: 'rekuperatory',
+    desc: 'Nasz kalkulator doboru rekuperatora ściennego to narzędzie, które pomaga użytkownikom dokładnie określić odpowiednie parametry rekuperatora wentylacyjnego do ich pomieszczeń.'
   }
 ];
 
