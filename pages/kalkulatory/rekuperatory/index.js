@@ -238,8 +238,8 @@ export default function Recuperators() {
     }
 
     if (
-      howHigh !== 'nie' &&
-      wind !== 'nie' &&
+      howHigh !== 'false' &&
+      wind !== 'false' &&
       howHigh !== '' &&
       wind !== '' &&
       roomType !== 'kitchen' &&
@@ -258,7 +258,7 @@ export default function Recuperators() {
           : 'https://sklep.ecopass.pl/produkt/membrana-wiatrowa-do-rekuperatorow-prana-200/'
       );
     } else if (
-      (howHigh === 'nie' && wind === 'nie') ||
+      (howHigh === 'false' && wind === 'false') ||
       roomType === 'kitchen' ||
       fireplace === 'open'
     ) {
