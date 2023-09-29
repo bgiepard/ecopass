@@ -570,7 +570,7 @@ export default function Recuperators() {
               </div>
             </>
           ) : null}
-          {prohibited || info || adjust || roomType === 'bathroom' ? (
+          {recu && (prohibited || info || adjust || roomType === 'bathroom') ? (
             <div className="flex flex-col lg:flex-row p-3 items-center w-full gap-5 mt-5 shadow-md shadow-gray-400 rounded-md">
               <Image src="/prana/dodatki/excl.png" width={150} height={150} alt="ostrzeżenie" />
               <div className="flex flex-col gap-3 w-full">
