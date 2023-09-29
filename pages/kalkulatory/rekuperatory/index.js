@@ -78,7 +78,7 @@ export default function Recuperators() {
           setRecuName('PRANA Origami 200G Premium +'))
         : setRecu('/prana/origami-smog-200g/main.png'),
         setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-stop-smog/'),
-        setRecuName('PRANA Origami 200G Standard');
+        setRecuName('PRANA Origami 200G Stop Smog');
     } else if (people == 3 && roomType === 'bedroom' && fireplace !== 'open') {
       financing === 'true'
         ? (setRecu('/prana/origami-prem-200c/main.png'),
@@ -88,7 +88,7 @@ export default function Recuperators() {
           setRecuName('PRANA Origami 200C Premium +'))
         : setRecu('/prana/origami-smog-200c/main.png'),
         setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
-        setRecuName('PRANA Origami 200C Standard');
+        setRecuName('PRANA Origami 200C Stop Smog');
     } else if (
       people == 1 &&
       (roomType === 'livingroom' || roomType === 'diningroom') &&
@@ -102,7 +102,7 @@ export default function Recuperators() {
           setRecuName('PRANA Origami 200G Premium +'))
         : setRecu('/prana/origami-smog-200g/main.png'),
         setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-stop-smog/'),
-        setRecuName('PRANA Origami 200G Standard');
+        setRecuName('PRANA Origami 200G Stop Smog');
     } else if (
       people >= 2 &&
       (roomType === 'livingroom' || roomType === 'diningroom') &&
@@ -116,7 +116,7 @@ export default function Recuperators() {
           setRecuName('PRANA Origami 200C Premium +'))
         : setRecu('/prana/origami-smog-200c/main.png');
       setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
-        setRecuName('PRANA Origami 200C Standard');
+        setRecuName('PRANA Origami 200C Stop Smog');
     } else if (people >= 1 && roomType === 'open' && fireplace !== 'open') {
       financing === 'true'
         ? (setRecu('/prana/origami-prem-200c/main.png'),
@@ -126,7 +126,7 @@ export default function Recuperators() {
           setRecuName('PRANA Origami 200C Premium +'))
         : setRecu('/prana/origami-smog-200c/main.png');
       setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
-        setRecuName('PRANA Origami 200C Standard');
+        setRecuName('PRANA Origami 200C Stop Smog');
     }
 
     if (roomType === 'kitchen' || fireplace === 'open') {
