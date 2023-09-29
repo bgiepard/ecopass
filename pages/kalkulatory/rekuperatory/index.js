@@ -28,6 +28,7 @@ const dataString = JSON.stringify(structuredData);
 export default function Recuperators() {
   const [people, setPeople] = useState(0);
   const [roomType, setRoomType] = useState('');
+  const [filter, setFilter] = useState('');
   const [financing, setFinancing] = useState('');
   const [ventilation, setVentilation] = useState('');
   const [fireplace, setFireplace] = useState('');
@@ -53,6 +54,7 @@ export default function Recuperators() {
   const [steelLink, setSteelLink] = useState('');
   const [colorInLink, setColorInLink] = useState('');
   const [adjustPhoto, setAdjustPhoto] = useState('');
+  const [filterLink, setFilterLink] = useState('');
 
   const handleClick = () => {
     if (
@@ -60,73 +62,97 @@ export default function Recuperators() {
       (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
       fireplace !== 'open'
     ) {
-      financing === 'true'
+      (financing === 'true' && filter !== 'false') || (financing === 'true' && filter === 'false')
         ? (setRecu('/prana/origami-prem-150/main.png'),
           setRecuLink(
             'https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-150-premium-plus/'
           ),
           setRecuName('PRANA Origami 150 Premium +'))
-        : setRecu('/prana/origami-stand-150/main.png'),
-        setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-150-standard/'),
-        setRecuName('PRANA Origami 150 Standard');
+        : financing === 'false' && filter !== 'false'
+        ? (setRecu('/prana/origami-smog-150/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-150-stop-smog/'),
+          setRecuName('PRANA Origami 150 Stop Smog'))
+        : (setRecu('/prana/origami-stand-150/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-150-standard/'),
+          setRecuName('PRANA Origami 150 Standard'));
     } else if ((people == 1 || people == 2) && roomType === 'bedroom' && fireplace !== 'open') {
-      financing === 'true'
+      (financing === 'true' && filter !== 'false') || (financing === 'true' && filter === 'false')
         ? (setRecu('/prana/origami-prem-200g/main.png'),
           setRecuLink(
             'https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-premium-plus/'
           ),
           setRecuName('PRANA Origami 200G Premium +'))
-        : setRecu('/prana/origami-smog-200g/main.png'),
-        setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-stop-smog/'),
-        setRecuName('PRANA Origami 200G Stop Smog');
+        : financing === 'false' && filter !== 'false'
+        ? (setRecu('/prana/origami-smog-200g/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-stop-smog/'),
+          setRecuName('PRANA Origami 200G Stop Smog'))
+        : (setRecu('/prana/origami-stand-200g/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-standard/'),
+          setRecuName('PRANA Origami 200G Standard'));
     } else if (people == 3 && roomType === 'bedroom' && fireplace !== 'open') {
-      financing === 'true'
+      (financing === 'true' && filter !== 'false') || (financing === 'true' && filter === 'false')
         ? (setRecu('/prana/origami-prem-200c/main.png'),
           setRecuLink(
             'https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-premium-plus/'
           ),
           setRecuName('PRANA Origami 200C Premium +'))
-        : setRecu('/prana/origami-smog-200c/main.png'),
-        setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
-        setRecuName('PRANA Origami 200C Stop Smog');
+        : financing === 'false' && filter !== 'false'
+        ? (setRecu('/prana/origami-smog-200c/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
+          setRecuName('PRANA Origami 200C Stop Smog'))
+        : (setRecu('/prana/origami-stand-200c/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-standard/'),
+          setRecuName('PRANA Origami 200C Standard'));
     } else if (
       people == 1 &&
       (roomType === 'livingroom' || roomType === 'diningroom') &&
       fireplace !== 'open'
     ) {
-      financing === 'true'
+      (financing === 'true' && filter !== 'false') || (financing === 'true' && filter === 'false')
         ? (setRecu('/prana/origami-prem-200g/main.png'),
           setRecuLink(
             'https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-premium-plus/'
           ),
           setRecuName('PRANA Origami 200G Premium +'))
-        : setRecu('/prana/origami-smog-200g/main.png'),
-        setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-stop-smog/'),
-        setRecuName('PRANA Origami 200G Stop Smog');
+        : financing === 'false' && filter !== 'false'
+        ? (setRecu('/prana/origami-smog-200g/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-stop-smog/'),
+          setRecuName('PRANA Origami 200G Stop Smog'))
+        : (setRecu('/prana/origami-stand-200g/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200g-standard/'),
+          setRecuName('PRANA Origami 200G Standard'));
     } else if (
       people >= 2 &&
       (roomType === 'livingroom' || roomType === 'diningroom') &&
       fireplace !== 'open'
     ) {
-      financing === 'true'
+      (financing === 'true' && filter !== 'false') || (financing === 'true' && filter === 'false')
         ? (setRecu('/prana/origami-prem-200c/main.png'),
           setRecuLink(
             'https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-premium-plus/'
           ),
           setRecuName('PRANA Origami 200C Premium +'))
-        : setRecu('/prana/origami-smog-200c/main.png');
-      setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
-        setRecuName('PRANA Origami 200C Stop Smog');
+        : financing === 'false' && filter !== 'false'
+        ? (setRecu('/prana/origami-smog-200c/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
+          setRecuName('PRANA Origami 200C Stop Smog'))
+        : (setRecu('/prana/origami-stand-200c/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-standard/'),
+          setRecuName('PRANA Origami 200C Standard'));
     } else if (people >= 1 && roomType === 'open' && fireplace !== 'open') {
-      financing === 'true'
+      (financing === 'true' && filter !== 'false') || (financing === 'true' && filter === 'false')
         ? (setRecu('/prana/origami-prem-200c/main.png'),
           setRecuLink(
             'https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-premium-plus/'
           ),
           setRecuName('PRANA Origami 200C Premium +'))
-        : setRecu('/prana/origami-smog-200c/main.png');
-      setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
-        setRecuName('PRANA Origami 200C Stop Smog');
+        : financing === 'false' && filter !== 'false'
+        ? (setRecu('/prana/origami-smog-200c/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-stop-smog/'),
+          setRecuName('PRANA Origami 200C Stop Smog'))
+        : (setRecu('/prana/origami-stand-200c/main.png'),
+          setRecuLink('https://sklep.ecopass.pl/produkt/rekuperator-prana-origami-200c-standard/'),
+          setRecuName('PRANA Origami 200C Standard'));
     }
 
     if (roomType === 'kitchen' || fireplace === 'open') {
@@ -243,7 +269,8 @@ export default function Recuperators() {
       howHigh !== '' &&
       wind !== '' &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setOverlay('/prana/dodatki/pokr-main.png');
       setMembrane('/prana/dodatki/membrana.png');
@@ -272,7 +299,8 @@ export default function Recuperators() {
       finish === 'outside' &&
       (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setColorOut('/prana/dodatki/zewn.png');
       setColorOutLink('https://sklep.ecopass.pl/produkt/malowanie-panelu-zewnetrznego-prana-150/');
@@ -287,7 +315,8 @@ export default function Recuperators() {
       roomType !== 'dressingroom' &&
       roomType !== 'garage' &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setColorOut('/prana/dodatki/zewn.png');
       setColorOutLink('https://sklep.ecopass.pl/produkt/malowanie-panelu-zewnetrznego-prana-200/');
@@ -300,7 +329,8 @@ export default function Recuperators() {
       finish === 'inside' &&
       (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setColorIn('/prana/dodatki/wewn.png');
       setColorInLink('https://sklep.ecopass.pl/produkt/malowanie-panelu-prana-150/');
@@ -312,7 +342,8 @@ export default function Recuperators() {
       roomType !== 'dressingroom' &&
       roomType !== 'garage' &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setColorIn('/prana/dodatki/wewn-200.png');
       setColorInLink('https://sklep.ecopass.pl/produkt/malowanie-panelu-wewnetrznego-prana-200/');
@@ -322,7 +353,8 @@ export default function Recuperators() {
       finish === 'true' &&
       (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setColorOut('/prana/dodatki/zewn.png');
       setColorOutLink('https://sklep.ecopass.pl/produkt/malowanie-panelu-zewnetrznego-prana-150/');
@@ -338,7 +370,8 @@ export default function Recuperators() {
       roomType !== 'dressingroom' &&
       roomType !== 'garage' &&
       roomType !== 'kitchen' &&
-      fireplace !== 'open'
+      fireplace !== 'open' &&
+      roomType !== ''
     ) {
       setColorOut('/prana/dodatki/zewn.png');
       setColorOutLink('https://sklep.ecopass.pl/produkt/malowanie-panelu-zewnetrznego-prana-200/');
@@ -355,6 +388,81 @@ export default function Recuperators() {
       setColorInLink('');
       setColorOutLink('');
       setSteelLink('');
+    }
+
+    if (
+      filter === 'g2' &&
+      (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g2-do-rekuperatora-prana-150/');
+    } else if (
+      filter === 'g3' &&
+      (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g3-do-rekuperatora-prana-150/');
+    } else if (
+      filter === 'g4' &&
+      (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g4-do-rekuperatora-prana-150/');
+    } else if (
+      filter === 'g2' &&
+      roomType !== 'bathroom' &&
+      roomType !== 'dressingroom' &&
+      roomType !== 'garage' &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g2-do-rekuperatora-prana-200/');
+    } else if (
+      filter === 'g3' &&
+      roomType !== 'bathroom' &&
+      roomType !== 'dressingroom' &&
+      roomType !== 'garage' &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g3-do-rekuperatora-prana-200/');
+    } else if (
+      filter === 'g4' &&
+      roomType !== 'bathroom' &&
+      roomType !== 'dressingroom' &&
+      roomType !== 'garage' &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g4-do-rekuperatora-prana-200/');
+    } else if (
+      filter === 'false' &&
+      roomType !== 'bathroom' &&
+      roomType !== 'dressingroom' &&
+      roomType !== 'garage' &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open' &&
+      financing === 'true'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g2-do-rekuperatora-prana-200/');
+    } else if (
+      filter === 'false' &&
+      (roomType === 'bathroom' || roomType === 'dressingroom' || roomType === 'garage') &&
+      roomType !== 'kitchen' &&
+      fireplace !== 'open' &&
+      financing === 'true'
+    ) {
+      setFilterLink('https://sklep.ecopass.pl/produkt/filtr-g2-do-rekuperatora-prana-150/');
+    } else if (
+      fireplace === 'open' ||
+      roomType === 'kitchen' ||
+      filter === 'false' ||
+      filter === ''
+    ) {
+      setFilterLink('');
     }
   };
 
@@ -435,6 +543,24 @@ export default function Recuperators() {
             <option value="open">Kuchnia otwarta z salonem lub salonem i jadalnią</option>
             <option value="dressingroom">Garderoba</option>
             <option value="garage">Garaż</option>
+          </select>
+          <label htmlFor="filter">
+            Czy zależy Ci na dodatkowej filtracji nawiewanego powietrza?
+          </label>
+          <select
+            id="type"
+            onChange={(e) => {
+              setFilter(e.target.value);
+            }}
+            aria-label="Czy zależy Ci na dodatkowej filtracji nawiewanego powietrza?"
+            className={`border-2 p-1 sm:w-[150px] w-[50vw] shadow-sm rounded-xl mb-3 focus:outline-secondary ${
+              recu && filter === '' ? 'border-red-500' : ''
+            }`}>
+            <option value="">Wybierz...</option>
+            <option value="false">Nie</option>
+            <option value="g2">Podstawowej</option>
+            <option value="g3">Dokładnej</option>
+            <option value="g4">Bardzo dokładnej</option>
           </select>
           <label htmlFor="financing">
             Czy będziesz korzystał z dotacji z programu Czyste Powietrze?
@@ -570,13 +696,13 @@ export default function Recuperators() {
               </div>
             </>
           ) : null}
-          {recu && (prohibited || info || adjust || roomType === 'bathroom') ? (
+          {(prohibited || info || adjust || roomType === 'bathroom') && roomType !== '' ? (
             <div className="flex flex-col lg:flex-row p-3 items-center w-full gap-5 mt-5 shadow-md shadow-gray-400 rounded-md">
               <Image src="/prana/dodatki/excl.png" width={150} height={150} alt="ostrzeżenie" />
               <div className="flex flex-col gap-3 w-full">
                 {prohibited ? <p className="font-semibold text-lg">{prohibited}</p> : null}
                 {info ? <p>{info}</p> : null}
-                {adjust ? <p>{adjust}</p> : null}
+                {adjust && roomType !== 'bathroom' && fireplace !== 'open' ? <p>{adjust}</p> : null}
                 {roomType === 'bathroom' && fireplace !== 'open' ? (
                   <p>
                     Rekuperatory przeznaczone do montowania w łazienkach muszą zostać
@@ -741,6 +867,41 @@ export default function Recuperators() {
                     Malowanie panelu wewnętrznego
                   </span>
                   <Link href={steelLink} target="_blank">
+                    <button className="bg-secondary px-5 py-[5px] rounded-2xl shadow-sm hover:shadow-md text-white font-bold float-right lg:mr-10">
+                      Zobacz w sklepie
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </>
+          ) : null}
+          {recu &&
+          filter !== '' &&
+          (filter !== 'false' || (filter === 'false' && financing === 'true')) ? (
+            <>
+              <p className="font-semibold mt-10 mb-5">
+                Filtry do rekuperatorów Stop Smog oraz Premium +. Średnia żywotność filtra to 4
+                tygodnie, zaleca się stosowanie oryginalnych filtrów.
+              </p>
+              <div className="flex w-full lg:flex-row flex-col shadow-md shadow-gray-400 rounded-md items-center gap-5 p-3 lg:p-0">
+                <Image
+                  src={filterLink && '/prana/dodatki/filtry.png'}
+                  width={200}
+                  height={200}
+                  alt="wewnętrzny"
+                  className="rounded-md"
+                />
+                <div className="flex flex-col w-full">
+                  <span className=" lg:text-xl text-lg font-semibold mb-5">
+                    {`Filtr ${
+                      filter !== 'false'
+                        ? filter.toUpperCase()
+                        : filter === 'false' && financing === 'true'
+                        ? ''
+                        : ''
+                    } do rekuperatora PRANA`}
+                  </span>
+                  <Link href={filterLink} target="_blank">
                     <button className="bg-secondary px-5 py-[5px] rounded-2xl shadow-sm hover:shadow-md text-white font-bold float-right lg:mr-10">
                       Zobacz w sklepie
                     </button>
