@@ -33,6 +33,21 @@ const categories = [
     id: 7,
     name: 'Promienniki',
     value: 'promienniki'
+  },
+  {
+    id: 8,
+    name: 'Maty grzewcze',
+    value: 'maty grzewcze'
+  },
+  {
+    id: 9,
+    name: 'Folie grzewcze',
+    value: 'folie grzewcze'
+  },
+  {
+    id: 10,
+    name: 'Zdrowe powietrze',
+    value: 'zdrowe powietrze'
   }
 ];
 

@@ -2,7 +2,7 @@
 title: 'Anatomia folii grzewczej -'
 title_second_line: 'jak działa każda część systemu?'
 description: 'Poszukiwanie bardziej efektywnych, ekologicznych i komfortowych rozwiązań w zakresie ogrzewania stało się priorytetem w dziedzinie technologii budowlanych. Jednym z rozwiązań, które zdobywa coraz większą popularność, są folie grzewcze. Te zaawansowane systemy ogrzewania, często niewidoczne dla oka, stanowią ważny element nowoczesnych budynków i przyczyniają się do stworzenia przyjaznego i wygodnego środowiska życia.'
-tags: ['promienniki', 'folia grzewcza', 'działanie folii grzewczej', 'składniki folii grzewczej']
+tags: ['folie grzewcze', 'działanie folii grzewczej', 'składniki folii grzewczej']
 cover: '/covers/how-works.png'
 date: 05.09.2023
 ---

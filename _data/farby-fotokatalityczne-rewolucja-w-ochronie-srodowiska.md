@@ -2,7 +2,7 @@
 title: 'Farby fotokatalityczne -'
 title_second_line: 'rewolucja w ochronie środowiska'
 description: 'Farby fotokatalityczne to materiały, które wykorzystują proces fotokatalizy do oczyszczania powietrza, samooczyszczania powierzchni i eliminowania zanieczyszczeń. W przeciwieństwie do tradycyjnych farb, farby fotokatalityczne aktywowane promieniowaniem słonecznym lub sztucznym światłem mogą skutecznie przyczynić się do poprawy jakości życia i ochrony środowiska.'
-tags: ['farby fotokatalityczne', 'czyste powietrze', 'ochrona środowiska']
+tags: ['zdrowe powietrze', 'farby fotokatalityczne', 'ochrona środowiska']
 cover: '/covers/clean-air.png'
 date: 11.09.2023
 ---

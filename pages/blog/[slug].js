@@ -58,7 +58,7 @@ const Articles = ({ article, products }) => {
       ? article.tags[0].replace(/\s/g, '-').replace(/ł/g, 'l')
       : article.tags[0] === 'dofinansowania' || article.tags[0] === 'elektrownie wiatrowe'
       ? 'leads'
-      : article.tags[0];
+      : article.tags[0].replace(/\s/g, '-');
 
   const fullTitle = `${article.title} ${article.title_second_line}`;
   const fullDescription = `${article.description}`;
@@ -111,7 +111,6 @@ const Articles = ({ article, products }) => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: structuredDataString }}></script>
-
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>

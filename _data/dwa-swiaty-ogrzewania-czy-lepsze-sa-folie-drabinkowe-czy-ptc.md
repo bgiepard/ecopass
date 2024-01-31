@@ -4,7 +4,7 @@ title_second_line: 'czy lepsze są folie drabinkowe czy PTC?'
 description: 'Technologia ogrzewania stale ewoluuje, wprowadzając coraz to nowsze i bardziej efektywne rozwiązania. Wśród tych innowacji szczególne miejsce zajmuje technologia podczerwieni, która pozwala na skuteczne i energooszczędne ogrzewanie. Jednym z przejawów tej technologii są folie grzewcze, które oferują nowe podejście do tworzenia komfortu termicznego w pomieszczeniach. W ramach tego artykułu skupimy się na porównaniu dwóch popularnych rodzajów folii grzewczych na podczerwień: folii drabinkowych oraz folii PTC.'
 tags:
   [
-    'promienniki',
+    'folie grzewcze',
     'folia grzewcza drabinkowa',
     'folia grzewcza PTC',
     'porównanie folii drabinkowej i PTC'

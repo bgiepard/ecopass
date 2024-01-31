@@ -2,7 +2,8 @@
 title: 'Oszczędność i elastyczność ogrzewania -'
 title_second_line: 'zastosowanie folii grzewczej na podczerwień'
 description: 'Wprowadzenie do technologii podczerwieni stanowi kluczowy krok w poszukiwaniu innowacyjnych i efektywnych rozwiązań w dziedzinie ogrzewania. Promieniowanie podczerwone, będące nieodłączną częścią widma elektromagnetycznego, odgrywa istotną rolę w różnych dziedzinach, w tym również w technologiach grzewczych.'
-tags: ['promienniki', 'folia grzewcza na podczerwień', 'ogrzewanie podłogowe', 'ogrzewanie ścienne']
+tags:
+  ['folie grzewcze', 'folia grzewcza na podczerwień', 'ogrzewanie podłogowe', 'ogrzewanie ścienne']
 cover: '/folia/17575.jpg'
 date: 21.08.2023
 ---

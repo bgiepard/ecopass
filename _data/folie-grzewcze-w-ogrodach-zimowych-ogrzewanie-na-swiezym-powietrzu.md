@@ -2,7 +2,7 @@
 title: 'Folie grzewcze w ogrodach zimowych -'
 title_second_line: 'ogrzewanie na świeżym powietrzu'
 description: 'Ogrzewanie w ogrodach zimowych staje się coraz bardziej popularne wśród miłośników przyrody i osób ceniących kontakt z naturą przez cały rok. Przenoszenie komfortu cieplnego na świeże powietrze pozwala cieszyć się pięknem ogrodu niezależnie od pory roku. Jednym z innowacyjnych rozwiązań, które umożliwiają to doświadczenie, są folie grzewcze.'
-tags: ['folia grzewcza', 'ogrzewanie tarasu balkonu i altany', 'ogrzewanie schodów i chodników']
+tags: ['folie grzewcze', 'ogrzewanie tarasu balkonu i altany', 'ogrzewanie schodów i chodników']
 cover: '/covers/heated-terrace.png'
 date: 06.10.2023
 ---

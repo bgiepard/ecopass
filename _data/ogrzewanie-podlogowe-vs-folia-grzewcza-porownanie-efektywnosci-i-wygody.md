@@ -4,7 +4,7 @@ title_second_line: 'porównanie efektywności i wygody'
 description: 'W dzisiejszych czasach, wybór odpowiedniego systemu ogrzewania dla swojego domu staje się kluczowym aspektem projektowania i budowy. W miarę jak technologia postępuje, pojawiają się nowe możliwości, które mogą znacząco wpłynąć na komfort i efektywność ogrzewania. W tym kontekście, dwie popularne opcje wyróżniają się: ogrzewanie podłogowe i folia grzewcza emitująca podczerwień. Oba rozwiązania mają swoje unikalne cechy i korzyści, co sprawia, że wybór pomiędzy nimi może być trudny dla wielu osób.'
 tags:
   [
-    'promienniki',
+    'folie grzewcze',
     'ogrzewanie podłogowe',
     'folia grzewcza na podczerwień',
     'porównanie folii grzewczej na podczerwień i ogrzewania podłogowego'

@@ -2,7 +2,7 @@
 title: 'Montaż i użytkowanie folii grzewczej -'
 title_second_line: 'praktyczne wskazówki'
 description: 'Dzisiejsze wymagania związane z efektywnością i komfortem stawiają przed nami nowe wyzwania w dziedzinie ogrzewania domów. Rozwój technologii przynosi innowacyjne rozwiązania, a jednym z nich są folie grzewcze na podczerwień. W niniejszym artykule przyjrzymy się temu nowoczesnemu podejściu do ogrzewania, zrozumieją jego znaczenie w dzisiejszych domach oraz poznamy korzyści, jakie może przynieść. Odkryjmy razem, jak folie grzewcze na podczerwień mogą zapewnić skuteczne i komfortowe ogrzewanie w naszych wnętrzach.'
-tags: ['promienniki', 'folia grzewcza', 'montaż folii grzewczej', 'jak zamontować folię grzewczą']
+tags: ['folie grzewcze', 'montaż folii grzewczej', 'jak zamontować folię grzewczą']
 cover: '/covers/folia-montaż.png'
 date: 31.08.2023
 ---
